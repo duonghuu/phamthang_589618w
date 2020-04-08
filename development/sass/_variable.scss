@@ -4,7 +4,7 @@
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1330px !default;
+$max-width: 1230px !default;
 $browser-context: 16;
 /* ======================== FONTS ======================== */
 $font-SFUSchadowBTBlackCondensed        : 'SFUSchadowBTBlackCondensed';
@@ -23,8 +23,8 @@ $font-muli                              : 'Muli', sans-serif;
 $font-oswald                            : 'Oswald', sans-serif;
 $font-nunito                            : 'Nunito', sans-serif;
 
-$font-title             : $font-muli;
-$font-text              : $font-muli;
+$font-title             : $font-montserrat;
+$font-text              : $font-montserrat;
 $font-awesome           : 'Font Awesome 5 Free';
 $font-second            : 'Arial';
 /* ======================== HEADER ======================== */
@@ -32,17 +32,17 @@ $bg-header-top          : #000000;
 $bg-header              : #fff;
 $bg-breadcrumb           : #f7f6f6;
 /* ======================== MENU ======================== */
-$font-menu              : $font-muli;
-$color-menu-hover       : #f00;
-$bg-menu                : #fff;
+$font-menu              : $font-montserrat;
+$color-menu-hover       : #ff0;
+$bg-menu                : #333;
 $bg-valak               : #000;
 $bg-menu-item           : transparent;
 $bg-menu-item-hover     : transparent;
 /* ======================== FOOTER ======================== */
 $bg-copyright       : #0f0f0f;
 $bg-footer          : #131313;
-$theme-color        : #000000;
-$height-map         : 485px;
+$theme-color        : #a81900;
+$height-map         : 375px;
 /* ======================== URL ======================== */
 $font-url           : 'css/fonts/';
 $font-awesome-url   : 'css/fontawesome/webfonts/';

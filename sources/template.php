@@ -1,7 +1,7 @@
 <?php 
 if($source=="index"){
-    // $gioithieu=get_fetch("select ten$lang as ten,mota$lang as mota,thumb,photo from #_about 
-    //     where type='gioi-thieu' ");
+    $gioithieu=get_fetch("select ten$lang as ten,mota2$lang as mota2,thumb,photo from #_about 
+        where type='gioi-thieu' ");
     $spmoi=get_result("select ten$lang as ten,tenkhongdau,id,type,gia,giakm,thumb,photo,size2 from
      #_product where type='san-pham' and spmoi>0 and hienthi>0 order by stt asc");
     $sptieubieu=get_result("select ten$lang as ten,tenkhongdau,id,type,gia,giakm,thumb,photo,size2 from

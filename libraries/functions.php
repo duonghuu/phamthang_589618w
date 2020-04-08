@@ -839,7 +839,7 @@ function thumb_bgratio($src_img, $new_w, $new_h){
   $img_thumb->insert($src_img, 'center');
   return $img_thumb;
 }
-function create_image($file, $width, $height, $folder,$file_name,$zoom_crop='1'){
+function create_thumb($file, $width, $height, $folder,$file_name,$zoom_crop='1'){
    $type = end(explode('.',$file_name));
    $name = basename($file_name, '.'.$type);
    $name=changeTitleImage($name);
@@ -881,7 +881,7 @@ function create_image($file, $width, $height, $folder,$file_name,$zoom_crop='1')
   $IMG->save($pathto, $quant);
   return $new_file;
   }
-function create_thumb($file, $width, $height, $folder,$file_name,$zoom_crop='1'){
+function create_thumb_old($file, $width, $height, $folder,$file_name,$zoom_crop='1'){
   $ext = end(explode('.',$file_name));
   $name = basename($file_name, '.'.$ext);
   $name=changeTitleImage($name);

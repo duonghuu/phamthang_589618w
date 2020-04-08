@@ -15,7 +15,14 @@
     color:#ff0;
   }
 }
-
+.chitiet{
+  @include setFont(15px, #000, 400);
+  margin-top: em(20);
+  @include boxstyle($display: inline-flex, $align-items: center);
+  img{
+    margin-right: 10px;
+  }
+}
 .btn-idx{
   @extend %btn-chitiet;
 }

@@ -45,7 +45,8 @@ $_SESSION['dong'] = lay_banner('dong');
     <div id="wapper"  >
         <section class="head-main">
             <?php 
-            include _template."layout/header.php";
+            // include _template."layout/header.php";
+            include _template."layout/menu_top.php";
             include _template."layout/valak_menu.php";
             include _template."layout/slider.php";
             if($source != "index") echo $bread->display();

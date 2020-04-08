@@ -315,8 +315,8 @@ switch($type){
 	case 'logo':
 	switch($act){
 		default:
-		@define ( _width_thumb2 , 250 );
-		@define ( _height_thumb2 , 80 );
+		@define ( _width_thumb2 , 160 );
+		@define ( _height_thumb2 , 120 );
 		break;
 	}
 	break;
@@ -389,10 +389,10 @@ switch($type){
 	switch($act){
 		default:
 		@define ( _width_thumb , 1366 );
-		@define ( _height_thumb , 475);
+		@define ( _height_thumb , 660);
 		@define ( _style_thumb , 2 );
 		@define ( _width_thumb2 , 1366 );
-		@define ( _height_thumb2 , 475);
+		@define ( _height_thumb2 , 660);
 		break;
 	}
 	break;
@@ -452,12 +452,13 @@ switch($type){
 	case 'gioi-thieu':
 	switch($act){
 		default:
-		$config['type'] = array('seo','noidung');
-		@define ( _width_thumb , 585 );
-		@define ( _height_thumb , 400 );
-		@define ( _style_thumb , 2 );
-		@define ( _width_thumb2 , 585 );
-		@define ( _height_thumb2 , 400 );
+		$config['type'] = array('seo','ten','noidung','mota2','hinhanh');
+		// $config['ck'] = array('mota2');
+		@define ( _width_thumb , 410 );
+		@define ( _height_thumb , 520 );
+		@define ( _style_thumb , 1 );
+		@define ( _width_thumb2 , 410 );
+		@define ( _height_thumb2 , 520 );
 		break;
 	}
 	break;

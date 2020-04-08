@@ -46,193 +46,155 @@
 .idx-desc {
     // @include setFont(15px, #808080, 400, $font-text);
 }
-.sliderma-main{
-    background-color: #fc0214;
-    .slider-ma{
-        .ma-item{
-            @include boxstyle($display: flex, $align-items: center, $justify-content: center);
-            @include setFont(13px, #fff, 700);
-            min-height: 36px;
-            text-transform: uppercase;
+.about-bg{
+    padding-bottom: em(60);
+}
+.special-title {
+    @include absolute($left: 0, $bottom: 0);
+    writing-mode: vertical-rl;
+    transform: scale(-1, -1);
+    
+    @include setFont(15px, #000, 400);
+    width: em(60);
+    padding-top: 30px;
+    margin-bottom: em(120);
+    &:before{
+        content: "";
+        @include absolute($right: 10px, $top: 0);
+        
+        @include box(1px, 20px);
+        background-color: $theme-color;
+    }
+}
+.about-flex{
+  $pd-60: em(60);
+  $pd-120: em(120);
+  position: relative;
+  overflow: hidden;
+  padding: $pd-60 $pd-60 $pd-120 $pd-60;
+  @include boxstyle($display: flex, $justify-content: space-between);
+  &:before{
+      $box-xam-width: percentage(1038/1200);
+      content: "";
+      @include absolute($right: 0, $top: em(120), $bottom: em(60));
+
+      @include box($box-xam-width, 100%);
+      background-color: #f5f5f5;
+      z-index: -1;
+  }
+  figure{
+    width: percentage(410/1080);
+    margin-bottom: 0;
+        img{
+
         }
     }
-}
-.spmoi-bg, .spmoi-bg{
-    padding: em(55) 0;
-}
-.spnoibat-main{
-    margin: 0 -#{em(15)};
-}
-.spnoibat-bg{
-    @include clearfix;    
-    position: relative;
-    margin-bottom: 40px;
-  .danhmuc-feature-img{
-    float: left;
-    width: 50%;
-
-    @at-root .even#{&}{
-        float: right;
-    }
-    a{
+  .about-info{
+    @include flex(1);
+    @include boxstyle($display: flex, $justify-content: flex-end, $flex-direction: column);
+    margin-left: em(50);
+    
+    &__title{
+        @include setFont(40px, #000, 700);
+        text-transform: uppercase;
         position: relative;
-        padding-top: percentage(711/684);
-        display: block;
+        margin-bottom: em(10);
+        &:before{
+            content: "";
+            @include absolute($left: 0, $bottom: 0);
+            @include box(50px, 1px);
+            background-color: $theme-color;
+        }
+    }
+    &__text{
+        @include setFont(15px, 000, 400);
+        line-height: 1.5;
+    }
+    &__footer{}
+  }
+}
+
+.dm-cap-bg{
+
+}
+.dm-cap-main{}
+.dm-cap-item{
+  a{
+    display: block;
+    position: relative;
+    color: #fff;
+    &:after{
+        content: "";
+        @include absolute(0,0,0,0);
+        @include bg("bongmo.png", $background-position: bottom center, $background-repeat: repeat-x);
+         @include box(100%, 100%);
+    }
+    figure{
+        margin-bottom: 0;
+        position: relative;
+        padding-top: percentage(557/342);
       img{
         @extend %img-fill;
         object-fit: cover;
         object-position: top center;
       }
-      span.feature-content{
-        $feature-postion: em(20);
-        @include absolute($feature-postion,$feature-postion,$feature-postion,$feature-postion);
-        @include boxstyle($display: flex, $justify-content: center, $align-items: center, $flex-direction: column);
-        border: 3px solid #fefdfd;
-        p{
-            @include setFont(em(41), #fff, 700);
-            margin-bottom: 0;
-        }
-        h2{
-            @include setFont(em(29), #fff, 400);
-            margin-bottom: 0;
-        }
-      }
-    }
-  }
-  .danhmuc-sanpham{
-    $right-position: percentage(33/1366);
-    $top-position: 63px;
-    @include absolute($top: $top-position, $right: $right-position);
-    @include boxShadow(3px 4px 5px rgba(0,0,0,.25));
-    min-height: percentage(579/711);
-    width: percentage(807/1366);
-    padding: 14px 10px;
-    background-color: #fdfdfd;
-    @at-root .even#{&}{
-        right: unset;
-        left: $right-position;
-    }
-    .danhmuc-sanpham-box{
-        .product-grid{
-            @include grid($display: flex, $flex-wrap: wrap, $gutter: 8px);
-            .pr-box{
-                @include grid-col($col: 4, $grid-columns: 12, $gutter: 8px);
-            }
-        }
-    }
-  }
-}
-
-.qc-item {
-    a{
-        display: block;
-        img{
-            width: 100%;
-        }
-    }
-}
-.tinnb-bg{
-    padding: em(40) 0;
-    background-color: #f8f8f8;
-}
-.tinnb-main{
-    margin: 0 -#{em(14)};
-  .tinnb-item{
-    padding: 0 em(14);
-    a{
-        display: block;
-        padding: 10px;
-        background-color: #fff;
-      figure{
-        position: relative;
-        padding-top: percentage(305/393);
-        img{
-            @extend %img-fill;
-            object-fit: cover;
-            object-position: top center;
-        }
-      }
-      h5{
-        @include setFont(16px, #333, 400);
-        margin-bottom: 5px;
-        @include line-clamp($font-size: 16px, $line-height: 1.5, $lines-to-show: 2, $max-height: false);
-      }
-      hr{
-        margin: 0 0 5px 0;
-      }
-      p{
-        @include setFont(14px, #333);
-        // @include line-clamp($font-size: 14px, $line-height: 1.5, $lines-to-show: 3, $max-height: false);
-        // text-align: justify;
-        // text-align-last: left;
-        margin-bottom: 0;
-        span{
-            text-decoration: underline;
-            font-style: italic;
-        }
-      }
-    }
-  }
-}
-.themanh-bg{
-    border-top: 1px solid #141414;
-    padding: 10px 0;
-}
-.themanh-main{
-    // margin: 0 -#{em(20)};
-
-}
-.themanh-item{
-    // padding: 0 em(20);
-    margin-left: -1px;
-  article{
-    @include boxstyle($display: flex, $justify-content: space-between, $align-items: center);
-    padding-left: 10px;
-    border-left: 1px solid #141414;
-    figure{
-        margin: 0 5px 0 0;
-        @include box(60px, 60px);
-        position: relative;
-      img{
-        @extend %img-fill;
-        object-fit: scale-down;
-      }
     }
     .info{
-        @include flex(1);
-      h6{
-        @include setFont(16px, #141414, 700);
-        @include line-clamp($font-size: 16px, $line-height: 1, $lines-to-show: 1, $max-height: true);
+        @include absolute(0,0,0,0);
+        z-index: 2;
+        @include boxstyle($display: flex, $justify-content: flex-end, $flex-direction: column);
+        padding: em(40) em(30) em(30);
+      &-head{
+        &__title{
+
+          &--big{
+            font-size: em(23);
+            font-weight: 700;
+            
+            
+            margin-bottom: 20px;
+            
+          }
+          &--small{
+            position: relative;
+            font-size: 17px;
+            margin-bottom: 30px;
+            @include boxstyle($display: flex, $justify-content: center);
+            &:before{
+                content: "";
+                @include box(30px, 1px);
+                @include absolute($top: -10px);
+                background-color: #fff;
+            }
+          }
+        }
       }
-      span{
-        @include setFont(15px, #606060);
-        display: block;
-        @include line-clamp($font-size: 15px, $line-height: 1, $lines-to-show: 1, $max-height: true);
+      &-body{
+        line-height: 1.5;
+        font-size: 13px;
+        display: none;
+      }
+      &-foot{
+        display: none;
+        .chitiet{
+            color: #fff;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
       }
     }
-  }
-}
-.ft-info-title {
-    @include setFont(em(15), #fff, 400);
-    margin-bottom: 0;
-}
-.dichvu-item{
-    background-color: #f5f1d9;
-    @include doubly(){
-        margin-top: 9px;
-    }
-    border-radius: 5px;
-    overflow: hidden;
-  a{
-    @include boxstyle($display: flex, $align-items: center);
-    @include setFont(15px, #00004f, 400);
-    padding: 3px;
-    text-transform: uppercase;
-    figure{
-        @include box(40px, 40px);
-        @include boxstyle($display: flex, $align-items: center);
-        margin: 0 5px 0 0;
-        img{}
+    &:hover{
+        .info{
+            @include justify-content(space-between);
+            background-color: rgba(168, 25, 0, 0.85);
+            &-body{
+              display: block;
+            }
+            &-foot{
+              display: block;
+            }
+        }
     }
   }
 }
