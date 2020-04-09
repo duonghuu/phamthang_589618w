@@ -20,17 +20,20 @@ div.mxhft{
     }
 }
 %mxh-style{
-    @include boxstyle($display: flex, $align-items: center);
+    @include boxstyle($display: flex, $justify-content: center, 
+        $align-items: center);
     position: relative;
     margin-top: 20px;
     a{
-        @include boxstyle($display: inline-flex, $justify-content: center, $align-items: center);  
-
+        @include boxstyle($display: inline-flex, $justify-content: center, 
+            $align-items: center);  
+        @include box(70px, 70px, 100%);
+        background-color: rgba(0, 0, 0, 0.32);
         &+a{
-            margin-left: 6px;
+            margin-left: -10px;
         }
         img{
-            max-height: 37px;
+            max-height: 50px;
             object-fit: scale-down;
             @include transition(all 1s ease);  
             &:hover{

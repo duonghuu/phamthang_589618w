@@ -32,6 +32,19 @@ $('.dm-cap-main').on({
           }
       }]
   });
+  $('.duan-datnen-main').slick({lazyLoad: 'ondemand',
+    infinite: true,
+    accessibility:false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay:false,
+    autoplaySpeed:3000,
+    speed:1000,
+    arrows:true,
+    centerMode:false,
+    dots:false,
+    draggable:true,
+  });
   $('.tinnb-main').on({
         beforeChange: function(event, slick, currentSlide, nextSlide) {
             myLazyLoad.update();
@@ -61,7 +74,7 @@ $('.dm-cap-main').on({
             }
         }]
     });
-    $('.themanh-main').on({
+    $('.camnhan-main').on({
           beforeChange: function(event, slick, currentSlide, nextSlide) {
               myLazyLoad.update();
           }
@@ -69,26 +82,16 @@ $('.dm-cap-main').on({
           lazyLoad: 'ondemand',
           infinite: true,
           accessibility: false,
-          slidesToShow: 4,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 3000,
           speed: 1000,
-          arrows: true,
+          arrows: false,
           centerMode: false,
-          dots: false,
+          dots: true,
           draggable: true,
           responsive: [{
-              breakpoint: 800,
-              settings: {
-                  slidesToShow: 2
-              }
-          },{
-              breakpoint: 500,
-              settings: {
-                  slidesToShow: 2
-              }
-          },{
               breakpoint: 430,
               settings: {
                   slidesToShow: 1

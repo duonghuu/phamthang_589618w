@@ -15,34 +15,52 @@
     position: relative;
     width: 100%;
     z-index: 5;
-    
-    .ft-top{
-        background-color: $bg-footer;
+    background-color: #a81900;
+    @include boxstyle($display: flex, $justify-content: space-between);
+    .ft-left{
+        background-color: #971600;
+        width: percentage(540/1366);
     }
-    .ft-flex {
-        @include boxstyle($display: flex, $justify-content: space-between);
-        padding: 38px 0;
-        .ft-logo { 
-            a{
-                img{
-                    
-                }
+    .ft-right{
+        $pd-lr: percentage(80/1366);
+        @include flex(1);
+        padding: em(55) $pd-lr;
+    }
+    .ft-top{
+        
+    }
+
+    .ft-logo { 
+        margin-bottom: 1em;
+        a{
+            display: inline-block;
+            max-width: 160px;
+            img{
+                
             }
         }
-        .ft-info {
-            position: relative;
-            width: percentage(600/1300);
-        }
+    }
+    .ft-info {
+        $pd-lr: percentage(60/540);
+        position: relative;
+        text-align: center;
+        color: #fff;
+        padding: 1em $pd-lr 2em;
+    }
+    .ft-flex {
+        
+        @include boxstyle($display: flex, $justify-content: space-between);
+        
 
         .ft-bando {
         }
 
         .ft-fanpage {
-            width: percentage(270/1190);
-            .fanpageplace {
-                height: 200px;
-                overflow: hidden;
-            }
+            // width: percentage(270/1190);
+            // .fanpageplace {
+            //     height: 200px;
+            //     overflow: hidden;
+            // }
         }
 
         .ft-dknt{
@@ -91,16 +109,16 @@
 
     .ft-tit {
         position: relative;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
 
         strong, span {
-            @include setFont(15px, #fff, 700);
-            &::after {
-                content: "";
-                @include box(50px, 2px);
-                @include absolute($bottom: -10px, $left: 0);
-                background-color: #fff;
-            }
+            @include setFont(15px, #fff, 600);
+            // &::after {
+            //     content: "";
+            //     @include box(50px, 2px);
+            //     @include absolute($bottom: -10px, $left: 0);
+            //     background-color: #fff;
+            // }
         }
 
         &::after {
@@ -111,60 +129,21 @@
         }
     }
 
-    .ft-logo{
-        // @include boxstyle($display: flex, $align-items: center);
-        // width: 28.8%;
-        // margin-bottom: 1em;
-        // a{
-        //     display: block;
-        //     img{
-        //         max-width: 400px;
-        //     }
-        // }
-        
-    }
-
-    .copyright {
-        position: relative;
-        background: $bg-copyright; 
-        .ft-wrap {
-            min-height: 54px;
-            @include boxstyle($display: flex, $justify-content: space-between, $align-items: center);
+    // .copyright {
+    //     position: relative;
+    //     background: $bg-copyright; 
+    //     .ft-wrap {
+    //         min-height: 54px;
+    //         @include boxstyle($display: flex, $justify-content: space-between, $align-items: center);
             
             .text {
                 @extend %copyright-font;
                 margin: 5px 0;
             }
 
-            ul.ft-thongke {
-                @extend %reset-list;
-
-                @include boxstyle($display: flex);
-                li {
-                    @extend %copyright-font;
-
-                    @include boxstyle($display: flex, $align-items: center);
-                    position: relative;
-                    margin: 5px 0;
-
-                    span {
-                        margin-left: 4px;
-                    }
-
-                    & + li {
-                        margin-left: 2em;
-
-                        &::before {
-                            content: "";
-                            background-color: #fff;
-                            @include box(1px, 12px);
-                            @include absolute($left: -1em);
-                        }
-                    }
-                }
-            }
-        }
-    }
+            
+    //     }
+    // }
 }
 .codebando, .codebando iframe{
     // @extend %map-style;
@@ -172,4 +151,30 @@
 .mxh{
     @extend %mxh-style;
 }
-/*end footer*/
+ul.ft-thongke {
+    @extend %reset-list;
+
+    @include boxstyle($display: flex);
+    li {
+        @extend %copyright-font;
+
+        @include boxstyle($display: flex, $align-items: center);
+        position: relative;
+        margin: 5px 0;
+
+        span {
+            margin-left: 4px;
+        }
+
+        & + li {
+            margin-left: 2em;
+
+            &::before {
+                content: "";
+                background-color: #fff;
+                @include box(1px, 12px);
+                @include absolute($left: -1em);
+            }
+        }
+    }
+}

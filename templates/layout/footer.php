@@ -1,11 +1,40 @@
 <footer id="footer">
-  <div class="ft-top ">
+  <div class="ft-left">
+    <div class="ft-info">
+      <div class="ft-logo"><a href="" ><img src="<?= _upload_hinhanh_l.
+      $logolang["photo"] ?>" alt="logo"></a></div>
+      <div class="content"> <?php echo lay_text('footer'); ?> </div>
+      <div class="mxh"><?= lay_mxh("mxh") ?></div>
+    </div>
+  </div>
+  <div class="ft-right">
+    <div class="ft-flex">
+      <div class="ft-baiviet">
+        <p class="ft-tit text-uppercase"><span>Về chúng tôi</span></p>
+        <?= for1("news","chinh-sach","chinh-sach",".html") ?>
+      </div>
+      <div class="ft-baiviet">
+        <p class="ft-tit text-uppercase"><span>Chính sách</span></p>
+        <?= for1("news","chinh-sach","chinh-sach",".html") ?>
+      </div>
+      <div class="ft-baiviet">
+        <p class="ft-tit text-uppercase"><span>Bảng tin bđs</span></p>
+        <?= for1("news","chinh-sach","chinh-sach",".html") ?>
+      </div>
+    </div>
+    <ul class="ft-thongke">
+      <li>Đang Online: <span><?php $count=count_online();echo $tong_xem=$count['dangxem'];?></span></li>
+      <li><?=_tongtruycap?>: <span><?php $count=count_online();echo $tong_xem=$count['daxem'];?></span></li>
+    </ul>
+    <p class="text">Copyright © 2020 <?= $company["ten"] ?>. Design by Nina</p>
+  </div>
+   <?php /*<div class="ft-top ">
     <div class="container">
       <div class="ft-flex">
         
         <div class="ft-info">
           <p class="ft-info-title text-uppercase"><?= _thongtinlienhe ?></p>
-          <?php /* <h4 class="ft-company"><a href=""><?= $company["ten"] ?></a></h4> */?>
+          <h4 class="ft-company"><a href=""><?= $company["ten"] ?></a></h4>
           <div class="content"> <?php echo lay_text('footer'); ?> </div>
           <div class="mxh"><?= lay_mxh("mxh") ?></div>
         </div>
@@ -23,7 +52,7 @@
               </a></div>
           <?php } ?>
         </div>
-        <?php /* <?php  if($deviceType != "phone"){ ?>
+        <?php  if($deviceType != "phone"){ ?>
                 <div class="ft-fanpage">
                   <p class="ft-tit text-uppercase"><span>Fanpage facebook</span></p>
                   <div class="fanpageplace">
@@ -39,10 +68,11 @@
                   </div>
                 </div>
                 
-                <?php } ?> */?>
+                <?php } ?> 
     </div>
   </div>
-</div>
+</div>*/?>
+             <?php /*  
 <div class="copyright">
   <div class="container">
     <div class="ft-wrap">
@@ -53,11 +83,14 @@
         <li><?=_thongkethang?>: <span><?=$trongthang;?></span></li> 
         <li><?=_tongtruycap?>: <span><?php $count=count_online();echo $tong_xem=$count['daxem'];?></span></li>
       </ul>
-             <?php /*  
         <li><?=_ngayhomqua?>: <span><?=$homqua;?></span></li> 
-*/?>
     </div>
   </div>
 </div>
+*/?>
 </footer>
-          <?php /* <div class="codebando"><?= $company["bando"] ?></div>  include _template."layout/dangkynhantin.php";<img src="http://placehold.it/600x520" alt="" style="   -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);   "> https://bennettfeely.com/clippy/ */?>
+<?php /* <div class="codebando"><?= $company["bando"] ?></div> 
+ include _template."layout/dangkynhantin.php";<img src="http://placehold.it/600x520" alt="" 
+ style="   -webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+ clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);   "> 
+ https://bennettfeely.com/clippy/ */?>

@@ -11,7 +11,7 @@
     font-weight: 700;
     font-size: 20px;
 }
-$product-gutter: percentage(30/1330);
+$product-gutter: percentage(30/1200);
 .product-grid{
     // @include clearfix; 
     @include grid($display: flex, $flex-wrap: wrap, $gutter: $product-gutter);
@@ -22,7 +22,7 @@ $product-gutter: percentage(30/1330);
     padding: 0 em(15);
 }
 .pr-box{
-    @include grid-col($col: 3, $grid-columns: 12, $gutter: $product-gutter);
+    @include grid-col($col: 4, $grid-columns: 12, $gutter: $product-gutter);
     position:relative;
     @include transition(all .2s linear);
 
@@ -38,42 +38,23 @@ $product-gutter: percentage(30/1330);
         background: #fff;
         .imgsp{
             display: block;
-            overflow: hidden;
             position: relative;
-            padding-top: percentage(403/303);
-            margin-bottom: 10px;
-            img{
-                @extend %img-fill;
-            }
-            .giam{
-                @include absolute($top: 10px, $left: 10px);
-                @include box(40px, 40px, 100%);
-                @include setFont(12px, #fff);
-                @include boxstyle($display: inline-flex, $justify-content: center, $align-items: center);
-                background-color: #fc0214;
-            }
-            .sizepanel{
-                height: 51px;
-                @include boxstyle($display: flex, $justify-content: space-between, $align-items: center);
-                background-color: rgba(#fff, 0.9);
-                @include absolute($bottom: -51px, $left: 0px, $right: 0);
-                @include transition(all 0.2s ease);
-                padding: 0 20px;
-                &>span{
-                    @extend %size-style;
+            color: #fff;
+            figure{
+                overflow: hidden;
+                position: relative;
+                padding-top: percentage(300/380);
+                margin: 0;
+                img{
+                    @extend %img-fill;
                 }
-                .size-right{
-                    span{
-                        @extend %size-style;
-                        @include doubly(){
-                            margin-left: 5px;
-                        }
-                    }
-                }
-            }
-            &:hover{
-                .sizepanel{
-                    bottom: 0;
+                figcaption{
+                    @include setFont(17px, #fff, 400);
+                    @include absolute($left: 0, $right: 0, $bottom: 0);
+                    background-color: rgba(168, 25, 0, 0.85);
+                    padding: 0.5em;
+                    text-align: center;
+                    text-transform: uppercase;
                 }
             }
         }
@@ -110,6 +91,11 @@ $product-gutter: percentage(30/1330);
                     @include setFont(17px, #d8232a, 700);
                 }
             }
+        }
+    }
+    &:hover{
+        figcaption{
+            display: none;
         }
     }
 }
