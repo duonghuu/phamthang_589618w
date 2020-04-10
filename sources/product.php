@@ -14,7 +14,9 @@ if($id>0)
 	$d->query($sql);
 
 		//Chi tiết sản phẩm
-	$row_detail = get_fetch("select *,id,ten$lang as ten,tenkhongdau,type,mota$lang as mota,noidung$lang as noidung,mausac2,size2 FROM #_product where hienthi=1 and id='$id' limit 0,1");
+	$row_detail = get_fetch("select *,id,ten$lang as ten,tenkhongdau,type,mota$lang as mota,
+		noidung$lang as noidung,vitri as tinhtrang,phaply as phongtam,mattien as phongngu,matbang as giabds
+		 FROM #_product where hienthi=1 and id='$id' limit 0,1");
 	if(empty($row_detail)){redirect($config_url_ssl.'/404.php');}
 
 	$a_danhmuc["id_danhmuc"] = $row_detail["id_danhmuc"];
@@ -212,6 +214,7 @@ if($id>0)
 
 	// $product = get_result("select *,mota$lang as mota,id,ten$lang as ten,tenkhongdau FROM #_product where $where 
 	// 	limit $bg,$pageSize");
-	$product = get_result("select *,mota$lang as mota,id,ten$lang as ten,tenkhongdau FROM #_product where $where 
+	$product = get_result("select *,mota$lang as mota,ten$lang as ten,vitri as tinhtrang,phaply as phongtam,
+		mattien as phongngu,matbang as giabds FROM #_product where $where 
 	");
 	$url_link = getCurrentPageURL();

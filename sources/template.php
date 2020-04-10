@@ -2,26 +2,21 @@
 if($source=="index"){
     $gioithieu=get_fetch("select ten$lang as ten,mota2$lang as mota2,thumb,photo from #_about 
         where type='gioi-thieu' ");
-    $spmoi=get_result("select ten$lang as ten,tenkhongdau,id,type,gia,giakm,thumb,photo,size2 from
-     #_product where type='san-pham' and spmoi>0 and hienthi>0 order by stt asc");
-    $sptieubieu=get_result("select ten$lang as ten,tenkhongdau,id,type,gia,giakm,thumb,photo,size2 from
-     #_product where type='san-pham' and tieubieu>0 and hienthi>0 order by stt asc");    
-    $quangcao=get_result("select ten$lang as ten,mota$lang as mota,link,photo,thumb
-     from #_slider where hienthi=1 and type='quang-cao' order by stt");
-    $product_danhmuc=get_result("select ten$lang as ten,tenkhongdau,id,
-        thumb,photo,type from #_product_danhmuc where type='san-pham' and noibat>0 and hienthi>0 order by stt asc");
-    $tinnb=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb,photo
-        ,type,ngaytao,luotxem from #_news where type='tin-tuc' and noibat>0 and hienthi>0 order by stt asc");
-    $c_tinnb=count($tinnb);
-    $sliderma = get_result("select ten$lang as ten from #_news 
-      where hienthi=1 and type='slider-ma' order by stt");
+    $spnoibat=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,type,thumb,photo,diachi,
+      vitri as tinhtrang,phaply as phongtam,mattien as phongngu,dientich,matbang as giabds from
+     #_product where type='can-ho' and noibat>0 and hienthi>0 order by stt asc");    
+      $datnen=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,type,thumb,photo,diachi,
+        vitri as tinhtrang,phaply as phongtam,mattien as phongngu,dientich,matbang as giabds from
+       #_product where type='dat-nen' and noibat>0 and hienthi>0 order by stt asc");
+    $ykien=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb,photo
+        ,type,ngaytao,chucvu from #_news where type='y-kien' and hienthi>0 order by stt asc");    
+    $product_danhmucnb=get_result("select ten$lang as ten,ten2$lang as ten2,mota$lang as mota,tenkhongdau,id,
+        thumb,photo,type from #_product_danhmuc where type in ('can-ho','nha-pho') and noibat>0 and hienthi>0 
+        order by stt asc");
 }
-$dichvu=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb,photo
-    ,type,ngaytao,luotxem from #_news where type='dich-vu' and hienthi>0 order by stt asc");
-$danhmuc_cap1 = get_result("select ten$lang as ten,tenkhongdau,id,type from
- #_product_danhmuc where type='san-pham' and hienthi>0 order by stt asc");
-$themanh=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb,photo
-    ,type,ngaytao,luotxem from #_news where type='the-manh' and hienthi>0 order by stt asc");
+$tinnb=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb,photo
+    ,type,ngaytao,luotxem from #_news where type='tin-tuc' and noibat>0 and hienthi>0 order by stt asc");
+$c_tinnb=count($tinnb);
 $logolang = get_fetch("select photo as photo from #_background where type='logo'");
 // $bannerlang = get_fetch("select photo as photo from #_background where type='banner'");
 // $ftlogo=get_fetch("select photo from #_about where type='footer' ");

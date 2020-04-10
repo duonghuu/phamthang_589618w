@@ -131,6 +131,16 @@ echo '&type='. $_REQUEST['type'];?>" method="post" enctype="multipart/form-data"
                <div class="clear"></div>
              </div>
            <?php } ?>
+            <?php if(in_array('ten2',$config['type'])) { ?>
+             <div class="formRow">
+               <label>Tiêu để nhỏ</label>
+               <div class="formRight">
+                 <input type="text" name="ten2<?=$key?>" title="Nhập tên bài viết" id="ten2<?=$key?>" class="tipS"
+                  value="<?=@$item['ten2'.$key]?>" />
+               </div>
+               <div class="clear"></div>
+             </div>
+           <?php } ?>
            <?php if(in_array('mota',$config['type'])) { ?>
              <div class="formRow">
                <label>Mô tả ngắn:</label>

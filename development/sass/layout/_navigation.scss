@@ -31,9 +31,12 @@
     @include animation('dropInDown 0.3s both');
 }
 .nav-bg {
-    @include absolute($top: 0, $left: 0, $right: 0);
+    @include relative($top: 0, $left: 0, $right: 0);
+    @include bg("duan-datnen.jpg", $background-size: 100% auto );
     z-index: 451 !important;
     @at-root .clsindex #{&}{
+        position: absolute;
+        background: none;
     }
 }
 .logo{
@@ -53,21 +56,30 @@
     }
     &-left{
         @include flex(1);
+        &>li{
+            @include doubly()
+            {
+                 margin-left: em(60);
+            }
+        }
     }
     &-right{
         @include flex(1);
         order: 2;
-        margin-right: em(40);
+        // margin-right: em(40);
+        &>li{
+            margin-left: em(50);
+        }
     }
     &>ul {
-        @include boxstyle($display: flex, $align-items: center, $justify-content: center);
+        @include boxstyle($display: flex, $align-items: center);
         z-index: 5;
         position: relative;
         &>li {
             @include boxstyle($display: flex, $align-items: center, $justify-content: center);
             position: relative;
             z-index: 5;
-            @include flex(auto);
+            //@include flex(auto);
             &:not(:last-child):after{
                 // content: "";
                 // @include box(1px, 11px);
@@ -76,6 +88,7 @@
             }
             @include doubly()
             {
+                
             }
             ul{
                 @extend %sub-menu-list;
@@ -113,7 +126,7 @@
                 @include setFont(14px, #212121, 400, $font-menu);
                 text-decoration: none;
                 line-height: 34px;
-                padding: 0 10px;
+                padding: 0 20px 0 10px;
                 white-space: nowrap;
                 display: block;
                 &:after {
@@ -125,7 +138,7 @@
                     @include absolute($top: 0, $right: 5px);
                 }
             }
-            @include setTagAHover(#212121,$color-menu-hover);
+            @include setTagAHover(#212121,$theme-color);
             &:hover{
                 &>ul{
                     display: block;

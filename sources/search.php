@@ -22,7 +22,9 @@
 		$page--;
 		$bg = $pageSize*$page;
 
-		$product = get_result("select *,ten$lang as ten,mota$lang as mota from #_product where $where limit $bg,$pageSize");
+		$product = get_result("select *,ten$lang as ten,mota$lang as mota,vitri as tinhtrang,
+			phaply as phongtam,mattien as phongngu,matbang as giabds from #_product 
+			where $where limit $bg,$pageSize");
 		$url_link = getCurrentPageURL();
 	}
 ?>

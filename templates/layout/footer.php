@@ -11,7 +11,7 @@
     <div class="ft-flex">
       <div class="ft-baiviet">
         <p class="ft-tit text-uppercase"><span>Về chúng tôi</span></p>
-        <?= for1("news","chinh-sach","chinh-sach",".html") ?>
+        <?= for1("news","ve-chung-toi","ve-chung-toi",".html") ?>
       </div>
       <div class="ft-baiviet">
         <p class="ft-tit text-uppercase"><span>Chính sách</span></p>
@@ -19,7 +19,11 @@
       </div>
       <div class="ft-baiviet">
         <p class="ft-tit text-uppercase"><span>Bảng tin bđs</span></p>
-        <?= for1("news","chinh-sach","chinh-sach",".html") ?>
+        <ul>
+          <?php foreach ($tinnb as $key => $value) { ?>
+            <li><a href="<?= get_url($value,"tin-tuc") ?>"><?= $value["ten"] ?></a></li>
+          <?php } ?>
+        </ul>
       </div>
     </div>
     <ul class="ft-thongke">

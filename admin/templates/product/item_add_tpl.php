@@ -250,7 +250,15 @@ $ds_photo=$d->result_array();
       <div class="clear"></div>
     </div>
   <?php } ?>
-  
+  <?php if(in_array('matbang',$config['type'])) { ?>
+   <div class="formRow">
+    <label><?= (!empty($config["title"]["matbang"]))?$config["title"]["matbang"]:'Diện tích' ?>: </label>
+    <div class="formRight">
+      <input type="text" name="matbang" value="<?=@$item['matbang']?>" class="tipS" />
+    </div>
+    <div class="clear"></div>
+  </div>
+  <?php } ?>
   <?php if(in_array('dientich',$config['type'])) { ?>
    <div class="formRow">
     <label><?= (!empty($config["title"]["dientich"]))?$config["title"]["dientich"]:'Diện tích' ?>: </label>
@@ -301,7 +309,8 @@ $ds_photo=$d->result_array();
   <div class="formRow">
     <label><?= (!empty($config["title"]["toado"]))?$config["title"]["toado"]:"Tọa độ" ?>:</label>
     <div class="formRight">
-      <textarea rows="8" cols="" title="Tọa độ" class="tipS" name="data[toado]" id="toado"><?=@$item['toado']?></textarea>
+      <textarea rows="8" cols="" title="Tọa độ" class="tipS" name="toado" id="toado">
+        <?=@unzip_chuanhoa($item['toado'])?></textarea>
     </div>
     <div class="clear"></div>
   </div>

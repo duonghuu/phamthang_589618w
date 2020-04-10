@@ -70,7 +70,7 @@
             width: percentage(350/1300);
 
             @include doubly(){
-               width: percentage(242/1300); 
+               // width: percentage(242/1300); 
             }
             ul {
                 @extend %reset-list;
@@ -79,7 +79,7 @@
                     margin-bottom: 10px;
                     @include setTagAHover(#fff, #ff0);
                     a {
-                        font-size: 15px;
+                        font-size: 13px;
                         position: relative;
                         
                         @include boxstyle($display: flex, $align-items: flex-start);
@@ -88,7 +88,7 @@
                             content: "";
                             margin: 8px 7px 0 0;
                             // @include setFont(7px, #fff, 700, $font-awesome);
-                            @include box(3px, 3px, 100%);
+                            @include box(5px, 5px, 100%);
                             background-color: #fff;
                         }
                     }

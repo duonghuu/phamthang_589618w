@@ -278,13 +278,15 @@ function save_item(){
     $data['tenkhongdau'] = changeTitle($data['ten']);
     $data['masp'] = $_POST['masp'];
     $data['gia'] = str_replace(',','',$_POST['gia']);
-    $data['dientich'] = $_POST['dientich'];
     $data['tag'] = $_POST['tag'];
-    $data['toado'] = $_POST['toado'];
-    $data['mattien'] = $_POST['mattien'];
     $data['giakm'] = str_replace(',','',$_POST['giakm']);
+    $data['dientich'] = $_POST['dientich'];
+    $data['toado'] = magic_quote($_POST['toado']);
+    $data['mattien'] = $_POST['mattien'];
+    $data['matbang'] = $_POST['matbang'];
     $data['vitri'] = $_POST['vitri'];
     $data['phaply'] = $_POST['phaply'];
+    $data['diachi'] = $_POST['diachi'];
     $data['stt'] = $_POST['stt'];
     $data['size'] = trim($_POST['size']);
     $data['mausac'] = trim($_POST['mausac']);
@@ -321,29 +323,6 @@ function save_item(){
     $data['tieubieu'] = isset($_POST['tieubieu']) ? 1 : 0;
     $data['spbanchay'] = isset($_POST['spbanchay']) ? 1 : 0;
     $data['noibat'] = isset($_POST['noibat']) ? 1 : 0;
-
-        /*loc nang cao*/
-        $arr_danhmuc = array();
-        $arr_list = array();
-        if(!empty($_POST['thuoctinh_danhmuc'])){
-            foreach($_POST['thuoctinh_danhmuc'] as $record){
-                $temp = explode('_', $record);
-                if(count($temp)>1){ // là có id list và id cat
-                    $arr_danhmuc[] = $temp[0];
-                    $arr_list[] = $temp[1];
-                }else{
-                    $arr_danhmuc[] = $temp[0];
-                }
-            }
-        }
-
-        $arr_danhmuc = array_unique($arr_danhmuc); // loại bỏ giá trị trùng
-        $arr_list = array_unique($arr_list); // loại bỏ giá trị trùng
-
-        $data['thuoctinh_danhmuc'] = implode(',', $arr_danhmuc);    
-        $data['thuoctinh_list'] = implode(',', $arr_list);
-        /*loc nang cao*/
-    
     $data['title'] = $_POST['title'];
     $data['keywords'] = $_POST['keywords'];
     $data['type'] = $_POST['type'];
@@ -351,7 +330,27 @@ function save_item(){
     $data['h1'] = $_POST['h1'];
     $data['h2'] = $_POST['h2'];
     $data['h3'] = $_POST['h3'];
-    $data['diachi'] = $_POST['diachi'];
+    /*loc nang cao*/
+    $arr_danhmuc = array();
+    $arr_list = array();
+    if(!empty($_POST['thuoctinh_danhmuc'])){
+        foreach($_POST['thuoctinh_danhmuc'] as $record){
+            $temp = explode('_', $record);
+            if(count($temp)>1){ // là có id list và id cat
+                $arr_danhmuc[] = $temp[0];
+                $arr_list[] = $temp[1];
+            }else{
+                $arr_danhmuc[] = $temp[0];
+            }
+        }
+    }
+
+    $arr_danhmuc = array_unique($arr_danhmuc); // loại bỏ giá trị trùng
+    $arr_list = array_unique($arr_list); // loại bỏ giá trị trùng
+
+    $data['thuoctinh_danhmuc'] = implode(',', $arr_danhmuc);    
+    $data['thuoctinh_list'] = implode(',', $arr_list);
+    /*loc nang cao*/
     if($id){
         if($photo = upload_image("file", _format_duoihinh, _upload_sanpham,$file_name)){
             //image_fix_orientation(_upload_sanpham.$photo);
@@ -1050,9 +1049,10 @@ function save_danhmuc(){
     $data['h2'] = $_POST['h2'];
     $data['h3'] = $_POST['h3'];
     foreach ($config['lang'] as $key => $value) {
-        $data['ten'.$key] = $d->escape_str($_POST['ten'.$key]);
-        $data['mota'.$key] = $d->escape_str($_POST['mota'.$key]);
-        $data['noidung'.$key] = $d->escape_str($_POST['noidung'.$key]);
+        $data['ten'.$key] = magic_quote($_POST['ten'.$key]);
+        $data['ten2'.$key] = magic_quote($_POST['ten2'.$key]);
+        $data['mota'.$key] = magic_quote($_POST['mota'.$key]);
+        $data['noidung'.$key] = magic_quote($_POST['noidung'.$key]);
     }
     if($id){
         if($photo = upload_image("file", _format_duoihinh, _upload_sanpham,$file_name)){

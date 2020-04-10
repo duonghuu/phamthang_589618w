@@ -144,7 +144,7 @@
 @define ('_banggia','Bảng giá');
 @define ('_linhvucdautu','Lĩnh vực đầu tư');
 @define ('_quanhecodong','Quan hệ cổ đông');
-@define ('_nhaptukhoatimkiem','Tìm kiếm sản phẩm');
+@define ('_nhaptukhoatimkiem','Tìm kiếm căn hộ');
 @define ('_chuanhaptukhoa','Bạn chưa nhập từ khóa tìm kiếm');
 @define ('_ketquatimkiem','Kết quả tìm kiếm');
 @define ('_quytrinhsanxuat','Quy trình sản xuất');
@@ -384,7 +384,7 @@
 @define ('_nhasanxuat','Nhà sản xuất');
 @define ('_luotxem','Lượt xem');
 @define ('_noidungsanpham','Nội dung sản phẩm');
-@define ('_sanphamkhac','Sản phẩm khác');
+@define ('_sanphamkhac','Bài viết khác');
 @define ('_khac','Khác');
 @define ('_sanphamcungloai','Sản phẩm cùng loại');
 @define ('_chitiet','Chi tiết');

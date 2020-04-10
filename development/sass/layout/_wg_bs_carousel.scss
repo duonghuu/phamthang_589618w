@@ -1,0 +1,38 @@
+.mybs-carousel{
+  max-width: 800px;
+  margin: 0 auto;
+  &>ul{
+    position: relative;
+    li{
+      width: percentage(1/8);
+      height: auto;
+      figure{
+        position: relative;
+        padding-top: percentage(630/800);
+        margin-bottom: 0;
+        img{
+          @extend %img-fill;
+          object-position: top center;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .carousel-inner{
+
+  }
+  .carousel-item{
+    position: relative;
+    padding-top: percentage(630/800);
+    img{
+      @extend %img-fill;
+      object-position: top center;
+      object-fit: cover;
+    }
+    &.active{
+      img{
+        
+      }
+    }
+  }
+}

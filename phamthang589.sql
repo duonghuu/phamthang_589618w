@@ -2,10 +2,10 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 08, 2020 lúc 08:54 AM
--- Phiên bản máy phục vụ: 10.4.6-MariaDB
--- Phiên bản PHP: 7.3.9
+-- Host: 127.0.0.1
+-- Generation Time: Apr 10, 2020 at 11:41 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `phamthang589`
+-- Database: `phamthang589`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `counter`
+-- Table structure for table `counter`
 --
 
 CREATE TABLE `counter` (
@@ -35,7 +35,7 @@ CREATE TABLE `counter` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `counter`
+-- Dumping data for table `counter`
 --
 
 INSERT INTO `counter` (`id`, `tm`, `ip`) VALUES
@@ -2922,12 +2922,47 @@ INSERT INTO `counter` (`id`, `tm`, `ip`) VALUES
 (4004, 1586312749, '::1'),
 (4005, 1586313695, '::1'),
 (4006, 1586314598, '::1'),
-(4007, 1586328584, '::1');
+(4007, 1586328584, '::1'),
+(4008, 1586329493, '::1'),
+(4009, 1586330501, '::1'),
+(4010, 1586332789, '::1'),
+(4011, 1586333960, '::1'),
+(4012, 1586334911, '::1'),
+(4013, 1586335849, '::1'),
+(4014, 1586336804, '::1'),
+(4015, 1586337852, '::1'),
+(4016, 1586339090, '::1'),
+(4017, 1586395203, '::1'),
+(4018, 1586398457, '::1'),
+(4019, 1586399931, '::1'),
+(4020, 1586401915, '::1'),
+(4021, 1586402855, '::1'),
+(4022, 1586404048, '::1'),
+(4023, 1586405799, '::1'),
+(4024, 1586408150, '::1'),
+(4025, 1586414482, '::1'),
+(4026, 1586415394, '::1'),
+(4027, 1586416875, '::1'),
+(4028, 1586421982, '::1'),
+(4029, 1586423209, '::1'),
+(4030, 1586426065, '::1'),
+(4031, 1586492557, '::1'),
+(4032, 1586494169, '::1'),
+(4033, 1586499298, '::1'),
+(4034, 1586502302, '::1'),
+(4035, 1586503263, '::1'),
+(4036, 1586504443, '::1'),
+(4037, 1586505348, '::1'),
+(4038, 1586506439, '::1'),
+(4039, 1586507374, '::1'),
+(4040, 1586509051, '::1'),
+(4041, 1586510018, '::1'),
+(4042, 1586510943, '::1');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_about`
+-- Table structure for table `table_about`
 --
 
 CREATE TABLE `table_about` (
@@ -2961,10 +2996,18 @@ CREATE TABLE `table_about` (
   `mota2cn` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `table_about`
+--
+
+INSERT INTO `table_about` (`id`, `ten`, `tenkhongdau`, `mota`, `noidung`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `description`, `h3`, `h2`, `h1`, `keywords`, `type`, `tenen`, `motaen`, `noidungen`, `tencn`, `motacn`, `noidungcn`, `link`, `mota2`, `mota2en`, `mota2cn`) VALUES
+(1, 'Đôi lời giới thiệu', 'doi-loi-gioi-thieu', '', '', 'untitled-3-1011.jpg', 'untitled-3.jpg0718_410x520.JPEG', 0, 1, 1586332411, 1586332828, '', '', '', '', '', '', 'gioi-thieu', '', '', '', '', '', '', '', 'Odio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. \r\n\r\nCras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.\r\n\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus', '', ''),
+(2, '', '', '', '<p>Conubia in proident vitae mollitia netus accumsan mollit. Posuere malesuada qui quisquam? Cupiditate nisi occaecat at! Magni eget qui? Cubilia urna amet dapibus iusto primis nobis! Qui voluptatem, pariatur occaecati. Ultricies sodales varius quia quos?</p>\r\n', '', '', 0, 1, 1586423460, 1586423468, '', '', '', '', '', '', 'footer', '', '', '', '', '', '', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_anhnen`
+-- Table structure for table `table_anhnen`
 --
 
 CREATE TABLE `table_anhnen` (
@@ -2981,7 +3024,7 @@ CREATE TABLE `table_anhnen` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_anhnen`
+-- Dumping data for table `table_anhnen`
 --
 
 INSERT INTO `table_anhnen` (`id`, `color`, `position_x`, `position_y`, `type`, `fixed`, `bgsize`, `photo`, `repea`, `hienthi`) VALUES
@@ -2990,7 +3033,7 @@ INSERT INTO `table_anhnen` (`id`, `color`, `position_x`, `position_y`, `type`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_background`
+-- Table structure for table `table_background`
 --
 
 CREATE TABLE `table_background` (
@@ -3021,13 +3064,13 @@ CREATE TABLE `table_background` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_background`
+-- Dumping data for table `table_background`
 --
 
 INSERT INTO `table_background` (`id`, `ten`, `tenkhongdau`, `mota`, `noidung`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `description`, `keywords`, `type`, `tenen`, `motaen`, `noidungen`, `photoen`, `link`, `photocn`, `tencn`, `noidungcn`, `motacn`) VALUES
 (1, '', '', '', '', '', '', 0, 1, 1564802013, 0, '', '', '', 'bgvisao', '', '', '', '', '', '', '', '', ''),
 (2, '', '', '', '', '', '', 0, 1, 1564802019, 0, '', '', '', 'bgdathen', '', '', '', '', '', '', '', '', ''),
-(3, '', '', '', '', '45678-7967.png', '', 0, 1, 1564803046, 1585881457, '', '', '', 'logo', '', '', '', '', '', '', '', '', ''),
+(3, '', '', '', '', 'untitled-10014layer-2-2134.png', '', 0, 1, 1564803046, 1586329372, '', '', '', 'logo', '', '', '', '', '', '', '', '', ''),
 (4, '', '', '', '', 'untitled-3-0402.png', '', 0, 1, 1564803058, 1585111704, '', '', '', 'banner', '', '', '', '', '', '', '', '', ''),
 (5, '', '', '', '', 'untitled-4-5681.jpg', '', 0, 1, 1564803064, 1579320072, '', '', '', 'bgbn', '', '', '', '', '', '', '', '', ''),
 (6, '', '', '', '', 'untitled-10-6199.jpg', '', 0, 1, 1564996911, 1579505518, '', '', '', 'bgft', '', '', '', '', '', '', '', '', ''),
@@ -3041,7 +3084,7 @@ INSERT INTO `table_background` (`id`, `ten`, `tenkhongdau`, `mota`, `noidung`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_chitietdonhang`
+-- Table structure for table `table_chitietdonhang`
 --
 
 CREATE TABLE `table_chitietdonhang` (
@@ -3073,7 +3116,7 @@ CREATE TABLE `table_chitietdonhang` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_chitietdonhang`
+-- Dumping data for table `table_chitietdonhang`
 --
 
 INSERT INTO `table_chitietdonhang` (`id`, `ten`, `gia`, `soluong`, `size`, `tonggia`, `photo`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `madonhang`, `masp`, `id_donhang`, `giacu`, `id_sanpham`, `mausac`, `ngaysinh`, `gioitinh`, `loai`, `tuoi`, `phong`, `visa`, `giaphong`, `giavisa`) VALUES
@@ -3083,7 +3126,7 @@ INSERT INTO `table_chitietdonhang` (`id`, `ten`, `gia`, `soluong`, `size`, `tong
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_com`
+-- Table structure for table `table_com`
 --
 
 CREATE TABLE `table_com` (
@@ -3105,7 +3148,7 @@ CREATE TABLE `table_com` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_com`
+-- Dumping data for table `table_com`
 --
 
 INSERT INTO `table_com` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `link`, `tenen`, `com`, `act`, `type`) VALUES
@@ -3146,7 +3189,7 @@ INSERT INTO `table_com` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`,
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_comment`
+-- Table structure for table `table_comment`
 --
 
 CREATE TABLE `table_comment` (
@@ -3175,7 +3218,7 @@ CREATE TABLE `table_comment` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_company`
+-- Table structure for table `table_company`
 --
 
 CREATE TABLE `table_company` (
@@ -3221,16 +3264,16 @@ CREATE TABLE `table_company` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_company`
+-- Dumping data for table `table_company`
 --
 
 INSERT INTO `table_company` (`id`, `ten`, `dienthoai`, `email`, `diachi`, `toado`, `fax`, `fanpage`, `website`, `giomo`, `tenen`, `diachien`, `favicon`, `faviconthumb`, `dongdau`, `dongdauthumb`, `codethem`, `sitemap`, `soluong_sp`, `soluong_spk`, `soluong_tin`, `soluong_tink`, `lang_default`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `codethem2`, `bando`, `bct`, `slogan`, `sloganen`, `tencn`, `diachicn`, `slogancn`, `ngaytao`, `thuoctinh`) VALUES
-(1, 'Roxy', '0919 447 278', 'thanhquang.nina@gmail.com', '15/17/17 Hoàng Hoa Thám, P.13, Q. Tân Bình', '10.853741418142036,106.62834708220907', '', 'https://www.facebook.com/NganroxyTrumsivnxk/', 'roxyshop.com.vn', '', 'abc', 'abc', 'favicon-32x32-2313.png', 'untitled-24638_32x21.png', 'f00000-8245.png', 'f000005140_70x49.png', '', 'sitemap.xml', 8, 8, 6, 10, '', '', 'thời trang xuất khẩu', '', '', '', '', '', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1385.636856256845!2d106.64634040665221!3d10.798068518474096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175294bfef92b9b%3A0xa23ca24a08c31ac0!2zMTUsIDE3IEhvw6BuZyBIb2EgVGjDoW0sIHBoxrDhu51uZyAxMywgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1585727359468!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', '', 'Roxyshop - Chuyên Thời Trang xuất Khẩu Cao Cấp', 'abc', '', '', '', 0, '{\"tt_zalo\":\"0919 447 278\",\"tt_messenger\":\"https://www.facebook.com/NganroxyTrumsivnxk/\"}');
+(1, 'Bất động sản Nam Long', '0919 447 278', 'thanhquang.nina@gmail.com', '15/17/17 Hoàng Hoa Thám, P.13, Q. Tân Bình', '10.853741418142036,106.62834708220907', '', 'https://www.facebook.com/NganroxyTrumsivnxk/', 'roxyshop.com.vn', '', 'abc', 'abc', 'favicon-32x32-2313.png', 'untitled-24638_32x21.png', 'f00000-8245.png', 'f000005140_70x49.png', '', 'sitemap.xml', 8, 8, 6, 10, '', '', 'thời trang xuất khẩu', '', '', '', '', '', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1385.636856256845!2d106.64634040665221!3d10.798068518474096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175294bfef92b9b%3A0xa23ca24a08c31ac0!2zMTUsIDE3IEhvw6BuZyBIb2EgVGjDoW0sIHBoxrDhu51uZyAxMywgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1585727359468!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', '', 'Roxyshop - Chuyên Thời Trang xuất Khẩu Cao Cấp', 'abc', '', '', '', 0, '{\"tt_zalo\":\"0919 447 278\",\"tt_messenger\":\"https://www.facebook.com/NganroxyTrumsivnxk/\"}');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_com_quyen`
+-- Table structure for table `table_com_quyen`
 --
 
 CREATE TABLE `table_com_quyen` (
@@ -3247,7 +3290,7 @@ CREATE TABLE `table_com_quyen` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_com_quyen`
+-- Dumping data for table `table_com_quyen`
 --
 
 INSERT INTO `table_com_quyen` (`id`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `com`, `act`, `type`, `id_quyen`, `act_cap`) VALUES
@@ -3294,7 +3337,7 @@ INSERT INTO `table_com_quyen` (`id`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `co
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_danhgiasao`
+-- Table structure for table `table_danhgiasao`
 --
 
 CREATE TABLE `table_danhgiasao` (
@@ -3309,7 +3352,7 @@ CREATE TABLE `table_danhgiasao` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_danhgiasao`
+-- Dumping data for table `table_danhgiasao`
 --
 
 INSERT INTO `table_danhgiasao` (`id`, `hienthi`, `link`, `ip`, `time`, `giatri`, `code`, `id_sanpham`) VALUES
@@ -3318,7 +3361,7 @@ INSERT INTO `table_danhgiasao` (`id`, `hienthi`, `link`, `ip`, `time`, `giatri`,
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_donhang`
+-- Table structure for table `table_donhang`
 --
 
 CREATE TABLE `table_donhang` (
@@ -3359,7 +3402,7 @@ CREATE TABLE `table_donhang` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_donhang`
+-- Dumping data for table `table_donhang`
 --
 
 INSERT INTO `table_donhang` (`id`, `madonhang`, `hoten`, `dienthoai`, `diachi`, `email`, `httt`, `tonggia`, `noidung`, `ghichu`, `ngaytao`, `tinhtrang`, `thanhpho`, `quan`, `htgh`, `nguongoc`, `ngaycapnhat`, `ngaydi`, `ip`, `ngayin`, `export`, `gioin`, `phi`, `phithem`, `thuve`, `id_user`, `phuong`, `id_sanpham`, `quoctich`, `ten`, `didong`, `ngaysinh`, `coupon`, `coupon_cost`) VALUES
@@ -3369,7 +3412,7 @@ INSERT INTO `table_donhang` (`id`, `madonhang`, `hoten`, `dienthoai`, `diachi`, 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_hinhanh`
+-- Table structure for table `table_hinhanh`
 --
 
 CREATE TABLE `table_hinhanh` (
@@ -3390,10 +3433,19 @@ CREATE TABLE `table_hinhanh` (
   `motacn` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `table_hinhanh`
+--
+
+INSERT INTO `table_hinhanh` (`id`, `photo`, `ten`, `mota`, `link`, `stt`, `hienthi`, `thumb`, `type`, `id_hinhanh`, `noibat`, `tenen`, `motaen`, `tencn`, `motacn`) VALUES
+(592, 'photo-1584502112306-150f676b0fd0-8536.jpg', '', '', '', 0, 1, 'photo-1584502112306-150f676b0fd0-8536.photo-1584502112306-150f676b0fd0-85362565_768x605.JPEG', 'can-ho', 113, 0, '', '', '', ''),
+(593, 'photo-1585840361623-ccd3c5694106-1683.jpg', '', '', '', 0, 1, 'photo-1585840361623-ccd3c5694106-1683.photo-1585840361623-ccd3c5694106-16839000_768x605.JPEG', 'can-ho', 113, 0, '', '', '', ''),
+(594, '800x600-1621.png', '', '', '', 0, 1, '800x600-1621.800x600-16216855_768x605.JPEG', 'can-ho', 113, 0, '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_hinhthucgiaohang`
+-- Table structure for table `table_hinhthucgiaohang`
 --
 
 CREATE TABLE `table_hinhthucgiaohang` (
@@ -3416,7 +3468,7 @@ CREATE TABLE `table_hinhthucgiaohang` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_hinhthucgiaohang`
+-- Dumping data for table `table_hinhthucgiaohang`
 --
 
 INSERT INTO `table_hinhthucgiaohang` (`id`, `id_item`, `noibat`, `ten`, `tenkhongdau`, `mota`, `noidung`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `keywords`, `description`) VALUES
@@ -3426,7 +3478,7 @@ INSERT INTO `table_hinhthucgiaohang` (`id`, `id_item`, `noibat`, `ten`, `tenkhon
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_httt`
+-- Table structure for table `table_httt`
 --
 
 CREATE TABLE `table_httt` (
@@ -3441,7 +3493,7 @@ CREATE TABLE `table_httt` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `table_httt`
+-- Dumping data for table `table_httt`
 --
 
 INSERT INTO `table_httt` (`id`, `ten`, `hienthi`, `noibat`, `stt`, `tenen`, `noidung`, `noidungen`) VALUES
@@ -3451,7 +3503,7 @@ INSERT INTO `table_httt` (`id`, `ten`, `hienthi`, `noibat`, `stt`, `tenen`, `noi
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_lienhe`
+-- Table structure for table `table_lienhe`
 --
 
 CREATE TABLE `table_lienhe` (
@@ -3481,7 +3533,7 @@ CREATE TABLE `table_lienhe` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_lkweb`
+-- Table structure for table `table_lkweb`
 --
 
 CREATE TABLE `table_lkweb` (
@@ -3502,7 +3554,7 @@ CREATE TABLE `table_lkweb` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_lkweb`
+-- Dumping data for table `table_lkweb`
 --
 
 INSERT INTO `table_lkweb` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `link`, `tenen`, `type`, `tencn`) VALUES
@@ -3519,7 +3571,7 @@ INSERT INTO `table_lkweb` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_news`
+-- Table structure for table `table_news`
 --
 
 CREATE TABLE `table_news` (
@@ -3572,7 +3624,7 @@ CREATE TABLE `table_news` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_news`
+-- Dumping data for table `table_news`
 --
 
 INSERT INTO `table_news` (`id`, `id_list`, `id_item`, `id_cat`, `noibat`, `photo`, `thumb`, `photo2`, `thumb2`, `taptin`, `ten`, `tenkhongdau`, `mota`, `noidung`, `luotxem`, `stt`, `hienthi`, `spmoi`, `ngaytao`, `ngaysua`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `id_danhmuc`, `tenen`, `motaen`, `noidungen`, `tencn`, `motacn`, `noidungcn`, `type`, `tag`, `chucvu`, `chucvuen`, `chucvucn`, `link`, `linken`, `linkcn`, `color`, `mota2`, `mota2en`, `mota2cn`, `gia`) VALUES
@@ -3580,6 +3632,7 @@ INSERT INTO `table_news` (`id`, `id_list`, `id_item`, `id_cat`, `noibat`, `photo
 (117, 0, 0, 0, 0, '', '', '', '', '', 'Tên tag 12', 'ten-tag-12', '', '', 0, 1, 1, 0, 1571385458, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tags', '', '', '', '', '', '', '', '', '', '', '', ''),
 (118, 0, 0, 0, 0, '', '', '', '', '', 'Tên tag 123', 'ten-tag-123', '', '', 0, 1, 1, 0, 1571385461, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tags', '', '', '', '', '', '', '', '', '', '', '', ''),
 (119, 0, 0, 0, 0, '', '', '', '', '', 'Tên tag 1234', 'ten-tag-1234', '', '', 0, 1, 1, 0, 1571385465, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tags', '', '', '', '', '', '', '', '', '', '', '', ''),
+(735, 0, 0, 0, 0, '400x300-5459.png', '400x300.png7010_400x300.JPEG', '', '', '', 'Nostra cupiditate c 1', 'nostra-cupiditate-c-1', 'Nostra cupiditate conubia unde odit, alias, labore eleifend malesuada diam, harum ad, mattis scelerisque dicta, fusce, tempus impedit a', '', 0, 1, 1, 0, 1586505169, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinh-sach', '', '', '', '', '', '', '', '', '', '', '', '0'),
 (205, 0, 0, 0, 0, '400x300-7013.png', '400x3001197_200x150.png', '', '', '', 'Nulla turpis faucibus purus quam ma', 'nulla-turpis-faucibus-purus-quam-ma', 'Nulla turpis faucibus purus quam magnam vivamus officiis, facilis hymenaeos, mollis parturient suscipit, mi harum dolores, duis ullamco torquent error culpa vitae laudantium donec accusantium aliquip voluptatum neque? Cursus tristique proin interdum cillum, mollis bibendum similique. Magnam do! Cras sit beatae aperiam repellendus enim, scelerisque sunt aliqua adip', '', 1, 1, 1, 0, 1573704253, 0, '', '', '', '', '', '', 9, '', '', '', '', '', '', 'muctieu', '', '', '', '', '', '', '', '', '', '', '', ''),
 (206, 0, 0, 0, 0, '400x300-4377.png', '400x3006185_200x150.png', '', '', '', 'Nulla turpis faucibus purus quam ma 1', 'nulla-turpis-faucibus-purus-quam-ma-1', 'Nulla turpis faucibus purus quam magnam vivamus officiis, facilis hymenaeos, mollis parturient suscipit, mi harum dolores, duis ullamco torquent error culpa vitae laudantium donec accusantium aliquip voluptatum neque? Cursus tristique proin interdum cillum, mollis bibendum similique. Magnam do! Cras sit beatae aperiam repellendus enim, scelerisque sunt aliqua adip', '', 0, 1, 1, 0, 1573704256, 0, '', '', '', '', '', '', 9, '', '', '', '', '', '', 'muctieu', '', '', '', '', '', '', '', '', '', '', '', ''),
 (207, 0, 0, 0, 0, '400x300-9458.png', '400x3007711_200x150.png', '', '', '', 'Nulla turpis faucibus purus quam ma 12', 'nulla-turpis-faucibus-purus-quam-ma-12', 'Nulla turpis faucibus purus quam magnam vivamus officiis, facilis hymenaeos, mollis parturient suscipit, mi harum dolores, duis ullamco torquent error culpa vitae laudantium donec accusantium aliquip voluptatum neque? Cursus tristique proin interdum cillum, mollis bibendum similique. Magnam do! Cras sit beatae aperiam repellendus enim, scelerisque sunt aliqua adip', '', 0, 1, 1, 0, 1573704259, 0, '', '', '', '', '', '', 9, '', '', '', '', '', '', 'muctieu', '', '', '', '', '', '', '', '', '', '', '', ''),
@@ -3591,12 +3644,20 @@ INSERT INTO `table_news` (`id`, `id_list`, `id_item`, `id_cat`, `noibat`, `photo
 (557, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 1', 'iste-wisi-tenetur-q-1', '', '', 0, 1, 1, 0, 1582683900, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
 (558, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 12', 'iste-wisi-tenetur-q-12', '', '', 0, 1, 1, 0, 1582683903, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
 (559, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 123', 'iste-wisi-tenetur-q-123', '', '', 0, 1, 1, 0, 1582683906, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
-(560, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 1234', 'iste-wisi-tenetur-q-1234', '', '', 0, 1, 1, 0, 1582683908, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', '');
+(560, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 1234', 'iste-wisi-tenetur-q-1234', '', '', 0, 1, 1, 0, 1582683908, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
+(736, 0, 0, 0, 0, '400x300-8611.png', '400x300.png1126_400x300.JPEG', '', '', '', 'Hymenaeos aut aliquip conse', 'hymenaeos-aut-aliquip-conse', 'Hymenaeos aut aliquip consectetur lorem eros, massa inventor', '', 0, 1, 1, 0, 1586505193, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0'),
+(737, 0, 0, 0, 0, '400x300-2868.png', '400x300.png6024_400x300.JPEG', '', '', '', 'Hymenaeos aut aliquip conse 1', 'hymenaeos-aut-aliquip-conse-1', 'Hymenaeos aut aliquip consectetur lorem eros, massa inventor', '', 0, 1, 1, 0, 1586505196, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0'),
+(738, 0, 0, 0, 0, '400x300-5335.png', '400x300.png6423_400x300.JPEG', '', '', '', 'Hymenaeos aut aliquip conse 12', 'hymenaeos-aut-aliquip-conse-12', 'Hymenaeos aut aliquip consectetur lorem eros, massa inventor', '', 0, 1, 1, 0, 1586505200, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0'),
+(739, 0, 0, 0, 1, '', '', '', '', '', 'Tên tin tu c', 'ten-tin-tu-c', '', '', 1, 1, 1, 0, 1586507387, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tin-tuc', '', '', '', '', '', '', '', '', '', '', '', '0'),
+(731, 0, 0, 0, 0, '150x150-3981.png', '150x150.png6417_100x100.JPEG', '', '', '', 'Tên khach hàng', 'ten-khach-hang', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504608, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
+(732, 0, 0, 0, 0, '150x150-8162.png', '150x150.png4820_100x100.JPEG', '', '', '', 'Tên khach hàng2', 'ten-khach-hang2', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504621, 1586504621, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
+(733, 0, 0, 0, 0, '150x150-6276.png', '150x150.png9841_100x100.JPEG', '', '', '', 'Tên khach hàng1', 'ten-khach-hang1', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504617, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
+(734, 0, 0, 0, 0, '400x300-9736.png', '400x300.png3127_400x300.JPEG', '', '', '', 'Nostra cupiditate c', 'nostra-cupiditate-c', 'Nostra cupiditate conubia unde odit, alias, labore eleifend malesuada diam, harum ad, mattis scelerisque dicta, fusce, tempus impedit a', '', 0, 1, 1, 0, 1586505164, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinh-sach', '', '', '', '', '', '', '', '', '', '', '', '0');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_newsletter`
+-- Table structure for table `table_newsletter`
 --
 
 CREATE TABLE `table_newsletter` (
@@ -3615,7 +3676,7 @@ CREATE TABLE `table_newsletter` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_news_cat`
+-- Table structure for table `table_news_cat`
 --
 
 CREATE TABLE `table_news_cat` (
@@ -3648,7 +3709,7 @@ CREATE TABLE `table_news_cat` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_news_danhmuc`
+-- Table structure for table `table_news_danhmuc`
 --
 
 CREATE TABLE `table_news_danhmuc` (
@@ -3677,7 +3738,7 @@ CREATE TABLE `table_news_danhmuc` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_news_danhmuc`
+-- Dumping data for table `table_news_danhmuc`
 --
 
 INSERT INTO `table_news_danhmuc` (`id`, `keywords`, `description`, `h3`, `h2`, `h1`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `noibat`, `noidung`, `tenen`, `noidungen`, `type`, `mota`, `motaen`) VALUES
@@ -3690,7 +3751,7 @@ INSERT INTO `table_news_danhmuc` (`id`, `keywords`, `description`, `h3`, `h2`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_news_item`
+-- Table structure for table `table_news_item`
 --
 
 CREATE TABLE `table_news_item` (
@@ -3724,7 +3785,7 @@ CREATE TABLE `table_news_item` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_news_list`
+-- Table structure for table `table_news_list`
 --
 
 CREATE TABLE `table_news_list` (
@@ -3756,7 +3817,7 @@ CREATE TABLE `table_news_list` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_online`
+-- Table structure for table `table_online`
 --
 
 CREATE TABLE `table_online` (
@@ -3766,16 +3827,16 @@ CREATE TABLE `table_online` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_online`
+-- Dumping data for table `table_online`
 --
 
 INSERT INTO `table_online` (`id`, `session_id`, `time`) VALUES
-(2067, 'b358cs1e9gvk7okpaqrrbs0atu', 1586328775);
+(2096, 'k4fnuj4knl0j05b082r00jsh47', 1586511517);
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_phanquyen`
+-- Table structure for table `table_phanquyen`
 --
 
 CREATE TABLE `table_phanquyen` (
@@ -3794,7 +3855,7 @@ CREATE TABLE `table_phanquyen` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_phanquyen`
+-- Dumping data for table `table_phanquyen`
 --
 
 INSERT INTO `table_phanquyen` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `link`, `tenen`) VALUES
@@ -3805,7 +3866,7 @@ INSERT INTO `table_phanquyen` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `t
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_place_city`
+-- Table structure for table `table_place_city`
 --
 
 CREATE TABLE `table_place_city` (
@@ -3819,7 +3880,7 @@ CREATE TABLE `table_place_city` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_place_city`
+-- Dumping data for table `table_place_city`
 --
 
 INSERT INTO `table_place_city` (`id`, `ten`, `tenkhongdau`, `stt`, `hienthi`, `ngaytao`, `ngaysua`) VALUES
@@ -3890,7 +3951,7 @@ INSERT INTO `table_place_city` (`id`, `ten`, `tenkhongdau`, `stt`, `hienthi`, `n
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_place_dist`
+-- Table structure for table `table_place_dist`
 --
 
 CREATE TABLE `table_place_dist` (
@@ -3906,7 +3967,7 @@ CREATE TABLE `table_place_dist` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_place_dist`
+-- Dumping data for table `table_place_dist`
 --
 
 INSERT INTO `table_place_dist` (`id`, `id_city`, `ten`, `tenkhongdau`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `gia`) VALUES
@@ -4618,7 +4679,7 @@ INSERT INTO `table_place_dist` (`id`, `id_city`, `ten`, `tenkhongdau`, `stt`, `h
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_product`
+-- Table structure for table `table_product`
 --
 
 CREATE TABLE `table_product` (
@@ -4680,7 +4741,7 @@ CREATE TABLE `table_product` (
   `id_ward` int(11) NOT NULL,
   `id_thanhvien` int(11) NOT NULL,
   `thuoctinh` text NOT NULL,
-  `toado` varchar(255) NOT NULL,
+  `toado` text NOT NULL,
   `diachi` varchar(255) NOT NULL,
   `diachien` int(255) NOT NULL,
   `diachicn` varchar(255) NOT NULL,
@@ -4694,10 +4755,22 @@ CREATE TABLE `table_product` (
   `thuoctinh_list` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `table_product`
+--
+
+INSERT INTO `table_product` (`id`, `id_danhmuc`, `id_list`, `id_item`, `id_cat`, `hienthi`, `noibat`, `tieubieu`, `spmoi`, `spbanchay`, `photo`, `thumb`, `tenkhongdau`, `ten`, `tenen`, `tencn`, `mota`, `motaen`, `motacn`, `mota2`, `mota2en`, `mota2cn`, `noidung`, `noidungen`, `noidungcn`, `masp`, `gia`, `giakm`, `luotxem`, `stt`, `type`, `soluong`, `tag`, `size`, `size2`, `mausac2`, `mausac`, `ngaytao`, `ngaysua`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `thuonghieu`, `id_nhasanxuat`, `dientich`, `id_huong`, `id_hientrang`, `phaply`, `mattien`, `id_city`, `id_dist`, `id_street`, `id_ward`, `id_thanhvien`, `thuoctinh`, `toado`, `diachi`, `diachien`, `diachicn`, `vitri`, `vitrien`, `matbang`, `matbangen`, `tiendo`, `tiendoen`, `thuoctinh_danhmuc`, `thuoctinh_list`) VALUES
+(110, 160, 0, 0, 0, 1, 0, 0, 0, 0, 'photo-1584502112306-150f676b0fd0-3334.jpg', 'photo-1584502112306-150f676b0fd0.jpg2162_380x300.JPEG', 'vel-nam-ducimus-autem-no', 'Vel nam ducimus autem no', '', '', 'Repudiandae ea eveniet! Donec blandit conubia. Eu. Sodales, facilisis sequi, laboris, egestas praesentium sem diam, nascetur repellat porta culpa dolores minus exercitation, laboris placerat? Saepe turpis. Erat tenetur sunt veritatis, facilisi mi. Mini', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'nha-pho', 0, '', '', '', '', '', 1586500977, 1586501355, '', '', '', '', '', '', 0, 0, '63m2', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Sequi, voluptate inceptos ac, proident am', 0, '', 'Sắp bán', '', '', '', '', '', '', ''),
+(111, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-6708.jpg', 'photo-1584689036675-940c6e0eec93.jpg7346_380x300.JPEG', 'ten-bai-viet', 'Tên bài viết', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '', '', '', '', 0, 0, 1, 1, 'can-ho', 0, '', '', '', '', '', 1586501466, 0, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '', '', '', '', '', ''),
+(112, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-3211.jpg', 'photo-1584689036675-940c6e0eec93.jpg8982_380x300.JPEG', 'ten-bai-viet-1', 'Tên bài viết 1', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '', '', '', '', 0, 0, 17, 1, 'can-ho', 0, '', '', '', '', '', 1586501474, 0, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '', '', '', '', '', ''),
+(113, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-1445.jpg', 'photo-1584689036675-940c6e0eec93.jpg4050_768x605.JPEG', 'ten-bai-viet-12', 'Tên bài viết 12', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '<p>Fringilla nibh debitis ullamco. Nisi morbi dignissim platea, habitasse quisque nec, magna? Id et magni eum nisi quibusdam vestibulum aliquam vulputate magnis culpa nascetur itaque mollis quae consequatur! Quod quas voluptate accumsan eos montes, tempor consequuntur nulla vehicula aliquam mauris! Velit doloremque nulla veniam laboriosam voluptas consectetuer vivamus, rhoncus quo animi ante! Dapibus excepturi. Nibh quis justo diam varius scelerisque, consequatur amet hymenaeos, sociosqu cupidatat, eos doloribus nostrum? Ullamco tellus, facilis class, cupiditate nulla mi culpa faucibus incidunt proident iste, provident dis, dictum porro, dis tenetur est distinctio possimus quidem nihil curabitur ad condimentum eiusmod sagittis, excepturi dapibus, penatibus orci.</p>\r\n\r\n<p>Anim natoque? Commodo iste deleniti consequuntur consectetur etiam facilis! Ac sunt pariatur, aliquet convallis quas arcu ea voluptas, per tristique diam tenetur voluptatibus iste? Tempus porro proi</p>\r\n', '', '', '', 0, 0, 19, 1, 'can-ho', 0, '', '', '', '', '', 1586501483, 1586510411, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '                                                        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '52tr', '', '', '', '', ''),
+(114, 161, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1585840361623-ccd3c5694106-5695.jpg', 'photo-1585840361623-ccd3c5694106.jpg7363_700x430.JPEG', 'magnis-exercitation-eros-cur', 'Magnis exercitation eros cur', '', '', 'Magnis exercitation eros curae, occaecati numquam. Habitant ante orci iure augue mollis, temporibus fusce? Exercitation voluptate aliquid litora. Senectus mollis mi facere nullam platea fringi', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'dat-nen', 0, '', '', '', '', '', 1586504087, 0, '', '', '', '', '', '', 0, 0, '100', 0, 0, '3', '2', 0, 0, 0, 0, 0, '', '        ', 'Unde tortor mattis pulvinar facilisi consequat bib', 0, '', 'Đã bán', '', '1000tr', '', '', '', '', ''),
+(115, 161, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1585840361623-ccd3c5694106-9609.jpg', 'photo-1585840361623-ccd3c5694106.jpg3164_700x430.JPEG', 'magnis-exercitation-eros-cur-1', 'Magnis exercitation eros cur 1', '', '', 'Magnis exercitation eros curae, occaecati numquam. Habitant ante orci iure augue mollis, temporibus fusce? Exercitation voluptate aliquid litora. Senectus mollis mi facere nullam platea fringi', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'dat-nen', 0, '', '', '', '', '', 1586504100, 0, '', '', '', '', '', '', 0, 0, '100', 0, 0, '3', '2', 0, 0, 0, 0, 0, '', '        ', 'Unde tortor mattis pulvinar facilisi consequat bib', 0, '', 'Đã bán', '', '1000tr', '', '', '', '', '');
+
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_product_cat`
+-- Table structure for table `table_product_cat`
 --
 
 CREATE TABLE `table_product_cat` (
@@ -4730,7 +4803,7 @@ CREATE TABLE `table_product_cat` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_product_danhmuc`
+-- Table structure for table `table_product_danhmuc`
 --
 
 CREATE TABLE `table_product_danhmuc` (
@@ -4764,13 +4837,29 @@ CREATE TABLE `table_product_danhmuc` (
   `noidungcn` text NOT NULL,
   `maunen` varchar(20) NOT NULL,
   `loc1` varchar(255) NOT NULL,
-  `loc2` varchar(255) NOT NULL
+  `loc2` varchar(255) NOT NULL,
+  `ten2cn` varchar(255) NOT NULL,
+  `ten2en` varchar(255) NOT NULL,
+  `ten2` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `table_product_danhmuc`
+--
+
+INSERT INTO `table_product_danhmuc` (`id`, `keywords`, `description`, `h3`, `h2`, `h1`, `ten`, `tenkhongdau`, `photo`, `thumb`, `photo2`, `thumb2`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `noibat`, `tieubieu`, `noidung`, `tenen`, `noidungen`, `type`, `mota`, `motaen`, `tencn`, `motacn`, `noidungcn`, `maunen`, `loc1`, `loc2`, `ten2cn`, `ten2en`, `ten2`) VALUES
+(157, '', '', '', '', '', 'Purus id vero faci bài viết', 'purus-id-vero-faci-bai-viet', 'photo-1586348943529-beaae6c28db9-5669.jpg', 'photo-1586348943529-beaae6c28db9.jpg1387_340x560.JPEG', '', '', 1, 1, 1586494693, 1586494834, '', 1, 0, '<p>Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus</p>\r\n', '', '', 'can-ho', 'Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
+(158, '', '', '', '', '', 'Purus id vero faci bài viết 1', 'purus-id-vero-faci-bai-viet-1', 'photo-1584971123287-b3559cca9144-1213.jpg', 'photo-1584971123287-b3559cca9144.jpg8449_340x560.JPEG', '', '', 1, 1, 1586494714, 1586494838, '', 1, 0, '<p>Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus</p>\r\n', '', '', 'can-ho', 'Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
+(159, '', '', '', '', '', 'Quiabài  quos, laoreet voluptat 1', 'quiabai-quos-laoreet-voluptat-1', 'photo-1584971123287-b3559cca9144-6401.jpg', 'photo-1584971123287-b3559cca9144.jpg0787_340x560.JPEG', '', '', 1, 1, 1586494747, 1586494826, '', 1, 0, '<p>Tempor! Incididunt dis. Adipisci id elementum minima consequat dignissim libero illo modi, commodi, montes! Curae repudiandae. Nam nec expedita neque, laoreet? Dignissimos exercitationem? Consectetuer! Perspiciatis sapien molestiae reiciendis? Sem ligula, minus magnam elit accusantium ea. Ipsum. Justo ultrices amet officia fames congue? Magnis esse amet fugit egestas accusamus, rem, suspendisse, quod tortor alias ornare, scelerisque? Similique exercitation facere molestie consequat, pariatur neque excepturi. Maiores, fusce, taciti. Etiam repellat provident odit! Laboriosam cubilia, eligendi vehicula amet quos, fugiat, accumsan adipiscing semper perspiciatis porttitor </p>\r\n', '', '', 'nha-pho', 'Quia quos, laoreet voluptate, ligula ultricies mattis tempus tempus a consectetur perferendis scelerisque, turpis. Nec quibusdam autem elementum! Voluptas pretium iste molestiae mollis cumque quo', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
+(160, '', '', '', '', '', 'Quiabài  quos, laoreet voluptat', 'quiabai-quos-laoreet-voluptat', 'photo-1586348943529-beaae6c28db9-7687.jpg', 'photo-1586348943529-beaae6c28db9.jpg7113_340x560.JPEG', '', '', 1, 1, 1586494752, 1586494823, '', 1, 0, '<p>Tempor! Incididunt dis. Adipisci id elementum minima consequat dignissim libero illo modi, commodi, montes! Curae repudiandae. Nam nec expedita neque, laoreet? Dignissimos exercitationem? Consectetuer! Perspiciatis sapien molestiae reiciendis? Sem ligula, minus magnam elit accusantium ea. Ipsum. Justo ultrices amet officia fames congue? Magnis esse amet fugit egestas accusamus, rem, suspendisse, quod tortor alias ornare, scelerisque? Similique exercitation facere molestie consequat, pariatur neque excepturi. Maiores, fusce, taciti. Etiam repellat provident odit! Laboriosam cubilia, eligendi vehicula amet quos, fugiat, accumsan adipiscing semper perspiciatis porttitor </p>\r\n', '', '', 'nha-pho', 'Quia quos, laoreet voluptate, ligula ultricies mattis tempus tempus a consectetur perferendis scelerisque, turpis. Nec quibusdam autem elementum! Voluptas pretium iste molestiae mollis cumque quo', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
+(161, '', '', '', '', '', 'Đất a', 'dat-a', '', '', '', '', 1, 1, 1586503963, 0, '', 0, 0, '', '', '', 'dat-nen', '', '', '', '', '', '', '', '', '', '', ''),
+(162, '', '', '', '', '', 'Đất ab', 'dat-ab', '', '', '', '', 1, 1, 1586503966, 0, '', 0, 0, '', '', '', 'dat-nen', '', '', '', '', '', '', '', '', '', '', ''),
+(163, '', '', '', '', '', 'Đất abc', 'dat-abc', '', '', '', '', 1, 1, 1586503969, 0, '', 0, 0, '', '', '', 'dat-nen', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_product_item`
+-- Table structure for table `table_product_item`
 --
 
 CREATE TABLE `table_product_item` (
@@ -4804,7 +4893,7 @@ CREATE TABLE `table_product_item` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_product_list`
+-- Table structure for table `table_product_list`
 --
 
 CREATE TABLE `table_product_list` (
@@ -4839,7 +4928,7 @@ CREATE TABLE `table_product_list` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_protag`
+-- Table structure for table `table_protag`
 --
 
 CREATE TABLE `table_protag` (
@@ -4851,7 +4940,7 @@ CREATE TABLE `table_protag` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_pushonesignal`
+-- Table structure for table `table_pushonesignal`
 --
 
 CREATE TABLE `table_pushonesignal` (
@@ -4881,7 +4970,7 @@ CREATE TABLE `table_pushonesignal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_pushonesignal`
+-- Dumping data for table `table_pushonesignal`
 --
 
 INSERT INTO `table_pushonesignal` (`id`, `stt`, `ten_vi`, `ten_en`, `link`, `photo_en`, `photo_vi`, `thumb_en`, `thumb_vi`, `mota_vi`, `mota_en`, `hienthi`, `ngaytao`, `thoigianbatdau`, `thoigianketthuc`, `gio`, `phut`, `giay`, `muigio`, `solangui`, `conlai`, `mathongbao`, `lichgui`) VALUES
@@ -4890,7 +4979,7 @@ INSERT INTO `table_pushonesignal` (`id`, `stt`, `ten_vi`, `ten_en`, `link`, `pho
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_slider`
+-- Table structure for table `table_slider`
 --
 
 CREATE TABLE `table_slider` (
@@ -4913,7 +5002,7 @@ CREATE TABLE `table_slider` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_slider`
+-- Dumping data for table `table_slider`
 --
 
 INSERT INTO `table_slider` (`id`, `photo`, `ten`, `mota`, `link`, `stt`, `hienthi`, `thumb`, `type`, `id_slider`, `noibat`, `tenen`, `motaen`, `vitri`, `tencn`, `motacn`) VALUES
@@ -4923,15 +5012,12 @@ INSERT INTO `table_slider` (`id`, `photo`, `ten`, `mota`, `link`, `stt`, `hienth
 (94, 'untitled-10006layer-10-6073.png', '', '', '', 1, 1, 'untitled-1_0006_layer-106176_150x390.png', 'letruot', 0, 0, '', '', 'right', '', ''),
 (95, 'untitled-10007layer-11-8509.png', '', '', '', 1, 1, 'untitled-1_0007_layer-114973_150x390.png', 'letruot', 0, 0, '', '', 'left', '', ''),
 (96, 'untitled-10007layer-11-6770.png', '', '', '', 1, 1, 'untitled-1_0007_layer-112768_150x390.png', 'letruot', 0, 0, '', '', 'right', '', ''),
-(146, 'untitled-3-8790.jpg', 'Slider', '', '', 1, 1, 'untitled-37834_1366x474.jpg', 'slider', 0, 0, '', '', '', '', ''),
-(147, 'slider-3-6424.jpg', '', '', '', 1, 1, 'slider-31960_1366x475.jpg', 'slider', 0, 0, '', '', '', '', ''),
-(149, 'banner254219-9479.jpg', '', '', '', 1, 1, 'banner_2542193517_1303x475.jpg', 'slider', 0, 0, '', '', '', '', ''),
-(148, '1582681154z17562007258738c69cd01dad7d73d1b6289e3e694a38c-1438.jpg', '', '', '', 1, 0, '1582681154_z1756200725873_8c69cd01dad7d73d1b6289e3e694a38c7679_930x475.jpg', 'slider', 0, 0, '', '', '', '', '');
+(150, 'untitled-2-5808.jpg', '', '', '', 1, 1, 'untitled-2.jpg9575_1366x660.JPEG', 'slider', 0, 0, '', '', '', '', '');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_tags`
+-- Table structure for table `table_tags`
 --
 
 CREATE TABLE `table_tags` (
@@ -4944,7 +5030,7 @@ CREATE TABLE `table_tags` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_tinhtrang`
+-- Table structure for table `table_tinhtrang`
 --
 
 CREATE TABLE `table_tinhtrang` (
@@ -4953,7 +5039,7 @@ CREATE TABLE `table_tinhtrang` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_tinhtrang`
+-- Dumping data for table `table_tinhtrang`
 --
 
 INSERT INTO `table_tinhtrang` (`id`, `trangthai`) VALUES
@@ -4966,7 +5052,7 @@ INSERT INTO `table_tinhtrang` (`id`, `trangthai`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_title`
+-- Table structure for table `table_title`
 --
 
 CREATE TABLE `table_title` (
@@ -4984,7 +5070,7 @@ CREATE TABLE `table_title` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_user`
+-- Table structure for table `table_user`
 --
 
 CREATE TABLE `table_user` (
@@ -5021,7 +5107,7 @@ CREATE TABLE `table_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_user`
+-- Dumping data for table `table_user`
 --
 
 INSERT INTO `table_user` (`id`, `username`, `password`, `ten`, `dienthoai`, `email`, `diachi`, `sex`, `nick_yahoo`, `nick_skype`, `congty`, `country`, `city`, `role`, `hienthi`, `com`, `quyen`, `ngaysinh`, `gioitinh`, `ngaytao`, `ngaysua`, `active`, `nhom`, `id_facebook`, `id_google`, `stt`, `ho`, `quoctich`, `didong`, `curjob`) VALUES
@@ -5032,7 +5118,7 @@ INSERT INTO `table_user` (`id`, `username`, `password`, `ten`, `dienthoai`, `ema
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_video`
+-- Table structure for table `table_video`
 --
 
 CREATE TABLE `table_video` (
@@ -5055,7 +5141,7 @@ CREATE TABLE `table_video` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_vnexpress`
+-- Table structure for table `table_vnexpress`
 --
 
 CREATE TABLE `table_vnexpress` (
@@ -5084,7 +5170,7 @@ CREATE TABLE `table_vnexpress` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `table_yahoo`
+-- Table structure for table `table_yahoo`
 --
 
 CREATE TABLE `table_yahoo` (
@@ -5107,7 +5193,7 @@ CREATE TABLE `table_yahoo` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `table_yahoo`
+-- Dumping data for table `table_yahoo`
 --
 
 INSERT INTO `table_yahoo` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `yahoo`, `skype`, `dienthoai`, `email`, `tenen`, `type`) VALUES
@@ -5115,501 +5201,501 @@ INSERT INTO `table_yahoo` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb
 (12, 0, 'idruudaekabi', '', '', '', 0, 1, 1579249289, 0, '', '', 'rirajerufilp', 'suh@gmail.com', '', 'yahoo');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `counter`
+-- Indexes for table `counter`
 --
 ALTER TABLE `counter`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_about`
+-- Indexes for table `table_about`
 --
 ALTER TABLE `table_about`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_anhnen`
+-- Indexes for table `table_anhnen`
 --
 ALTER TABLE `table_anhnen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_background`
+-- Indexes for table `table_background`
 --
 ALTER TABLE `table_background`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_chitietdonhang`
+-- Indexes for table `table_chitietdonhang`
 --
 ALTER TABLE `table_chitietdonhang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_com`
+-- Indexes for table `table_com`
 --
 ALTER TABLE `table_com`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_comment`
+-- Indexes for table `table_comment`
 --
 ALTER TABLE `table_comment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_company`
+-- Indexes for table `table_company`
 --
 ALTER TABLE `table_company`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_com_quyen`
+-- Indexes for table `table_com_quyen`
 --
 ALTER TABLE `table_com_quyen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_danhgiasao`
+-- Indexes for table `table_danhgiasao`
 --
 ALTER TABLE `table_danhgiasao`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_donhang`
+-- Indexes for table `table_donhang`
 --
 ALTER TABLE `table_donhang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_hinhanh`
+-- Indexes for table `table_hinhanh`
 --
 ALTER TABLE `table_hinhanh`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_hinhthucgiaohang`
+-- Indexes for table `table_hinhthucgiaohang`
 --
 ALTER TABLE `table_hinhthucgiaohang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_httt`
+-- Indexes for table `table_httt`
 --
 ALTER TABLE `table_httt`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_lienhe`
+-- Indexes for table `table_lienhe`
 --
 ALTER TABLE `table_lienhe`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_lkweb`
+-- Indexes for table `table_lkweb`
 --
 ALTER TABLE `table_lkweb`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_news`
+-- Indexes for table `table_news`
 --
 ALTER TABLE `table_news`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_newsletter`
+-- Indexes for table `table_newsletter`
 --
 ALTER TABLE `table_newsletter`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_news_cat`
+-- Indexes for table `table_news_cat`
 --
 ALTER TABLE `table_news_cat`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_news_danhmuc`
+-- Indexes for table `table_news_danhmuc`
 --
 ALTER TABLE `table_news_danhmuc`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_news_item`
+-- Indexes for table `table_news_item`
 --
 ALTER TABLE `table_news_item`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_news_list`
+-- Indexes for table `table_news_list`
 --
 ALTER TABLE `table_news_list`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_online`
+-- Indexes for table `table_online`
 --
 ALTER TABLE `table_online`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_phanquyen`
+-- Indexes for table `table_phanquyen`
 --
 ALTER TABLE `table_phanquyen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_place_city`
+-- Indexes for table `table_place_city`
 --
 ALTER TABLE `table_place_city`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_place_dist`
+-- Indexes for table `table_place_dist`
 --
 ALTER TABLE `table_place_dist`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_product`
+-- Indexes for table `table_product`
 --
 ALTER TABLE `table_product`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_product_cat`
+-- Indexes for table `table_product_cat`
 --
 ALTER TABLE `table_product_cat`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_product_danhmuc`
+-- Indexes for table `table_product_danhmuc`
 --
 ALTER TABLE `table_product_danhmuc`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_product_item`
+-- Indexes for table `table_product_item`
 --
 ALTER TABLE `table_product_item`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_product_list`
+-- Indexes for table `table_product_list`
 --
 ALTER TABLE `table_product_list`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_protag`
+-- Indexes for table `table_protag`
 --
 ALTER TABLE `table_protag`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_pushonesignal`
+-- Indexes for table `table_pushonesignal`
 --
 ALTER TABLE `table_pushonesignal`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_slider`
+-- Indexes for table `table_slider`
 --
 ALTER TABLE `table_slider`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_tags`
+-- Indexes for table `table_tags`
 --
 ALTER TABLE `table_tags`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_tinhtrang`
+-- Indexes for table `table_tinhtrang`
 --
 ALTER TABLE `table_tinhtrang`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_title`
+-- Indexes for table `table_title`
 --
 ALTER TABLE `table_title`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_user`
+-- Indexes for table `table_user`
 --
 ALTER TABLE `table_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_video`
+-- Indexes for table `table_video`
 --
 ALTER TABLE `table_video`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_vnexpress`
+-- Indexes for table `table_vnexpress`
 --
 ALTER TABLE `table_vnexpress`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `table_yahoo`
+-- Indexes for table `table_yahoo`
 --
 ALTER TABLE `table_yahoo`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `counter`
+-- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4008;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4043;
 
 --
--- AUTO_INCREMENT cho bảng `table_about`
+-- AUTO_INCREMENT for table `table_about`
 --
 ALTER TABLE `table_about`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT cho bảng `table_anhnen`
+-- AUTO_INCREMENT for table `table_anhnen`
 --
 ALTER TABLE `table_anhnen`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `table_background`
+-- AUTO_INCREMENT for table `table_background`
 --
 ALTER TABLE `table_background`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT cho bảng `table_chitietdonhang`
+-- AUTO_INCREMENT for table `table_chitietdonhang`
 --
 ALTER TABLE `table_chitietdonhang`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT cho bảng `table_com`
+-- AUTO_INCREMENT for table `table_com`
 --
 ALTER TABLE `table_com`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
--- AUTO_INCREMENT cho bảng `table_comment`
+-- AUTO_INCREMENT for table `table_comment`
 --
 ALTER TABLE `table_comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_company`
+-- AUTO_INCREMENT for table `table_company`
 --
 ALTER TABLE `table_company`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `table_com_quyen`
+-- AUTO_INCREMENT for table `table_com_quyen`
 --
 ALTER TABLE `table_com_quyen`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
--- AUTO_INCREMENT cho bảng `table_danhgiasao`
+-- AUTO_INCREMENT for table `table_danhgiasao`
 --
 ALTER TABLE `table_danhgiasao`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `table_donhang`
+-- AUTO_INCREMENT for table `table_donhang`
 --
 ALTER TABLE `table_donhang`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
--- AUTO_INCREMENT cho bảng `table_hinhanh`
+-- AUTO_INCREMENT for table `table_hinhanh`
 --
 ALTER TABLE `table_hinhanh`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=589;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=595;
 
 --
--- AUTO_INCREMENT cho bảng `table_hinhthucgiaohang`
+-- AUTO_INCREMENT for table `table_hinhthucgiaohang`
 --
 ALTER TABLE `table_hinhthucgiaohang`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT cho bảng `table_httt`
+-- AUTO_INCREMENT for table `table_httt`
 --
 ALTER TABLE `table_httt`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `table_lienhe`
+-- AUTO_INCREMENT for table `table_lienhe`
 --
 ALTER TABLE `table_lienhe`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `table_lkweb`
+-- AUTO_INCREMENT for table `table_lkweb`
 --
 ALTER TABLE `table_lkweb`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT cho bảng `table_news`
+-- AUTO_INCREMENT for table `table_news`
 --
 ALTER TABLE `table_news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=731;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=740;
 
 --
--- AUTO_INCREMENT cho bảng `table_newsletter`
+-- AUTO_INCREMENT for table `table_newsletter`
 --
 ALTER TABLE `table_newsletter`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT cho bảng `table_news_cat`
+-- AUTO_INCREMENT for table `table_news_cat`
 --
 ALTER TABLE `table_news_cat`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_news_danhmuc`
+-- AUTO_INCREMENT for table `table_news_danhmuc`
 --
 ALTER TABLE `table_news_danhmuc`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
--- AUTO_INCREMENT cho bảng `table_news_item`
+-- AUTO_INCREMENT for table `table_news_item`
 --
 ALTER TABLE `table_news_item`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_news_list`
+-- AUTO_INCREMENT for table `table_news_list`
 --
 ALTER TABLE `table_news_list`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT cho bảng `table_online`
+-- AUTO_INCREMENT for table `table_online`
 --
 ALTER TABLE `table_online`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2068;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2097;
 
 --
--- AUTO_INCREMENT cho bảng `table_phanquyen`
+-- AUTO_INCREMENT for table `table_phanquyen`
 --
 ALTER TABLE `table_phanquyen`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT cho bảng `table_place_city`
+-- AUTO_INCREMENT for table `table_place_city`
 --
 ALTER TABLE `table_place_city`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
--- AUTO_INCREMENT cho bảng `table_place_dist`
+-- AUTO_INCREMENT for table `table_place_dist`
 --
 ALTER TABLE `table_place_dist`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=705;
 
 --
--- AUTO_INCREMENT cho bảng `table_product`
+-- AUTO_INCREMENT for table `table_product`
 --
 ALTER TABLE `table_product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
 
 --
--- AUTO_INCREMENT cho bảng `table_product_cat`
+-- AUTO_INCREMENT for table `table_product_cat`
 --
 ALTER TABLE `table_product_cat`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT cho bảng `table_product_danhmuc`
+-- AUTO_INCREMENT for table `table_product_danhmuc`
 --
 ALTER TABLE `table_product_danhmuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
 
 --
--- AUTO_INCREMENT cho bảng `table_product_item`
+-- AUTO_INCREMENT for table `table_product_item`
 --
 ALTER TABLE `table_product_item`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_product_list`
+-- AUTO_INCREMENT for table `table_product_list`
 --
 ALTER TABLE `table_product_list`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
--- AUTO_INCREMENT cho bảng `table_protag`
+-- AUTO_INCREMENT for table `table_protag`
 --
 ALTER TABLE `table_protag`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2599;
 
 --
--- AUTO_INCREMENT cho bảng `table_pushonesignal`
+-- AUTO_INCREMENT for table `table_pushonesignal`
 --
 ALTER TABLE `table_pushonesignal`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `table_slider`
+-- AUTO_INCREMENT for table `table_slider`
 --
 ALTER TABLE `table_slider`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=150;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
 
 --
--- AUTO_INCREMENT cho bảng `table_tags`
+-- AUTO_INCREMENT for table `table_tags`
 --
 ALTER TABLE `table_tags`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_tinhtrang`
+-- AUTO_INCREMENT for table `table_tinhtrang`
 --
 ALTER TABLE `table_tinhtrang`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT cho bảng `table_title`
+-- AUTO_INCREMENT for table `table_title`
 --
 ALTER TABLE `table_title`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_user`
+-- AUTO_INCREMENT for table `table_user`
 --
 ALTER TABLE `table_user`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- AUTO_INCREMENT cho bảng `table_video`
+-- AUTO_INCREMENT for table `table_video`
 --
 ALTER TABLE `table_video`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=225;
 
 --
--- AUTO_INCREMENT cho bảng `table_vnexpress`
+-- AUTO_INCREMENT for table `table_vnexpress`
 --
 ALTER TABLE `table_vnexpress`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `table_yahoo`
+-- AUTO_INCREMENT for table `table_yahoo`
 --
 ALTER TABLE `table_yahoo`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;

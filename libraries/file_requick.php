@@ -7,10 +7,14 @@ $d = new database($config['database']);
 $company= get_fetch("select *,ten$lang as ten,diachi$lang as diachi,slogan$lang as slogan from #_company limit 0,1");
 $thuoctinh = json_decode($company["thuoctinh"],true);
 $datacom = array(
-	array("tbl"=>"product_danhmuc","field"=>"id_danhmuc","source"=>"product","type"=>"sanpham","com"=>"san-pham"),
-	array("tbl"=>"product_list","field"=>"id_list","source"=>"product","type"=>"sanpham","com"=>"san-pham"),
-	// array("tbl"=>"product_cat","field"=>"id_cat","source"=>"product","type"=>"sanpham","com"=>"san-pham"),
-	array("tbl"=>"product","field"=>"id","source"=>"product","type"=>"sanpham","com"=>"san-pham"),
+	array("tbl"=>"product_danhmuc","field"=>"id_danhmuc","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
+	array("tbl"=>"product_list","field"=>"id_list","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
+	// array("tbl"=>"product_cat","field"=>"id_cat","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
+	array("tbl"=>"product","field"=>"id","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
+
+	array("tbl"=>"product_danhmuc","field"=>"id_danhmuc","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
+	array("tbl"=>"product_list","field"=>"id_list","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
+	array("tbl"=>"product","field"=>"id","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
 
 	// array("tbl"=>"news_danhmuc","field"=>"id_danhmuc","source"=>"news","type"=>"cokhi","com"=>"co-khi"),
 	// array("tbl"=>"news_list","field"=>"id_list","source"=>"news","type"=>"cokhi","com"=>"co-khi"),
@@ -132,48 +136,38 @@ switch($com)
 	$type_og = "article";
 	break;
 	
-	case 'chinh-sach-bo-si':
-	$type = "chinh-sach-bo-si";
-	$title = 'Chính sách bỏ sỉ';
-	$title_cat = 'Chính sách bỏ sỉ';
-	$title_other = _tinlienquan;
-	$source = "about";
-	$template = "about";
-	$type_og = "article";
-	break;
-	case 'so-sanh-cac-cho-si':
-	$type = "so-sanh-cac-cho-si";
-	$title = "So sánh với các chợ sỉ";
-	$title_cat = "So sánh với các chợ sỉ";
-	$title_other = _tinlienquan;
-	$source = "about";
-	$template = "about";
-	$type_og = "article";
-	break;
-	
 	case 'tim-kiem':
-	$type = "san-pham";
+	$type = "can-ho";
 	$title = _ketquatimkiem;
 	$title_cat = _ketquatimkiem;
 	$source = "search";
 	$template = "product";
 	break;
-	case 'san-pham':
-	$type = "san-pham";
-	$title = _sanpham;
-	$title_cat = _sanpham;
+	case 'can-ho':
+	$type = "can-ho";
+	$title = "Căn hộ";
+	$title_cat = "Căn hộ";
 	$title_other = _sanphamkhac;
 	$source = "product";
-	$template = isset($_GET['id']) ? "product_detail" : "product";
+	$template = isset($_GET['id']) ? "canho_detail" : "product";
 	$type_og = isset($_GET['id']) ? "article" : "object";
 	break;
-	case 'hang-moi':
-	$type = "san-pham";
-	$title = _sanpham;
-	$title_cat = _sanpham;
+	case 'nha-pho':
+	$type = 'nha-pho';
+	$title = "Nhà phố";
+	$title_cat = "Nhà phố";
 	$title_other = _sanphamkhac;
 	$source = "product";
-	$template = isset($_GET['id']) ? "product_detail" : "product";
+	$template = isset($_GET['id']) ? "canho_detail" : "product";
+	$type_og = isset($_GET['id']) ? "article" : "object";
+	break;
+	case 'dat-nen':
+	$type = "dat-nen";
+	$title = "Đất nền";
+	$title_cat = "Đất nền";
+	$title_other = _sanphamkhac;
+	$source = "product";
+	$template = isset($_GET['id']) ? "canho_detail" : "product";
 	$type_og = isset($_GET['id']) ? "article" : "object";
 	break;
 	case 'thuong-hieu':

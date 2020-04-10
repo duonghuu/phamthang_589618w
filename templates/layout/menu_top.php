@@ -8,14 +8,21 @@
           <img src="images/homeicon.png" alt="home">
         </a></li>
         <li><a href="gioi-thieu.html"><?= _gioithieu ?></a></li>
-        <li><a href="gioi-thieu.html">Căn hộ</a></li>
-        <li><a href="gioi-thieu.html">Nhà phố</a></li>
+        <li class="<?php if($com=='can-ho') echo 'active'; ?>"><a href="can-ho.html">Căn hộ</a>
+          <?= for2cap('product_danhmuc','product_list','can-ho','can-ho','','/')?>
+        </li>
+        <li class="<?php if($com=='nha-pho') echo 'active'; ?>"><a href="nha-pho.html">Nhà phố</a>
+          <?= for2cap('product_danhmuc','product_list','nha-pho','nha-pho','','/')?>
+        </li>
       </ul>
-
       <ul class="main-nav-right">
-        <li><a href="gioi-thieu.html">Đất nền</a></li>
-        <li><a href="bang-tin.html">Bảng tin</a></li>
-        <li><a href="lien-he.html"><?= _lienhe ?></a></li>
+        <li class="<?php if($com=='dat-nen') echo 'active'; ?>"><a href="dat-nen.html">Đất nền</a>
+          <?= for1('product_danhmuc','dat-nen','dat-nen','')?>
+        </li>
+        <li class="<?php if($com=='tin-tuc') echo 'active'; ?>"><a href="tin-tuc.html">
+          Bảng tin</a></li> 
+        <li class="<?php if($source == 'contact') echo 'active'; ?>"><a href="lien-he.html"><?= _lienhe ?>
+          </a></li>
       </ul>
       <button class="openBtn timkiem_icon" ><i class="fas fa-search"></i></button>
       <div id="search">
