@@ -14,7 +14,8 @@
                 <ul class="sub">
                     <?php phanquyen_menu('Danh mục 1','product','man_danhmuc','can-ho'); ?>
                     <?php phanquyen_menu('Danh mục 2','product','man_list','can-ho'); ?>
-                    <?php phanquyen_menu('Danh mục 3','product','man','can-ho'); ?>
+                    <?php phanquyen_menu('Danh mục 3','product','man_cat','can-ho'); ?>
+                    <?php phanquyen_menu('Bài viết','product','man','can-ho'); ?>
 
                     <?php //phanquyen_menu('Danh mục cấp 1','product','man_danhmuc','san-pham'); ?>
                     <?php //phanquyen_menu('Danh mục cấp 2','product','man_list','san-pham'); ?>
@@ -33,7 +34,8 @@
                 <ul class="sub">
                     <?php phanquyen_menu('Danh mục 1','product','man_danhmuc','nha-pho'); ?>
                     <?php phanquyen_menu('Danh mục 2','product','man_list','nha-pho'); ?>
-                    <?php phanquyen_menu('Danh mục 3','product','man','nha-pho'); ?>
+                    <?php phanquyen_menu('Danh mục 3','product','man_cat','nha-pho'); ?>
+                    <?php phanquyen_menu('Bài viết','product','man','nha-pho'); ?>
                 </ul>
             </li>
             <li class="categories_li <?php if($_GET['type']=='dat-nen')
@@ -49,7 +51,7 @@
             echo ' activemenu' ?>" id="menu_tt"><a href="" title="" class="exp">
                 <span>Bảng tin</span><strong></strong></a>
                 <ul class="sub">
-                    <?php phanquyen_menu('Danh mục Bảng tin','product','man_danhmuc','tin-tuc'); ?>
+                    <?php phanquyen_menu('Danh mục Bảng tin','news','man_danhmuc','tin-tuc'); ?>
                     <?php phanquyen_menu('Bảng tin','news','man','tin-tuc'); ?>
                 </ul>
             </li>
@@ -59,7 +61,7 @@
             Bài viết</span><strong></strong></a>
             <ul class="sub">
                 <?php phanquyen_menu('Cảm nhận khách hàng','news','man','y-kien'); ?>
-                <?php phanquyen_menu('Về chúng tôi','news','man','ve-chung-toi'); ?>
+                <?php //phanquyen_menu('Về chúng tôi','news','man','ve-chung-toi'); ?>
                 <?php phanquyen_menu('Chính sách','news','man','chinh-sach'); ?>
                 <?php //phanquyen_menu('Thư viện','news','man','thu-vien'); ?>
                 <?php //phanquyen_menu('Lấy tin từ Vnexpress','vnexpress','man',''); ?>
@@ -154,8 +156,10 @@ $_GET['com']=='user') echo ' activemenu' ?>" id="menu_cp"><a href="" title="" cl
     echo ' activemenu' ?>" id="menuseo"><a href="#" title="" class="exp"><span>Hổ Trợ SEO
     </span><strong></strong></a>
     <ul class="sub">
-        <?php //phanquyen_menu('Tin tức','title','capnhat','tin-tuc'); ?>
-        <?php //phanquyen_menu('Sản phẩm','title','capnhat','san-pham'); ?>
+        <?php phanquyen_menu('Bảng tin','title','capnhat','tin-tuc'); ?>
+        <?php phanquyen_menu('Căn hộ','title','capnhat','can-ho'); ?>
+        <?php phanquyen_menu('Nhà phố','title','capnhat','nha-pho'); ?>
+        <?php phanquyen_menu('Đất nền','title','capnhat','dat-nen'); ?>
     </ul>
 </li>
 </ul>

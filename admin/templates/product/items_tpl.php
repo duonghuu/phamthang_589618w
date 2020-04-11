@@ -81,7 +81,7 @@ function get_main_list()
 {
     if(!empty($_REQUEST['id_danhmuc'])){
         $getdata = get_result("select * from table_product_list where 
-            id_danhmuc=".$_REQUEST['id_danhmuc']." order by stt,id desc");        
+            id_danhmuc='".$_REQUEST['id_danhmuc']."' order by stt,id desc");        
     }
     $str='
     <select id="id_list" name="id_list" onchange="select_onchange1()" class="main_select">
@@ -100,7 +100,7 @@ function get_main_list()
 }
 function get_main_category()
 {
-    $getdata = get_result("select * from table_product_cat where id_list=".$_REQUEST['id_list']." order by stt,id desc");
+    $getdata = get_result("select * from table_product_cat where id_list='".$_REQUEST['id_list']."' order by stt,id desc");
     $str='
     <select id="id_cat" name="id_cat" onchange="select_onchange2()" class="main_select">
     <option value="">Danh mục cấp 3</option>
@@ -118,7 +118,7 @@ function get_main_category()
 }
 function get_main_item()
 {
-    $getdata = get_result("select * from table_product_item where id_cat=".$_REQUEST['id_cat']." order by stt,id desc");
+    $getdata = get_result("select * from table_product_item where id_cat='".$_REQUEST['id_cat']."' order by stt,id desc");
     $str='
     <select id="id_item" name="id_item" onchange="select_onchange3()" class="main_select">
     <option value="">Danh mục cấp 4</option>

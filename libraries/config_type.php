@@ -32,7 +32,7 @@ switch($type){
 		break;
 
 		case 'list':
-		$config['type'] = array('seo','ten','hinhanh');
+		$config['type'] = array('seo','ten');
 		$config['title'] = array('noibat'=>"Nổi bật");
 		@define ( _width_thumb , 300 );
 		@define ( _height_thumb , 300 );
@@ -49,8 +49,8 @@ switch($type){
 		break;
 
 		default:
-		$config['type'] = array('seo','ten','mota','noibat','danhmuc','list','hinhanh','hinhthem','noidung',
-			'dientich','diachi','mattien','phaply','toado','vitri','matbang');
+		$config['type'] = array('seo','ten','mota','noibat','danhmuc','list','cat','hinhanh','hinhthem',
+			'noidung','dientich','diachi','mattien','phaply','toado','vitri','matbang');
 		$config['ck'] = array('mota2');
 		$config['title'] = array('tieubieu'=>"Sản phẩm hot",'noibat'=>"Nổi bật",
 			'spmoi'=>"Mới",'spbanchay'=>"Bán chạy","mota"=>"Mô tả","toado"=>"Iframe google map",
@@ -83,7 +83,7 @@ switch($type){
 		break;
 
 		case 'list':
-		$config['type'] = array('seo','ten','hinhanh');
+		$config['type'] = array('seo','ten');
 		$config['title'] = array('noibat'=>"Nổi bật");
 		@define ( _width_thumb , 300 );
 		@define ( _height_thumb , 300 );
@@ -101,7 +101,7 @@ switch($type){
 
 		default:
 		$config['type'] = array('seo','ten','mota','noibat','danhmuc','hinhanh','hinhthem','noidung',
-			'dientich','diachi','mattien','phaply','toado','vitri','matbang');
+			'dientich','diachi','toado','vitri','matbang');
 		$config['ck'] = array('mota2');
 		$config['title'] = array('tieubieu'=>"Sản phẩm hot",'noibat'=>"Nổi bật",
 			'spmoi'=>"Mới",'spbanchay'=>"Bán chạy","mota"=>"Mô tả","toado"=>"Iframe google map",
@@ -260,7 +260,7 @@ switch($type){
 		$config['type'] = array('seo','ten');
 		break;
 		default:
-		$config['type'] = array('seo','ten','noidung','mota','hinhanh');
+		$config['type'] = array('seo','ten','noidung','mota','hinhanh','danhmuc');
 		if($type == "tin-tuc"){
 			$config['type'][] = "noibat";	
 		}
@@ -543,7 +543,12 @@ switch($type){
 	case 'footer':
 	switch($act){
 		default:
-		$config['type'] = array('noidung');
+		$config['type'] = array('noidung','hinhanh');
+		@define ( _width_thumb , 160 );
+		@define ( _height_thumb , 120 );
+		@define ( _style_thumb , 1 );
+		@define ( _width_thumb2 , 160 );
+		@define ( _height_thumb2 , 120 );
 		break;
 	}
 	break;

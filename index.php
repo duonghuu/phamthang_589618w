@@ -37,12 +37,16 @@ $_SESSION['dong'] = lay_banner('dong');
 </head>
 <?php //include _template."layout/background.php";?>
 <body class="cls<?= $template ?>" <?=$str_background?> >
-    <?php /* <div class="wap_load"><div class="cssload-thecube"><div class="cssload-cube cssload-c1"></div>
+    <?php 
+    /* 
+    <div class="wap_load"><div class="cssload-thecube"><div class="cssload-cube cssload-c1"></div>
     <div class="cssload-cube cssload-c2"></div><div class="cssload-cube cssload-c4"></div>
-    <div class="cssload-cube cssload-c3"></div></div></div> */
+    <div class="cssload-cube cssload-c3"></div></div></div>
+     */
     if($template != "checkouts"){
     ?>
-    <div id="wapper"  >
+    <a href="" class="logoload" ><img src="<?= _upload_hinhanh_l.$logolang["photo"] ?>" alt="logo"></a>
+    <div id="wapper">
         <section class="head-main">
             <?php 
             // include _template."layout/header.php";
@@ -50,7 +54,21 @@ $_SESSION['dong'] = lay_banner('dong');
             // include _template."layout/valak_menu.php";
             include _template."layout/slider.php";
             if($source != "index") echo $bread->display();
+            if($source == "index"){
             ?>
+            <div class="call-element">
+                <div class="container">
+                    <div class="callnow">
+                      <i class="fas fa-phone-alt"></i>Call Now: <a href="tel:<?=preg_replace('/[^0-9]/','',$company['dienthoai']);?>">
+                        <?= $company['dienthoai'] ?>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#thamquan" rel="nofollow" class="thamquan-btn scrollLink"><img 
+                src="images/dkthamkhao.png" alt="<?= _dangky ?>"></a>
+            <?php } ?>
+            
             <div class="main_content <?php if($source!="index") echo 'container';  ?>">
                 <?php if($template == 'productxx') {  ?>
                     <div class="clearfix">

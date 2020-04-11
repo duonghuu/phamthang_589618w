@@ -38,7 +38,7 @@
       </div>
       <div class="clear"></div>
     </div>
-    <div class="formRow ">
+    <div class="formRow none">
       <label>Slogan</label>
       <div class="formRight">
         <input type="text" value="<?php echo @$item['slogan'.$key];?>" name="slogan<?=$key?>" title="Nhập Slogan" class="tipS" />

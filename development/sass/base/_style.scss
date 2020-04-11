@@ -197,23 +197,46 @@ div.map iframe {
 body {
     @include font-size(16, 16);
     font-family: $font-text;
+    
     &.clsindex{
     }
     
 }
-
+%loadtrang_css1{
+    content: '';
+        height: 50%;
+        background-color: $theme-color;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        z-index: 500000;
+        transition: all 0.7s;
+}
 div#wapper {
     margin: 0 auto;
     position: relative;
     z-index: 1;
     width: 100%;
-    
+    overflow: hidden;
     @at-root .body &{
         background-image: url($images-url+"web-bg.jpg");
         background-repeat: repeat-y;
         background-size: 100% auto;
     }
-    
+    &:before{
+        @extend %loadtrang_css1;
+        top: 0;
+        @include when-inside('.slider_fix'){
+            top: -50%;
+        };
+    }
+    &:after{
+        @extend %loadtrang_css1;
+        bottom: 0;
+        @include when-inside('.slider_fix'){
+            bottom: -50%;
+        };
+    }
     /* display: flex; */
 
     /* height: 100vh; */
@@ -793,8 +816,9 @@ div.wap_item {
 }
 #slideshow {
     position:relative;
+    z-index: 1;
     overflow:hidden;
-    @include flex(1);
+    
     .slideshow-slider-main{
         @include clearfix;
         .slideshow-slider-item {

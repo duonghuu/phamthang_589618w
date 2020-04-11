@@ -2,7 +2,7 @@
   <div class="ft-left">
     <div class="ft-info">
       <div class="ft-logo"><a href="" ><img src="<?= _upload_hinhanh_l.
-      $logolang["photo"] ?>" alt="logo"></a></div>
+      $ftlogo["photo"] ?>" alt="logo"></a></div>
       <div class="content"> <?php echo lay_text('footer'); ?> </div>
       <div class="mxh"><?= lay_mxh("mxh") ?></div>
     </div>
@@ -11,7 +11,19 @@
     <div class="ft-flex">
       <div class="ft-baiviet">
         <p class="ft-tit text-uppercase"><span>Về chúng tôi</span></p>
-        <?= for1("news","ve-chung-toi","ve-chung-toi",".html") ?>
+        <ul>
+            <li><a href="gioi-thieu.html"><?= _gioithieu ?></a></li>
+            <li class="<?php if($com=='can-ho') echo 'active'; ?>"><a href="can-ho.html">Căn hộ</a>
+            </li>
+            <li class="<?php if($com=='nha-pho') echo 'active'; ?>"><a href="nha-pho.html">Nhà phố</a>
+            </li>
+            <li class="<?php if($com=='dat-nen') echo 'active'; ?>"><a href="dat-nen.html">Đất nền</a>
+            </li>
+            <li class="<?php if($com=='tin-tuc') echo 'active'; ?>"><a href="tin-tuc.html">
+              Bảng tin</a>
+            <li class="<?php if($source == 'contact') echo 'active'; ?>"><a href="lien-he.html"><?= _lienhe ?>
+              </a></li>
+          </ul>
       </div>
       <div class="ft-baiviet">
         <p class="ft-tit text-uppercase"><span>Chính sách</span></p>

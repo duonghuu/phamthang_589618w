@@ -19,7 +19,7 @@ $tinnb=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb
 $c_tinnb=count($tinnb);
 $logolang = get_fetch("select photo as photo from #_background where type='logo'");
 // $bannerlang = get_fetch("select photo as photo from #_background where type='banner'");
-// $ftlogo=get_fetch("select photo from #_about where type='footer' ");
+$ftlogo=get_fetch("select photo from #_about where type='footer' ");
 // $bgbnlang = get_fetch("select photo as photo from #_background where type='bgbn'");
 // $tutags = get_result("select id,ten$lang as ten,link from #_news where type='tags'
  // and hienthi=1 order by stt asc");

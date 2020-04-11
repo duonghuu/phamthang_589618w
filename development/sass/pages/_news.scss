@@ -59,7 +59,7 @@
                 }
                 .desc{
                     font-size: 14px;
-                    @include line-clamp(14px, 1.5, 4, false);
+                    @include line-clamp(14px, 1.5, 5, false);
                 }
             }
         }

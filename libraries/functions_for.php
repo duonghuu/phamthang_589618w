@@ -362,7 +362,7 @@ function lay_slider($type,$class='',$width=0,$height=0,$zc=2){
 		        <div class="canho-info__head">
 		          <h3 class="canho-info__title text-capitalize">'.$v["ten"].'</h3>
 		          <div class="canho-info__body">
-		            '.$v["mota"].'
+		            '.catchuoi($v["mota"],300).'
 		          </div>
 		        </div>
 

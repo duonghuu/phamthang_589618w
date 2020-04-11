@@ -105,22 +105,25 @@
   list-style-type: none;
   margin-bottom: 0; }
 
-form#frm_dknt, .slider-flex, .main-nav, .main-nav > ul, .main-nav > ul > li, .main-nav > ul > li > a, #footer, #footer .ft-flex, #footer .ft-flex .ft-baiviet ul li a, ul.ft-thongke, ul.ft-thongke li, #search .my-search, .mxh, .idx-tit h4, .idx-tit h4 span, .idx-tit h4 a, .about-flex, .about-flex .about-info, .dm-cap-item a .info, .dm-cap-item a .info-head__title--small, .canho-info, .canho-info__title, .canho-other-info-line, .duan-datnen-item section .duan-datnen-line, .camnhan-item article, .camnhan-item article .camnhan-head, .thamquan-canho form, .thamquan-canho .form-left .form-group, .news-tpl-grid .news-tpl-item a, .pr-box article .info p, div.wap_pro {
+form#frm_dknt, .slider-flex, .main-nav, .main-nav > ul, .main-nav > ul > li, .main-nav > ul > li > a, #footer, #footer .ft-flex, #footer .ft-flex .ft-baiviet ul li a, ul.ft-thongke, ul.ft-thongke li, #search .my-search, .mxh, .idx-tit h4, .idx-tit h4 span, .idx-tit h4 a, .about-flex, .about-flex .about-info, .dm-cap-item a .info, .dm-cap-item a .info-head__title--small, .canho-info, .canho-info__title, .canho-other-info-line, .duan-datnen-item section .duan-datnen-line, .camnhan-item article, .camnhan-item article .camnhan-head, .thamquan-canho form, .thamquan-canho .form-left .form-group, .datnen-item, .news-tpl-grid .news-tpl-item a, .pr-box article .info p, div.wap_pro {
   display: flex; }
 
-form#frm_dknt #submit_nhantin, .mxh a, .btn-idx, .chitiet, .camnhan-item article .camnhan-head figure {
+form#frm_dknt #submit_nhantin, .mxh a, .btn-idx, .chitiet, .camnhan-item article .camnhan-head figure, .datnen-item .imgsp, .call-element .callnow, .call-element .callnow i {
   display: inline-flex; }
 
-.slider-flex, .main-nav, #footer, #footer .ft-flex, #search .my-search, .idx-tit h4 span, .idx-tit h4 a, .about-flex, .canho-info, .canho-other-info-line, .duan-datnen-item section .duan-datnen-line, .thamquan-canho form, .thamquan-canho .form-left .form-group, .news-tpl-grid .news-tpl-item a, .pr-box article .info p, div.wap_pro {
+.slider-flex, .main-nav, #footer, #footer .ft-flex, #search .my-search, .idx-tit h4 span, .idx-tit h4 a, .about-flex, .canho-info, .canho-other-info-line, .duan-datnen-item section .duan-datnen-line, .thamquan-canho form, .thamquan-canho .form-left .form-group, .datnen-item, .news-tpl-grid .news-tpl-item a, .pr-box article .info p, div.wap_pro {
   justify-content: space-between; }
 
-form#frm_dknt #submit_nhantin, .main-nav > ul > li, .main-nav > ul > li > a, .mxh, .mxh a, .idx-tit h4, .dm-cap-item a .info-head__title--small, .canho-info__title, .camnhan-item article, .camnhan-item article .camnhan-head {
+.main-nav > ul {
+  justify-content: space-around; }
+
+form#frm_dknt #submit_nhantin, .main-nav > ul > li, .main-nav > ul > li > a, .mxh, .mxh a, .idx-tit h4, .dm-cap-item a .info-head__title--small, .canho-info__title, .camnhan-item article, .camnhan-item article .camnhan-head, .call-element .callnow i {
   justify-content: center; }
 
 .about-flex .about-info, .dm-cap-item a .info {
   justify-content: flex-end; }
 
-form#frm_dknt, form#frm_dknt #submit_nhantin, .main-nav, .main-nav > ul, .main-nav > ul > li, .main-nav > ul > li > a, ul.ft-thongke li, #search .my-search, .mxh, .mxh a, .chitiet, .idx-tit h4 span, .idx-tit h4 a, .camnhan-item article .camnhan-head, .camnhan-item article .camnhan-head figure {
+form#frm_dknt, form#frm_dknt #submit_nhantin, .main-nav, .main-nav > ul, .main-nav > ul > li, .main-nav > ul > li > a, ul.ft-thongke li, #search .my-search, .mxh, .mxh a, .chitiet, .idx-tit h4 span, .idx-tit h4 a, .camnhan-item article .camnhan-head, .camnhan-item article .camnhan-head figure, .call-element .callnow, .call-element .callnow i {
   align-items: center; }
 
 .pr-box article .info p {
@@ -8999,11 +9002,22 @@ body {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif; }
 
+div#wapper:before, div#wapper:after {
+  content: '';
+  height: 50%;
+  background-color: #a81900;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 500000;
+  transition: all 0.7s; }
+
 div#wapper {
   margin: 0 auto;
   position: relative;
   z-index: 1;
   width: 100%;
+  overflow: hidden;
   /* display: flex; */
   /* height: 100vh; */
   /* flex-wrap: wrap; */
@@ -9013,6 +9027,14 @@ div#wapper {
     background-image: url("images/web-bg.jpg");
     background-repeat: repeat-y;
     background-size: 100% auto; }
+  div#wapper:before {
+    top: 0; }
+    .slider_fix div#wapper:before {
+      top: -50%; }
+  div#wapper:after {
+    bottom: 0; }
+    .slider_fix div#wapper:after {
+      bottom: -50%; }
 
 div.wap_thongtin {
   padding: 9px 0;
@@ -9484,13 +9506,8 @@ div.wap_item {
 
 #slideshow {
   position: relative;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+  z-index: 1;
+  overflow: hidden; }
   #slideshow .slideshow-slider-main:after {
     content: "";
     display: table;
@@ -9621,8 +9638,8 @@ div.wap_item {
 .main-nav > ul > li ul {
   position: absolute;
   display: none;
-  min-width: 200px;
-  background-color: #fff;
+  width: 220px;
+  background-color: #a81900;
   list-style-type: none;
   margin: 0;
   -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
@@ -9645,7 +9662,8 @@ div.wap_item {
   background-size: 100% auto;
   z-index: 451 !important; }
   .clsindex .nav-bg {
-    position: absolute;
+    position: absolute; }
+  .clsindex .nav-bg:not(.fixed) {
     background: none; }
 
 .logo {
@@ -9653,6 +9671,15 @@ div.wap_item {
   max-width: 160px;
   margin: 0 1.875em;
   padding: 1em 0; }
+  .logo img {
+    height: 120px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .fixed .logo img {
+      height: 72px; }
 
 .main-nav {
   position: relative; }
@@ -9663,8 +9690,6 @@ div.wap_item {
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1; }
-    .main-nav-left > li + li {
-      margin-left: 3.75em; }
   .main-nav-right {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -9672,17 +9697,20 @@ div.wap_item {
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    order: 2; }
-    .main-nav-right > li {
-      margin-left: 3.125em; }
+    order: 2;
+    margin-right: 3.75em; }
   .main-nav > ul {
     z-index: 5;
     position: relative; }
     .main-nav > ul > li {
       position: relative;
-      z-index: 5; }
-      .main-nav > ul > li ul {
-        top: 100%; }
+      z-index: 5;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
       .main-nav > ul > li a {
         color: #fff; }
         .main-nav > ul > li a:hover {
@@ -9702,7 +9730,8 @@ div.wap_item {
         color: #ff0; }
 
 .main-nav ul.sub-menu {
-  left: 0;
+  left: 50%;
+  margin-left: -110px;
   top: 100%; }
   .main-nav ul.sub-menu li {
     position: relative; }
@@ -9712,21 +9741,19 @@ div.wap_item {
       font-weight: 400;
       font-family: "Montserrat", sans-serif;
       text-decoration: none;
-      line-height: 34px;
-      padding: 0 20px 0 10px;
-      white-space: nowrap;
+      padding: 7px 20px 7px 10px;
       display: block; }
       .main-nav ul.sub-menu li a:after {
         content: "\f105";
         font-weight: 700;
         font-family: "Font Awesome 5 Free";
         position: absolute;
-        top: 0;
+        top: 5px;
         right: 5px; }
     .main-nav ul.sub-menu li a {
-      color: #212121; }
+      color: #fff; }
       .main-nav ul.sub-menu li a:hover {
-        color: #a81900; }
+        color: #ff0; }
     .main-nav ul.sub-menu li:hover > ul {
       display: block; }
     .main-nav ul.sub-menu li ul {
@@ -10115,7 +10142,9 @@ div.mxhft {
   margin: 0 auto; }
 
 .about-bg {
-  padding-bottom: 3.75em; }
+  padding-bottom: 3.75em;
+  position: relative;
+  z-index: 2; }
 
 .special-title {
   position: absolute;
@@ -10233,9 +10262,19 @@ div.mxhft {
     .dm-cap-item a .info-body {
       line-height: 1.5;
       font-size: 13px;
-      display: none; }
+      opacity: 0;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
     .dm-cap-item a .info-foot {
-      display: none; }
+      opacity: 0;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      -ms-transition: all 0.8s ease;
+      -o-transition: all 0.8s ease;
+      transition: all 0.8s ease; }
       .dm-cap-item a .info-foot .chitiet {
         color: #fff; }
         .dm-cap-item a .info-foot .chitiet img {
@@ -10248,31 +10287,39 @@ div.mxhft {
     justify-content: space-between;
     background-color: rgba(168, 25, 0, 0.85); }
     .dm-cap-item a:hover .info-body {
-      display: block; }
+      opacity: 1; }
     .dm-cap-item a:hover .info-foot {
-      display: block; }
+      opacity: 1; }
 
 .canho-noibat {
   padding-top: 2.5em; }
 
 .canho-info {
   position: absolute;
-  top: 0;
+  top: 60%;
   right: 0;
-  bottom: 0;
   left: 0;
+  height: 100%;
   z-index: 2;
   padding: 1.25em;
   background-color: rgba(168, 25, 0, 0.85);
   text-align: center;
-  display: none; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
+  display: flex; }
   .pr-box:hover .canho-info {
-    display: flex; }
+    opacity: 1;
+    top: 0; }
   .canho-info__title {
     position: relative;
     color: #fff;
     font-size: 18px;
     font-weight: 600;
+    line-height: 1.5;
     margin-bottom: 30px;
     text-transform: capitalize; }
     .canho-info__title:before {
@@ -10304,7 +10351,7 @@ div.mxhft {
         color: #a81900; }
   .canho-other-info-line p {
     color: #000;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     -webkit-box-flex: auto;
     -webkit-flex: auto;
@@ -10318,12 +10365,17 @@ div.mxhft {
       margin-right: 3px; }
     .canho-other-info-line p .fas.fa-tag, .canho-other-info-line p span {
       color: #a81900; }
+    .canho-other-info-line p span {
+      font-size: 16px; }
   .canho-other-info-line + .canho-other-info-line p {
     margin-top: 10px; }
 
 .duan-datnen {
   padding: 3.75em;
-  background-size: cover; }
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px; }
   .duan-datnen .idx-tit h4 span, .duan-datnen .idx-tit h4 a {
     color: #fff; }
   .duan-datnen .special-title {
@@ -10434,13 +10486,23 @@ div.mxhft {
     border-radius: 10px;
     border: 1px solid #c8c8c8;
     position: relative;
-    padding: 20px 20px 70px; }
+    padding: 20px 20px 70px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
     .camnhan-item article .camnhan-head {
       position: absolute;
       right: 0;
       bottom: -50px;
       left: 0; }
       .camnhan-item article .camnhan-head figure {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
         width: 92px;
         height: 100px;
         background-color: #fff;
@@ -10483,10 +10545,16 @@ div.mxhft {
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3; }
+  .camnhan-item:hover article, .camnhan-item:hover figure {
+    border-color: #a81900 !important; }
 
 .thamquan-canho {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 3.75em 0; }
+  height: 400px;
+  padding: 3.75em 0;
+  position: relative; }
   .thamquan-canho .idx-tit h4 span {
     color: #fff; }
   .thamquan-canho form {
@@ -10525,6 +10593,86 @@ div.mxhft {
     width: 33.9805825243%; }
     .thamquan-canho .form-right textarea {
       height: 90px; }
+
+.canho-thongtin {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-color: #cecbcb;
+  border-style: solid;
+  border-width: 1px 0; }
+  .canho-thongtin p {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+.datnen-item {
+  margin-bottom: 2em; }
+  .datnen-item .imgsp {
+    width: 49%;
+    order: 1; }
+  .datnen-item .info {
+    width: 49%; }
+    .datnen-item .info h3 {
+      color: #a81900;
+      font-size: 25px; }
+      .datnen-item .info h3 a {
+        color: #a81900; }
+    .datnen-item .info .xemthem {
+      background-color: #f7f6f6;
+      display: inline-block;
+      color: #333;
+      font-size: 12px;
+      padding: 5px 10px;
+      border-radius: 3px; }
+  .datnen-item.even .imgsp {
+    order: 0; }
+
+.call-element {
+  position: relative;
+  z-index: 6; }
+  .call-element .callnow {
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    top: -38px;
+    right: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px; }
+    .call-element .callnow i {
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      color: #fff;
+      font-size: 12px;
+      background-color: #a81900;
+      margin-right: 7px; }
+    .call-element .callnow a {
+      color: #a81900;
+      margin-left: 5px; }
+
+.thamquan-btn {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  z-index: 156; }
+
+.logoload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000000;
+  max-width: 120px; }
+  .slider_fix .logoload {
+    display: none;
+    }
 
 .giohang_fix {
   margin-left: 10px;
@@ -11032,12 +11180,12 @@ div.mxhft {
         font-size: 14px;
         display: block;
         display: -webkit-box;
-        height: 84px;
+        height: 105px;
         line-height: 1.5;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 4; }
+        -webkit-line-clamp: 5; }
 
 .news-tpl-grid {
   box-sizing: border-box;

@@ -9,10 +9,10 @@
         </a></li>
         <li><a href="gioi-thieu.html"><?= _gioithieu ?></a></li>
         <li class="<?php if($com=='can-ho') echo 'active'; ?>"><a href="can-ho.html">Căn hộ</a>
-          <?= for2cap('product_danhmuc','product_list','can-ho','can-ho','','/')?>
+          <?= for3cap('product_danhmuc','product_list','product_cat','can-ho','can-ho','','/','')?>
         </li>
         <li class="<?php if($com=='nha-pho') echo 'active'; ?>"><a href="nha-pho.html">Nhà phố</a>
-          <?= for2cap('product_danhmuc','product_list','nha-pho','nha-pho','','/')?>
+          <?= for3cap('product_danhmuc','product_list','product_cat','nha-pho','nha-pho','','/','')?>
         </li>
       </ul>
       <ul class="main-nav-right">
@@ -20,7 +20,8 @@
           <?= for1('product_danhmuc','dat-nen','dat-nen','')?>
         </li>
         <li class="<?php if($com=='tin-tuc') echo 'active'; ?>"><a href="tin-tuc.html">
-          Bảng tin</a></li> 
+          Bảng tin</a>
+          <?= for1('news_danhmuc','tin-tuc','tin-tuc','')?></li> 
         <li class="<?php if($source == 'contact') echo 'active'; ?>"><a href="lien-he.html"><?= _lienhe ?>
           </a></li>
       </ul>

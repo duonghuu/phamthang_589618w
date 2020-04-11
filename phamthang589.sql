@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 10, 2020 at 11:41 AM
+-- Generation Time: Apr 11, 2020 at 06:53 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -2957,7 +2957,12 @@ INSERT INTO `counter` (`id`, `tm`, `ip`) VALUES
 (4039, 1586507374, '::1'),
 (4040, 1586509051, '::1'),
 (4041, 1586510018, '::1'),
-(4042, 1586510943, '::1');
+(4042, 1586510943, '::1'),
+(4043, 1586574307, '::1'),
+(4044, 1586575242, '::1'),
+(4045, 1586577672, '::1'),
+(4046, 1586578934, '::1'),
+(4047, 1586580252, '::1');
 
 -- --------------------------------------------------------
 
@@ -3566,7 +3571,7 @@ INSERT INTO `table_lkweb` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb
 (33, 0, 'kerousitordu', 'kerousitordu', 'untitled-10001layer-5-9380.png', '', 1, 1, 1582620965, 1583908402, '', '', 'mxhft', ''),
 (34, 0, '', '', 'untitled-10000layer-6-9501.png', '', 1, 1, 1582861349, 1583908397, '', '', 'mxhft', ''),
 (35, 0, '', '', 'untitled-10000layer-10-9674.png', '', 1, 1, 1583484813, 1585554660, '', '', 'mxh', ''),
-(36, 0, '', '', 'untitled-10004layer-6-5279.png', '', 1, 1, 1585554682, 1585720395, 'https://www.facebook.com/NganroxyTrumsivnxk/', '', 'mxh', '');
+(36, 0, '', '', 'untitled-10004layer-6-5279.png', '', 1, 0, 1585554682, 1585720395, 'https://www.facebook.com/NganroxyTrumsivnxk/', '', 'mxh', '');
 
 -- --------------------------------------------------------
 
@@ -3645,9 +3650,6 @@ INSERT INTO `table_news` (`id`, `id_list`, `id_item`, `id_cat`, `noibat`, `photo
 (558, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 12', 'iste-wisi-tenetur-q-12', '', '', 0, 1, 1, 0, 1582683903, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
 (559, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 123', 'iste-wisi-tenetur-q-123', '', '', 0, 1, 1, 0, 1582683906, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
 (560, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 1234', 'iste-wisi-tenetur-q-1234', '', '', 0, 1, 1, 0, 1582683908, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
-(736, 0, 0, 0, 0, '400x300-8611.png', '400x300.png1126_400x300.JPEG', '', '', '', 'Hymenaeos aut aliquip conse', 'hymenaeos-aut-aliquip-conse', 'Hymenaeos aut aliquip consectetur lorem eros, massa inventor', '', 0, 1, 1, 0, 1586505193, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(737, 0, 0, 0, 0, '400x300-2868.png', '400x300.png6024_400x300.JPEG', '', '', '', 'Hymenaeos aut aliquip conse 1', 'hymenaeos-aut-aliquip-conse-1', 'Hymenaeos aut aliquip consectetur lorem eros, massa inventor', '', 0, 1, 1, 0, 1586505196, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(738, 0, 0, 0, 0, '400x300-5335.png', '400x300.png6423_400x300.JPEG', '', '', '', 'Hymenaeos aut aliquip conse 12', 'hymenaeos-aut-aliquip-conse-12', 'Hymenaeos aut aliquip consectetur lorem eros, massa inventor', '', 0, 1, 1, 0, 1586505200, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0'),
 (739, 0, 0, 0, 1, '', '', '', '', '', 'Tên tin tu c', 'ten-tin-tu-c', '', '', 1, 1, 1, 0, 1586507387, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tin-tuc', '', '', '', '', '', '', '', '', '', '', '', '0'),
 (731, 0, 0, 0, 0, '150x150-3981.png', '150x150.png6417_100x100.JPEG', '', '', '', 'Tên khach hàng', 'ten-khach-hang', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504608, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
 (732, 0, 0, 0, 0, '150x150-8162.png', '150x150.png4820_100x100.JPEG', '', '', '', 'Tên khach hàng2', 'ten-khach-hang2', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504621, 1586504621, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
@@ -3831,7 +3833,7 @@ CREATE TABLE `table_online` (
 --
 
 INSERT INTO `table_online` (`id`, `session_id`, `time`) VALUES
-(2096, 'k4fnuj4knl0j05b082r00jsh47', 1586511517);
+(2100, 'hs1jt3hfk5cej5u48h472dk2a0', 1586580781);
 
 -- --------------------------------------------------------
 
@@ -4763,7 +4765,7 @@ INSERT INTO `table_product` (`id`, `id_danhmuc`, `id_list`, `id_item`, `id_cat`,
 (110, 160, 0, 0, 0, 1, 0, 0, 0, 0, 'photo-1584502112306-150f676b0fd0-3334.jpg', 'photo-1584502112306-150f676b0fd0.jpg2162_380x300.JPEG', 'vel-nam-ducimus-autem-no', 'Vel nam ducimus autem no', '', '', 'Repudiandae ea eveniet! Donec blandit conubia. Eu. Sodales, facilisis sequi, laboris, egestas praesentium sem diam, nascetur repellat porta culpa dolores minus exercitation, laboris placerat? Saepe turpis. Erat tenetur sunt veritatis, facilisi mi. Mini', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'nha-pho', 0, '', '', '', '', '', 1586500977, 1586501355, '', '', '', '', '', '', 0, 0, '63m2', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Sequi, voluptate inceptos ac, proident am', 0, '', 'Sắp bán', '', '', '', '', '', '', ''),
 (111, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-6708.jpg', 'photo-1584689036675-940c6e0eec93.jpg7346_380x300.JPEG', 'ten-bai-viet', 'Tên bài viết', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '', '', '', '', 0, 0, 1, 1, 'can-ho', 0, '', '', '', '', '', 1586501466, 0, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '', '', '', '', '', ''),
 (112, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-3211.jpg', 'photo-1584689036675-940c6e0eec93.jpg8982_380x300.JPEG', 'ten-bai-viet-1', 'Tên bài viết 1', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '', '', '', '', 0, 0, 17, 1, 'can-ho', 0, '', '', '', '', '', 1586501474, 0, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '', '', '', '', '', ''),
-(113, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-1445.jpg', 'photo-1584689036675-940c6e0eec93.jpg4050_768x605.JPEG', 'ten-bai-viet-12', 'Tên bài viết 12', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '<p>Fringilla nibh debitis ullamco. Nisi morbi dignissim platea, habitasse quisque nec, magna? Id et magni eum nisi quibusdam vestibulum aliquam vulputate magnis culpa nascetur itaque mollis quae consequatur! Quod quas voluptate accumsan eos montes, tempor consequuntur nulla vehicula aliquam mauris! Velit doloremque nulla veniam laboriosam voluptas consectetuer vivamus, rhoncus quo animi ante! Dapibus excepturi. Nibh quis justo diam varius scelerisque, consequatur amet hymenaeos, sociosqu cupidatat, eos doloribus nostrum? Ullamco tellus, facilis class, cupiditate nulla mi culpa faucibus incidunt proident iste, provident dis, dictum porro, dis tenetur est distinctio possimus quidem nihil curabitur ad condimentum eiusmod sagittis, excepturi dapibus, penatibus orci.</p>\r\n\r\n<p>Anim natoque? Commodo iste deleniti consequuntur consectetur etiam facilis! Ac sunt pariatur, aliquet convallis quas arcu ea voluptas, per tristique diam tenetur voluptatibus iste? Tempus porro proi</p>\r\n', '', '', '', 0, 0, 19, 1, 'can-ho', 0, '', '', '', '', '', 1586501483, 1586510411, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '                                                        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '52tr', '', '', '', '', ''),
+(113, 157, 53, 0, 10, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-1445.jpg', 'photo-1584689036675-940c6e0eec93.jpg4050_768x605.JPEG', 'ten-bai-viet-12', 'Tên bài viết 12', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '<p>Fringilla nibh debitis ullamco. Nisi morbi dignissim platea, habitasse quisque nec, magna? Id et magni eum nisi quibusdam vestibulum aliquam vulputate magnis culpa nascetur itaque mollis quae consequatur! Quod quas voluptate accumsan eos montes, tempor consequuntur nulla vehicula aliquam mauris! Velit doloremque nulla veniam laboriosam voluptas consectetuer vivamus, rhoncus quo animi ante! Dapibus excepturi. Nibh quis justo diam varius scelerisque, consequatur amet hymenaeos, sociosqu cupidatat, eos doloribus nostrum? Ullamco tellus, facilis class, cupiditate nulla mi culpa faucibus incidunt proident iste, provident dis, dictum porro, dis tenetur est distinctio possimus quidem nihil curabitur ad condimentum eiusmod sagittis, excepturi dapibus, penatibus orci.</p>\r\n\r\n<p>Anim natoque? Commodo iste deleniti consequuntur consectetur etiam facilis! Ac sunt pariatur, aliquet convallis quas arcu ea voluptas, per tristique diam tenetur voluptatibus iste? Tempus porro proi</p>\r\n', '', '', '', 0, 0, 19, 1, 'can-ho', 0, '', '', '', '', '', 1586501483, 1586577959, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '                                                                <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '52tr', '', '', '', '', ''),
 (114, 161, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1585840361623-ccd3c5694106-5695.jpg', 'photo-1585840361623-ccd3c5694106.jpg7363_700x430.JPEG', 'magnis-exercitation-eros-cur', 'Magnis exercitation eros cur', '', '', 'Magnis exercitation eros curae, occaecati numquam. Habitant ante orci iure augue mollis, temporibus fusce? Exercitation voluptate aliquid litora. Senectus mollis mi facere nullam platea fringi', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'dat-nen', 0, '', '', '', '', '', 1586504087, 0, '', '', '', '', '', '', 0, 0, '100', 0, 0, '3', '2', 0, 0, 0, 0, 0, '', '        ', 'Unde tortor mattis pulvinar facilisi consequat bib', 0, '', 'Đã bán', '', '1000tr', '', '', '', '', ''),
 (115, 161, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1585840361623-ccd3c5694106-9609.jpg', 'photo-1585840361623-ccd3c5694106.jpg3164_700x430.JPEG', 'magnis-exercitation-eros-cur-1', 'Magnis exercitation eros cur 1', '', '', 'Magnis exercitation eros curae, occaecati numquam. Habitant ante orci iure augue mollis, temporibus fusce? Exercitation voluptate aliquid litora. Senectus mollis mi facere nullam platea fringi', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'dat-nen', 0, '', '', '', '', '', 1586504100, 0, '', '', '', '', '', '', 0, 0, '100', 0, 0, '3', '2', 0, 0, 0, 0, 0, '', '        ', 'Unde tortor mattis pulvinar facilisi consequat bib', 0, '', 'Đã bán', '', '1000tr', '', '', '', '', '');
 
@@ -4799,6 +4801,14 @@ CREATE TABLE `table_product_cat` (
   `mota` text NOT NULL,
   `motaen` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `table_product_cat`
+--
+
+INSERT INTO `table_product_cat` (`id`, `id_list`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `id_danhmuc`, `noibat`, `noidung`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `tenen`, `noidungen`, `type`, `mota`, `motaen`) VALUES
+(10, 53, 'Test danh mục cấp 3 a', 'test-danh-muc-cap-3-a', '', '', 1, 1, 1586576660, 0, 157, 0, '', '', '', '', '', '', '', '', '', 'can-ho', '', ''),
+(11, 53, 'Test danh mục cấp 3 b', 'test-danh-muc-cap-3-b', '', '', 1, 1, 1586576667, 0, 157, 0, '', '', '', '', '', '', '', '', '', 'can-ho', '', '');
 
 -- --------------------------------------------------------
 
@@ -4924,6 +4934,14 @@ CREATE TABLE `table_product_list` (
   `motacn` text NOT NULL,
   `noidungcn` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `table_product_list`
+--
+
+INSERT INTO `table_product_list` (`id`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `id_danhmuc`, `title`, `description`, `h3`, `h2`, `h1`, `keywords`, `noibat`, `noidung`, `tenen`, `noidungen`, `type`, `mota`, `motaen`, `tencn`, `motacn`, `noidungcn`) VALUES
+(53, 'Test danh muc cap 2 a', 'test-danh-muc-cap-2-a', '', '', 1, 1, 1586576641, 0, 157, '', '', '', '', '', '', 0, '', '', '', 'can-ho', '', '', '', '', ''),
+(54, 'Test danh muc cap 2 b', 'test-danh-muc-cap-2-b', '', '', 1, 1, 1586576645, 0, 157, '', '', '', '', '', '', 0, '', '', '', 'can-ho', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -5458,7 +5476,7 @@ ALTER TABLE `table_yahoo`
 -- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4043;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4048;
 
 --
 -- AUTO_INCREMENT for table `table_about`
@@ -5590,7 +5608,7 @@ ALTER TABLE `table_news_list`
 -- AUTO_INCREMENT for table `table_online`
 --
 ALTER TABLE `table_online`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2097;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2101;
 
 --
 -- AUTO_INCREMENT for table `table_phanquyen`
@@ -5620,7 +5638,7 @@ ALTER TABLE `table_product`
 -- AUTO_INCREMENT for table `table_product_cat`
 --
 ALTER TABLE `table_product_cat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `table_product_danhmuc`
@@ -5638,7 +5656,7 @@ ALTER TABLE `table_product_item`
 -- AUTO_INCREMENT for table `table_product_list`
 --
 ALTER TABLE `table_product_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `table_protag`

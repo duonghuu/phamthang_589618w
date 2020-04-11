@@ -738,18 +738,16 @@ function utf8convert($str) {
     $str = preg_replace("/($uni)/i",$ascii,$str);
   return $str;
 }
-function changeTitle($text){
- $text = strtolower(utf8convert($text));
- $text = preg_replace("/[^a-z0-9-\s]/", "",$text);
- $text = preg_replace('/([\s]+)/', '-', $text);
- $text = str_replace(array('%20', ' '), '-', $text);
- $text = preg_replace("/\-\-\-\-\-/","-",$text);
- $text = preg_replace("/\-\-\-\-/","-",$text);
- $text = preg_replace("/\-\-\-/","-",$text);
- $text = preg_replace("/\-\-/","-",$text);
- $text = '@'.$text.'@';
- $text = preg_replace('/\@\-|\-\@|\@/', '', $text);
- return $text;
+function changeTitle($str){
+  $str = stripUnicode($str);
+  $str = mb_convert_case($str,MB_CASE_LOWER,'utf-8');
+  $str = strtolower($str);
+  $str = trim($str);
+  $str = str_replace("-"," ",$str);
+  $str=preg_replace('/[^a-zA-Z0-9\ ]/','',$str);
+  $str = str_replace("  "," ",$str);
+  $str = str_replace(" ","-",$str);
+  return $str;
 } 
 function changeTitleImage($str)
 {
@@ -765,11 +763,8 @@ function getCurrentPageURL() {
   $pageURL = 'http';
   if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
   $pageURL .= "://";
-  if ($_SERVER["SERVER_NAME"]== "locahost") {
-    $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
-  } else {
-    $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-  }
+  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+  // $pageURL = str_replace("amp/", "", $pageURL);
   $pageURL = explode("&p=", $pageURL);
   return $pageURL[0];
 }
@@ -777,11 +772,7 @@ function getCurrentPageURL_AMP() { //Hàm thêm mới - để thêm mới /amp/ 
   $pageURL = 'http';
   if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
   $pageURL .= "://";
-  if ($_SERVER["SERVER_PORT"] != "80") {
-    $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"]."/amp".$_SERVER["REQUEST_URI"];
-  } else {
-    $pageURL .= $_SERVER["SERVER_NAME"]."/amp".$_SERVER["REQUEST_URI"];
-  }
+  $pageURL .= $_SERVER["SERVER_NAME"]."/amp".$_SERVER["REQUEST_URI"];
   $pageURL = explode("&p=", $pageURL);
   return $pageURL[0];
 }

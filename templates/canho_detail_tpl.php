@@ -10,13 +10,17 @@ $img_row_detail = _upload_sanpham_l.$row_detail["thumb"];
   <!-- The slideshow -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?= $img_row_detail ?>" alt="<?= $row_detail["ten"] ?>">
+      <a data-fancybox="gallery27" data-caption="<?= $row_detail["ten"] ?>" href="
+        <?= _upload_sanpham_l.$row_detail["photo"] ?>">
+        <img src="<?= $img_row_detail ?>" alt="<?= $row_detail["ten"] ?>"></a>
     </div>
     <?php foreach ($hinhthem as $k_hinh => $v_hinh) { 
       $img_hinhthem = _upload_hinhthem_l.$v_hinh["thumb"];
       ?>
     <div class="carousel-item">
-      <img src="<?= $img_hinhthem ?>" alt="<?= $row_detail["ten"] ?>">
+      <a data-fancybox="gallery27" data-caption="<?= $row_detail["ten"] ?>" href="
+        <?= _upload_hinhthem_l.$v_hinh["photo"] ?>">
+      <img src="<?= $img_hinhthem ?>" alt="<?= $row_detail["ten"] ?>"></a>
     </div>
     <?php } ?>
   </div>
@@ -45,21 +49,24 @@ $img_row_detail = _upload_sanpham_l.$row_detail["thumb"];
     </li>
     <?php } ?>
   </ul>
-
-  
-
 </div>
-<div class="canho-other-info mb-3">
-  <div class="canho-other-info-line">
-    <p><i class="fas fa-map-marker-alt"></i> <?= $row_detail["diachi"] ?></p>
+<div class="canho-thongtin">
+  <div class="d-flex">
+    <p><strong>Tiêu đề: </strong><?= $row_detail["ten"] ?></p>
+    <p><strong>Địa chỉ: </strong><?= $row_detail["diachi"] ?></p>
   </div>
-  <div class="canho-other-info-line">
-    <p><i class="fas fa-building"></i> <?= $row_detail["dientich"] ?></p>
-    <p><i class="fas fa-bed"></i> <?= $row_detail["phongngu"] ?></p>
-    <p><i class="fas fa-bath"></i> <?= $row_detail["phongtam"] ?></p>
+  <?php if($row_detail["type"] != "dat-nen"){ ?>
+  <div class="d-flex">
+    <p><strong>Phòng ngủ: </strong><?= $row_detail["phongngu"] ?></p>
+    <p><strong>Toilet: </strong><?= $row_detail["phongtam"] ?></p>
   </div>
-  <div class="canho-other-info-line">
-    <p><i class="fas fa-tag"></i> Giá: <span><?= $row_detail["giabds"] ?></span></p>
+  <?php } ?>
+  <div class="d-flex">
+    <p><strong>Diện tích: </strong><?= $row_detail["dientich"] ?></p>
+    <p><strong>Giá: </strong><?= $row_detail["giabds"] ?></p>
+  </div>
+  <div class="d-flex">
+    <p><strong>Tình trạng: </strong><?= $row_detail["tinhtrang"] ?></p>
   </div>
 </div>
 <div class="content">

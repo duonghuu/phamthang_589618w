@@ -6165,6 +6165,13 @@ function loadData(page,id_tab,loai){
   });
 }
 $(document).ready(function() {
+      setTimeout(function(){
+          $("body").addClass('slider_fix');
+       },400);
+    $( "a.scrollLink" ).click(function( event ) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 100 }, 500);
+      });
      $('.chatface').click(function(){
          $('#khungchatn').toggle(300);
      });
@@ -6216,13 +6223,13 @@ $(document).ready(function() {
     }
   });
   if ($(document.body).height() < $(window).height()) {
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id; js.async=true;
-      js.src = "//connect.facebook.net/"+js_langfb+"/sdk.js#xfbml=1&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    // (function(d, s, id) {
+    //   var js, fjs = d.getElementsByTagName(s)[0];
+    //   if (d.getElementById(id)) return;
+    //   js = d.createElement(s); js.id = id; js.async=true;
+    //   js.src = "//connect.facebook.net/"+js_langfb+"/sdk.js#xfbml=1&version=v2.8";
+    //   fjs.parentNode.insertBefore(js, fjs);
+    // }(document, 'script', 'facebook-jssdk'));
     //$(".codebando").html(js_bando);
     // if(js_linkvideo){ 
     //   $("#video-idx").html('<iframe id="iframe" src="https://www.youtube.com/embed/'+js_linkvideo+
@@ -6232,13 +6239,13 @@ $(document).ready(function() {
     var fired = false;
     window.addEventListener("scroll", function(){
       if ((document.documentElement.scrollTop != 0 && fired === false) || (document.body.scrollTop != 0 && fired === false)) {
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id; js.async=true;
-          js.src = "//connect.facebook.net/"+js_langfb+"/sdk.js#xfbml=1&version=v2.8";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+        // (function(d, s, id) {
+        //   var js, fjs = d.getElementsByTagName(s)[0];
+        //   if (d.getElementById(id)) return;
+        //   js = d.createElement(s); js.id = id; js.async=true;
+        //   js.src = "//connect.facebook.net/"+js_langfb+"/sdk.js#xfbml=1&version=v2.8";
+        //   fjs.parentNode.insertBefore(js, fjs);
+        // }(document, 'script', 'facebook-jssdk'));
         //$(".codebando").html(js_bando);
         // if(js_linkvideo){ 
         //   $("#video-idx").html('<iframe id="iframe" src="https://www.youtube.com/embed/'+js_linkvideo+
@@ -6255,55 +6262,26 @@ $(document).ready(function() {
     //       'top': vitri + 'px'
     //     })
     //   });
-    // $(window).scroll(function(){
-    //   var cach_top = $(window).scrollTop();
-    //   var heaigt_header = $('.hd-top').height();
-    //   if(cach_top >= heaigt_header){
-    //     $('.hd-bot').css({position: 'fixed', top: '0px', zIndex:99999});
-    //     $('.hd-bot').addClass('fixed');
-    //   }else{
-    //     $('.hd-bot').css({position: 'relative', top: 'auto'});
-    //     $('.hd-bot').removeClass('fixed');
-    //   }
-    // });
+    $(window).scroll(function(){
+      var cach_top = $(window).scrollTop();
+      var heaigt_header = $('.nav-bg').height();
+      if(cach_top >= heaigt_header){
+        $('.nav-bg').css({position: 'fixed', top: '0px', zIndex:99999});
+        $('.nav-bg').addClass('fixed');
+      }else{
+        if(js_template == "index"){
+          $('.nav-bg').css({position: 'absolute', top: 'auto'});
+        }else{
+          $('.nav-bg').css({position: 'relative', top: 'auto'});
+        }
+        $('.nav-bg').removeClass('fixed');
+      }
+    });
   }
   
 });
 
 
-  $('.main_manu_valak ul li').each(function(index, el) {
-    if($(this).children("ul").length) {
-      $(this).prepend('<div class="btn_expand_menu_valak"></div>');
-    }
-  });
-  $(document).on('click', '#humber_valak', function(event) {
-    event.preventDefault();
-    $("#valak_openmmenu").addClass('expand_menu');
-  });
-  $(document).on('click', '#close_valak', function(event) {
-    event.preventDefault();
-    $("#valak_openmmenu").removeClass('expand_menu');
-  });
-  $(document).on('click', '.btn_expand_menu_valak', function(event) {
-    event.preventDefault();
-    if($(this).hasClass('more')) {
-      $(this).removeClass('more');
-    }
-    else {
-      $(this).addClass('more');
-    }
-    $(this).parent('li').children('ul').toggle();
-  });
-  $(window).scroll(function() {
-    if($(window).scrollTop() >= $(".hd-bg").height()) 
-    {
-      $("#valak_mmenu").css({position:"fixed",left:'0px',right:'0px',top:'0px',zIndex:'999'});
-    }
-    else
-    {
-      $("#valak_mmenu").css({position:"relative"});
-    }
-  });
 function doEnter(evt){
     var key;
     if(evt.keyCode == 13 || evt.which == 13){
@@ -6359,20 +6337,6 @@ $(document).ready(function() {
     }
     document.frm_dknt.submit(); 
   });
-});
-$(document).ready(function() {
-     $('body').append('<div id="toptop" title="Lên đầu trang"><i class="fas fa-arrow-circle-right"></i></div>');
-     $(window).scroll(function() {
-      if($(window).scrollTop() != 0){
-        $('#toptop').fadeIn();
-      }else {
-        $('#toptop').fadeOut();
-      }
-     });
-
-     $('#toptop').click(function() {
-      $('html, body').animate({scrollTop:0},500);
-     });
 });
      var mzOptions = {
       zoomMode:true,
@@ -6449,362 +6413,3 @@ $(document).ready(function() {
         });
       });
     });
-
-function formatNumber(nStr)//format gia
-{
-    nStr += '';
-    x = nStr.split('.');
-    x1 = x[0];
-    x2 = x.length > 1 ? '.' + x[1] : '';
-    var rgx = /(\d+)(\d{3})/;
-    while (rgx.test(x1)) {
-        x1 = x1.replace(rgx, '$1' + '.' + '$2');
-    }
-    return x1 + x2;
-}
-function updateCartInfo(){
-  var code_coupon = $("#code_coupon").val();
-  var price_coupon = $("#price_coupon").val();
-  var price_ship = $("#price_ship").val();
-  var gia_cart = $("#gia_cart").val();
-  var sum_cart = parseInt(gia_cart) + parseInt(price_ship) - parseInt(price_coupon);
-
-  $(".total-line-reduction span").text('-'+formatNumber(price_coupon)+'₫');
-  $(".total-line-shipping span").text(formatNumber(price_ship)+'₫');
-  $(".total-line-table-footer span").text(formatNumber(sum_cart)  + '₫');
-  $("#tong_gia").val(sum_cart);
-}
-$(document).ready(function() {
-  $('.giohang-cl').click(function(event) {
-    $('#giohang').removeClass('active');
-  });
-  $('.ttmh').click(function(event) {
-    $('#giohang').removeClass('active');
-  });
-  $('.xoa_gh').click(function(){
-    var root = $(this).parents('.dong_gh');
-    var id = root.data('id');
-    $.ajax({
-      url:"ajax/cart.php",
-      dataType:'json',
-      type:"POST",
-      data:{id:id,act:"delete"},
-      success: function(kq){
-        root.remove();
-        $(".giohang_fix span").html(kq.sl);
-        $(".tongtien_gh span").html(kq.tongtien);
-      }
-    })
-  });
-  $('.sl_gh').change(function(){
-    var root = $(this).parents('.dong_gh');
-    var soluong = root.find('.sl_gh').val();
-    var vitri = root.data('vitri');
-    var id = root.data('id');
-    $.ajax({
-      url:"ajax/cart.php",
-      type:"POST",
-      dataType:'json',
-      data:{soluong: soluong,vitri:vitri,id:id,act:"update"},
-      success: function(kq){
-        root.find('.gia_gh').html(kq.tonggia);
-        $(".tongtien_gh span").html(kq.tongtien);
-      }
-    })
-  });
-  $('.cus-radio-items .cus-radio').click(function(){
-    $('.cus-radio-items .cus-radio').removeClass('active');
-    $(this).addClass('active');
-  });
-      $('#thanhpho').change(function(){
-        var id_city = $(this).val();
-        $.ajax({
-          type:'post',
-          url:'ajax/place.php',
-          data:{act:'dist',id_city:id_city},
-          success:function(rs){
-            $('#quan').html(rs);
-          }
-        });
-      });
-          $("#quan").change(function(){
-              $val = $(this).val();
-              if($val!=''){
-                  $.ajax({
-                      type: "POST",
-                      url: "ajax/cart.php",
-                      dataType: "json",
-                      data: {id:$val, act:"tinhship"},
-                      success: function(data){
-                          if(data!=''){
-                              $("input#price_ship").val(data["price_ship"]);
-                              // var price_ship=data;
-                              // $(".total-line-shipping span").html(formatNumber(data["price_ship"])+'₫');
-                              // $(".total-line-table-footer span").html(formatNumber(data["tonggia"])  + '₫');
-                              // $("#tong_gia").val(data["tonggia"]);
-                          }else{
-                            $("input#price_ship").val(data["price_ship"]);
-                              // $(".total-line-shipping span").html("0₫");
-                          }
-                          updateCartInfo();
-                          // $(".show-price-ship").show();
-                      }
-                  })
-              }
-          });
-          $("#sudung").click(function(){
-              $val = $("#coupon").val();
-              if($val!=''){
-                  $.ajax({
-                      type: "POST",
-                      url: "ajax/cart.php",
-                      dataType: "json",
-                      data: {id:$val, act:"coupon"},
-                      success: function(data){
-                          if(data!=''){
-                              $("input#code_coupon").val(data["code_coupon"]);
-                              $("input#price_coupon").val(data["price_coupon"]);
-                              $(".show-coupon").hide();
-                              $(".order-summary-section-total-lines .total-line.total-line-reduction").css("display","flex");
-                              // var price_ship=data;
-                              // $(".show-coupon").html("Giảm giá: "+formatNumber(data["price_coupon"])+' đ');
-                              // $(".tongtien_gh span").html(formatNumber(data["tonggia"])  + ' đ');
-                              // $("#tong_gia").val(data["tonggia"]);
-                          }else{
-                              $(".show-coupon").show();
-                              $(".order-summary-section-total-lines .total-line.total-line-reduction").hide();
-                              
-                          }
-                          updateCartInfo();
-                          // $(".show-coupon").show();
-                      }
-                  })
-              }
-          });
-      $('.click_ajax2').click(function(){
-        if(isEmpty($('#httt').val(), lang_chonhinhthucthanhtoan))
-        {
-          $('#httt').focus();
-          return false;
-        }
-        if(isEmpty($('#hoten').val(), lang_nhaphoten))
-        {
-          $('#hoten').focus();
-          return false;
-        }
-        if(isEmpty($('#dienthoai').val(), lang_nhapsodienthoai))
-        {
-          $('#dienthoai').focus();
-          return false;
-        }
-        if(isEmpty($('#thanhpho').val(), lang_chontinhthanhpho))
-        {
-          $('#thanhpho').focus();
-          return false;
-        }
-        if(isEmpty($('#quan').val(), lang_chonquanhuyen))
-        {
-          $('#quan').focus();
-          return false;
-        }
-
-        if(isEmpty($('#diachi').val(), lang_nhapdiachi))
-        {
-          $('#diachi').focus();
-          return false;
-        }
-
-        if(isEmpty($('#email_lienhe').val(), lang_emailkhonghople))
-        {
-          $('#email_lienhe').focus();
-          return false;
-        }
-        if(isEmpty($('#noidung').val(), lang_nhapnoidung))
-        {
-          $('#noidung').focus();
-          return false;
-        }
-        frm_order.submit();
-      });
-  $('.size').click(function(){
-    $('.size').removeClass('active_size');
-    $(this).addClass('active_size');
-  });
-  $('.mausac').click(function(){
-    $('.mausac').removeClass('active_mausac');
-    $(this).addClass('active_mausac');
-  });
-  $('.cart_popup').click(function(){
-    if($('.size').length && $('.active_size').length==false){
-      alert(lang_chonsize);
-      return false;
-    }
-    if($('.active_size').length){
-      var size = $('.active_size').html();
-    }
-    else{
-      var size = '';
-    }
-    if($('.mausac').length && $('.active_mausac').length==false){
-      alert(lang_chonmau);
-      return false;
-    }
-    if($('.active_mausac').length){
-      var mausac = $('.active_mausac').html();
-    }
-    else{
-      var mausac = '';
-    }
-    var act = "dathang";
-    var id = $(this).data('id');
-    var soluong = $('.soluong').val();
-    if (soluong == undefined){
-      soluong = 1;
-    }
-    if(soluong>0)
-    {
-      $.ajax({
-       type:'post',
-       url:'ajax/cart_popup.php',
-       data:{id:id,size:size,mausac:mausac,soluong:soluong,act:act},
-       beforeSend: function() {
-        $('.thongbao').html('<p><img src="images/loader_p.gif"></p>');
-      },
-      error: function(){
-        alert(lang_hethongloi);
-      },
-      success:function(kq){
-        $('body').append('<div class="wap_giohang"></div>');
-        $('.wap_giohang').html(kq);
-        $('.popup_donhang').fadeIn(300);
-        $('body').append('<div id="baophu"></div>').fadeIn(300);
-      }
-    });
-    }
-    else
-    {
-      alert(lang_nhapsoluong);
-    }
-    return false;
-  });
-  $( "body" ).on( "click", ".muangay", function() {
-    if($('.size').length && $('.active_size').length==false)
-    {
-      alert('Chọn size');
-      return false;
-    }
-    if($('.active_size').length)
-    {
-      var size = $('.active_size').html();
-    }
-    else
-    {
-      var size = '';
-    }
-    if($('.mausac').length && $('.active_mausac').length==false)
-    {
-      alert('Chọn màu');
-      return false;
-    }
-    if($('.active_mausac').length)
-    {
-      var mausac = $('.active_mausac').html();
-    }
-    else
-    {
-      var mausac = '';
-    }
-    var act = "dathang";
-    var id = $(this).data('id');
-    var soluong = $('.soluong').val();
-    if(soluong==undefined){
-      soluong = 1;
-    }
-    if(soluong>0)
-    {
-      $.ajax({
-        type:'post',
-        url:'ajax/cart.php',
-        dataType:'json',
-        data:{id:id,size:size,mausac:mausac,soluong:soluong,act:act},
-        beforeSend: function() {
-          $('.thongbao').html('<p><img src="images/loader_p.gif"></p>');
-        },
-        error: function(){
-          add_popup('Hệ thống bị lỗi, xin quý khách chuyển sang mục khác.');
-        },
-        success:function(kq){
-          location.href = "gio-hang.html";
-        }
-      });
-    }
-    else
-    {
-      alert('Nhập số lượng');
-    }
-    return false;
-  });
-  $( "body" ).on( "click", ".dathang", function() {
-    if($('.size').length && $('.active_size').length==false)
-    {
-      alert(lang_chonsize);
-      return false;
-    }
-    if($('.active_size').length)
-    {
-      var size = $('.active_size').html();
-    }
-    else
-    {
-      var size = '';
-    }
-    if($('.mausac').length && $('.active_mausac').length==false)
-    {
-      alert(lang_chonmau);
-      return false;
-    }
-    if($('.active_mausac').length)
-    {
-      var mausac = $('.active_mausac').html();
-    }
-    else
-    {
-      var mausac = '';
-    }
-    var act = "dathang";
-    var id = $(this).data('id');
-    var soluong = $('.soluong').val();
-    if(soluong==undefined){
-      soluong = 1;
-    }
-    if(soluong>0)
-    {
-      $.ajax({
-        type:'post',
-        url:'ajax/cart.php',
-        dataType:'json',
-        data:{id:id,size:size,mausac:mausac,soluong:soluong,act:act},
-        beforeSend: function() {
-          $('.thongbao').html('<p><img src="images/loader_p.gif"></p>');
-        },
-        error: function(){
-          add_popup(lang_hethongloi);
-        },
-        success:function(kq){
-          // add_popup(kq.thongbao);
-          $('.giohang_fix span').html(kq.sl);
-          $('.giohang-left-cont').html(kq.thongtin);
-          $('.giohang-left-tit span').html(soluong);
-          $('.giohang-right-tit span').html(kq.sl);
-          $('.giohang-thanhtien span, .giohang-right-tt .ghajax, .giohang-right-total .ghajax').html(kq.tongtien);
-          $('#giohang').addClass('active');
-        }
-      });
-    }
-    else
-    {
-      alert(lang_nhapsoluong);
-    }
-    return false;
-  });
-});

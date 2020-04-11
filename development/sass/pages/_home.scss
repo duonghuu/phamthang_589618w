@@ -54,6 +54,8 @@
 }
 .about-bg{
     padding-bottom: em(60);
+    position: relative;
+    z-index: 2;
 }
 .special-title {
     @include absolute($left: 0, $bottom: 0);
@@ -174,10 +176,12 @@
       &-body{
         line-height: 1.5;
         font-size: 13px;
-        display: none;
+        opacity: 0;
+        @include transition(all 0.8s ease);
       }
       &-foot{
-        display: none;
+        opacity: 0;
+        @include transition(all 0.8s ease);
         .chitiet{
             color: #fff;
             img{
@@ -191,10 +195,10 @@
             @include justify-content(space-between);
             background-color: rgba(168, 25, 0, 0.85);
             &-body{
-              display: block;
+              opacity: 1;
             }
             &-foot{
-              display: block;
+              opacity: 1;
             }
         }
     }
@@ -205,15 +209,19 @@
 }
 .canho-info{
     $pd-20: em(20);
-    @include absolute(0,0,0,0);
+    @include absolute($top: 60%,$left: 0,$right: 0);
+    height: 100%;
     z-index: 2;
     @include boxstyle($display: flex, $justify-content: space-between, $flex-direction: column);
     padding: $pd-20;
     background-color: rgba(168, 25, 0, 0.85);
     text-align: center;
-    display: none;
+    @include transition(all 1s ease);
+    opacity: 0;
+    display: flex;
     @at-root .pr-box:hover #{&}{
-        display: flex;
+        opacity: 1;
+        top: 0;
     }
   &__head{
 
@@ -221,6 +229,7 @@
   &__title{
     position: relative;
     @include setFont(18px, #fff, 600);
+    line-height: 1.5;
     margin-bottom: 30px;
     @include boxstyle($display: flex, $justify-content: center);
     text-transform: capitalize;
@@ -258,7 +267,7 @@
   &-line{
     @include boxstyle($display: flex, $justify-content: space-between);
     p{
-        @include setFont(15px, #000, 400);
+        @include setFont(13px, #000, 400);
         @include flex(auto);
 
         margin-bottom: 0;
@@ -271,6 +280,9 @@
         
         color: #a81900;
       }
+      span{
+        font-size: 16px;
+      }
     }
     @include doubly(){
         p{
@@ -281,7 +293,11 @@
 }
 .duan-datnen{
     padding: em(60);
+    background-attachment: fixed;
+    //background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 600px;
     .idx-tit {
         h4{
             span, a{
@@ -408,11 +424,13 @@
     border: 1px solid #c8c8c8;
     position: relative;
     padding: 20px 20px 70px;
+    @include transition(all 0.2s ease);
     @include boxstyle($display: flex, $justify-content: center, $flex-wrap: wrap);
     .camnhan-head{
       @include boxstyle($display: flex, $align-items: center, $justify-content: center);
       @include absolute($left: 0, $bottom: -50px, $right: 0);
       figure{
+        @include transition(all 0.2s ease);
         @include box(92px, 100px);
         @include boxstyle($display: inline-flex, $align-items: center);
         background-color:#fff;
@@ -450,10 +468,20 @@
       }
     }
   }
+  &:hover{
+    article, figure{
+      border-color: $theme-color !important;
+    }
+  }
 }
 .thamquan-canho{
-  background-size: cover;
+  background-attachment: fixed;
+    //background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
   padding: em(60) 0;
+  position: relative;
   .idx-tit{
     h4{
       span{
@@ -507,5 +535,96 @@
     textarea{
       height: 90px;
     }
+  }
+}
+.canho-thongtin{
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-color: #cecbcb;
+  border-style: solid;
+  border-width: 1px 0;
+  p{
+    @include flex(1);
+  }
+}
+.datnen-item{
+  @include boxstyle($display: flex, $justify-content: space-between);
+  margin-bottom: 2em;
+  .imgsp{
+    @include boxstyle($display: inline-flex);
+    width: 49%;
+    order: 1;
+    img{
+
+    }
+  }
+  .info{
+    width: 49%;
+
+    h3{
+      @include setFont(25px, $theme-color);  
+      a{
+        color: $theme-color;
+      }
+    }
+    p{
+      strong{
+
+      }
+    }
+
+    .xemthem{
+      background-color: #f7f6f6;
+      display: inline-block;
+      @include setFont(12px, #333);  
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+  }
+  &.even{
+    .imgsp{
+      order: 0;
+    }  
+  }
+}
+.call-element{
+  position: relative;
+  z-index: 6;
+.callnow{
+  @include setFont(20px, #000);
+  @include absolute($right: 15px, $top: -38px);
+  @include boxstyle($display: inline-flex, $align-items: center);
+  background-color: #fff;
+  border-radius: 5px;
+  @include boxShadow(0 20px 20px rgba(0,0,0,.1));
+  padding: 20px;
+  i{
+    @include box(32px, 32px, 100%);
+    @include setFont(12px, #fff);
+    @include boxstyle($display: inline-flex, $justify-content: center, $align-items: center);
+    background-color: $theme-color;
+    margin-right: 7px;
+  }
+  a{
+    color: $theme-color;
+    margin-left: 5px;
+  }
+}
+}
+.thamquan-btn{
+  @include absolute($left: 0, $top: 300px);
+  z-index: 156;
+  img{}
+}
+.logoload{
+  @include absolute($left: 50%, $top: 50%);
+  transform: translate(-50%, -50%);
+  z-index: 10000000;
+  max-width: 120px;
+  @include when-inside('.slider_fix'){
+    display: none;
+  };
+  img{
+    
   }
 }

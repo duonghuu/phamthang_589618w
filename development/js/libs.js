@@ -19,4 +19,7 @@ $(document).ready(function() {
   setTimeout(function(){
     $(".wap_load").fadeOut(1000);
   },1000);
+  setTimeout(function(){
+    $("body").addClass('slider_fix');
+ },700);
 });

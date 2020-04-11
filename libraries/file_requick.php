@@ -99,15 +99,6 @@ switch($com)
 	$template = isset($_GET['id']) ? "news_detail" : "news";
 	$type_og = isset($_GET['id']) ? "article" : "object";
 	break;
-	case 've-chung-toi':
-	$type = "ve-chung-toi";
-	$title = "Về chúng tôi";
-	$title_cat = "Về chúng tôi";
-	$title_other = _tinlienquan;
-	$source = "news";
-	$template = isset($_GET['id']) ? "news_detail" : "news";
-	$type_og = isset($_GET['id']) ? "article" : "object";
-	break;
 	case 'ho-tro':
 	$type = "ho-tro";
 	$title = "Hỗ trợ";
@@ -167,7 +158,7 @@ switch($com)
 	$title_cat = "Đất nền";
 	$title_other = _sanphamkhac;
 	$source = "product";
-	$template = isset($_GET['id']) ? "canho_detail" : "product";
+	$template = isset($_GET['id']) ? "canho_detail" : "datnen";
 	$type_og = isset($_GET['id']) ? "article" : "object";
 	break;
 	case 'thuong-hieu':
