@@ -282,6 +282,7 @@ function save_item(){
     $data['giakm'] = str_replace(',','',$_POST['giakm']);
     $data['dientich'] = $_POST['dientich'];
     $data['toado'] = magic_quote($_POST['toado']);
+    $data['link'] = $_POST['link'];
     $data['mattien'] = $_POST['mattien'];
     $data['matbang'] = $_POST['matbang'];
     $data['vitri'] = $_POST['vitri'];

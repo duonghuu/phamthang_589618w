@@ -5,6 +5,10 @@
       <div class="special-title text-uppercase"><?= $company["ten"] ?></div>
       <figure>
         <img src="<?= _upload_hinhanh_l.$gioithieu["thumb"] ?>" alt="<?= _gioithieu ?>" />
+        <figcaption>
+          <p><strong><?= $gioithieu["link"] ?></strong></p>
+          <p><?= $gioithieu["chucvu"] ?></p>
+        </figcaption>
       </figure>
       <div class="about-info">
         <div class="about-info__title"><?= $gioithieu["ten"] ?></div>

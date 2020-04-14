@@ -84,6 +84,15 @@ $ds_photo=$d->result_array();
                  <div class="clear"></div>
              </div>
          <?php } ?>
+         <?php if(in_array('chucvu',$config['type'])) { ?>
+             <div class="formRow">
+                 <label><?= (!empty($config['title']['chucvu'])) ? $config['title']['chucvu'] : "Chức vụ" ?></label>
+                 <div class="formRight">
+                     <input type="text" name="chucvu" title="Nhập nội dung" id="chucvu" class="tipS" value="<?=@$item['chucvu']?>" />
+                 </div>
+                 <div class="clear"></div>
+             </div>
+         <?php } ?>
          
     </div>      <!-- .widget  -->
     <div class="widget">

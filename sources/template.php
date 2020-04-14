@@ -1,6 +1,6 @@
 <?php 
 if($source=="index"){
-    $gioithieu=get_fetch("select ten$lang as ten,mota2$lang as mota2,thumb,photo from #_about 
+    $gioithieu=get_fetch("select ten$lang as ten,mota2$lang as mota2,thumb,photo,link,chucvu from #_about 
         where type='gioi-thieu' ");
     $spnoibat=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,type,thumb,photo,diachi,
       vitri as tinhtrang,phaply as phongtam,mattien as phongngu,dientich,matbang as giabds from

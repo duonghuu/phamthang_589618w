@@ -70,6 +70,7 @@ function save_item(){
 	$data['h2'] = $_POST['h2'];
 	$data['h3'] = $_POST['h3'];
 	$data['link'] = $_POST['link'];
+	$data['chucvu'] = $_POST['chucvu'];
 	$data['hienthi'] = isset($_POST['hienthi']) ? 1 : 0;
 	$data['ngaysua'] = time();
 		foreach ($config['lang'] as $key => $value) {

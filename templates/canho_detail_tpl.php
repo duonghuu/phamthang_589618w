@@ -72,6 +72,20 @@ $img_row_detail = _upload_sanpham_l.$row_detail["thumb"];
 <div class="content">
   <?= $row_detail["noidung"] ?>
 </div>
+<div class="row canho-map-video">
+  <?php if(!empty($row_detail["toado"])){ ?>
+  <div class="col-md-6">
+    <div class="bando-x">
+      <?= $row_detail["toado"] ?>
+    </div>
+  </div>
+  <?php } ?>
+  <?php if(!empty($row_detail["link"])){ ?>
+  <div class="col-md-6">
+    <div id="video-idx"></div>
+  </div>
+  <?php } ?>
+</div>
 <?php if(count($product)>0) { ?>
   <div class="tieude_giua"><div><?=$title_other?></div></div>
   <div class="product-grid">

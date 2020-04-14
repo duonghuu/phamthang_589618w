@@ -6231,10 +6231,10 @@ $(document).ready(function() {
     //   fjs.parentNode.insertBefore(js, fjs);
     // }(document, 'script', 'facebook-jssdk'));
     //$(".codebando").html(js_bando);
-    // if(js_linkvideo){ 
-    //   $("#video-idx").html('<iframe id="iframe" src="https://www.youtube.com/embed/'+js_linkvideo+
-    //'" frameborder="0" allowfullscreen></iframe>');
-    // }
+    if(js_linkvideo){ 
+      $("#video-idx").html('<iframe id="iframe" src="https://www.youtube.com/embed/'+js_linkvideo+
+    '" frameborder="0" allowfullscreen></iframe>');
+    }
   }else{
     var fired = false;
     window.addEventListener("scroll", function(){
@@ -6247,10 +6247,10 @@ $(document).ready(function() {
         //   fjs.parentNode.insertBefore(js, fjs);
         // }(document, 'script', 'facebook-jssdk'));
         //$(".codebando").html(js_bando);
-        // if(js_linkvideo){ 
-        //   $("#video-idx").html('<iframe id="iframe" src="https://www.youtube.com/embed/'+js_linkvideo+
-        //'" frameborder="0" allowfullscreen></iframe>');
-        // }
+        if(js_linkvideo){ 
+          $("#video-idx").html('<iframe id="iframe" src="https://www.youtube.com/embed/'+js_linkvideo+
+        '" frameborder="0" allowfullscreen></iframe>');
+        }
         fired = true;
       }
     }, true);

@@ -14,7 +14,7 @@
   var js_deviceType = '<?= $deviceType ?>';
   var js_template = '<?= $template ?>';
   var js_langfb = '<?= ($lang=='') ? 'vi_VN' : 'en_EN' ?>';
-  var js_linkvideo = '<?= getYoutubeIdFromUrl($video[0]["link"]) ?>';
+  var js_linkvideo = '<?= getYoutubeIdFromUrl($row_detail["link"]) ?>';
   var js_bando = '<?= $company["bando"] ?>';
   var js_num_danhgiasao = '<?=$num_danhgiasao?>';
   var lang_thongbao = '<?= _thongbao ?>';

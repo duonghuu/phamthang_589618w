@@ -315,6 +315,15 @@ $ds_photo=$d->result_array();
     <div class="clear"></div>
   </div>
   <?php } ?>
+  <?php if(in_array('link',$config['type'])) { ?>
+      <div class="formRow">
+        <label><?= (!empty($config["title"]["link"]))?$config["title"]["link"]:'Link' ?>:</label>
+        <div class="formRight">
+          <input type="text" name="link" title="Nhập nội dung" id="link" class="tipS" value="<?=@$item['link']?>" />
+        </div>
+        <div class="clear"></div>
+      </div>
+    <?php } ?>
   <div class="formRow none">
     <label>Tag </label>
     <div class="formRight">

@@ -1,6 +1,6 @@
       <?php 
       if($source == "index"){
-        $slider = get_result("select ten$lang as ten,photo,thumb from #_slider 
+        $slider = get_result("select ten$lang as ten,mota$lang as mota,link,photo,thumb from #_slider 
           where hienthi=1 and type='slider' order by stt");
          ?>
          <div id="slideshow">
@@ -16,6 +16,15 @@
                       <img src="thumb/425x150/1/<?= _upload_hinhanh_l.$v["photo"] ?>" 
                       alt="<?= $v["ten"] ?>" />
                     </picture></a>
+                    <div class="slider-text-bg">
+                      <div class="slider-text">
+                        <div class="slider-text__ten"><?= $v["ten"] ?></div>
+                        <div class="slider-text__mota"><?= $v["mota"] ?></div>
+                        <div class="slider-text__button slider-button">
+                          <a href="<?= $v["link"] ?>"><img src="images/chitiet.png" alt="Chi tiết"> Chi Tiết</a>
+                        </div>
+                      </div>
+                    </div>
                   </section>
                 </div>
               <?php } ?>

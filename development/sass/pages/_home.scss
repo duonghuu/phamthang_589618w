@@ -93,8 +93,22 @@
   figure{
     width: percentage(410/1080);
     margin-bottom: 0;
+    position: relative;
         img{
-
+          width: 100%;
+        }
+        figcaption{
+          @include background-opacity(#000, $opacity: 0.5);
+          @include absolute($left: 0, $bottom: 0, $right: 0);
+          padding: 10px;
+          text-align: center;
+          p{
+            margin-bottom: 0;
+            @include setFont(17px, #fff);
+            strong{
+              font-size: 20px;
+            }
+          }
         }
     }
   .about-info{
@@ -621,10 +635,17 @@
   transform: translate(-50%, -50%);
   z-index: 10000000;
   max-width: 120px;
+  opacity: 1;
   @include when-inside('.slider_fix'){
-    display: none;
+    opacity: 0;
   };
   img{
     
+  }
+}
+.bando-x{
+  iframe{
+    height: 400px;
+    width: 100%;
   }
 }

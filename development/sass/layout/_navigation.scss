@@ -113,8 +113,32 @@
                 text-align: center;
                 text-transform: uppercase;
                 @include setFont(15px, #fff, 600, $font-menu);
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    background-color: #ff0;
+                    transition: all .5s;
+                    -moz-transition: all .5s;
+                    -webkit-transition: all .5s;
+                    transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    opacity: 0;
+                    max-width: 0;
+                }
             }
             &:hover {
+                &>a {
+                    &:after{
+                        opacity: 1;
+                        max-width: 100%;
+                    }
+                }
                 &>ul{
                     display: block;
                 }
@@ -122,6 +146,10 @@
             &.active{
                 &>a {
                     color: $color-menu-hover;
+                    &:after{
+                        opacity: 1;
+                        max-width: 100%;
+                    }
                 }
             }
         }
