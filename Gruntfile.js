@@ -53,6 +53,7 @@ module.exports = function(grunt) {
                 // '<%= dirs.inputJS %>/bootstrap.min.js',
                 '<%= dirs.inputJS %>/jquery.fancybox.min.js',
                 '<%= dirs.inputJS %>/slick.min.js',
+                '<%= dirs.inputJS %>/typer.js',
                 '<%= dirs.inputJS %>/list.min.js',
                 '<%= dirs.inputJS %>/wow.min.js',
                 '<%= dirs.inputJS %>/magiczoomplus.js',

@@ -260,9 +260,10 @@ switch($type){
 		$config['type'] = array('seo','ten');
 		break;
 		default:
-		$config['type'] = array('seo','ten','noidung','mota','hinhanh','danhmuc');
+		$config['type'] = array('seo','ten','noidung','mota','hinhanh');
 		if($type == "tin-tuc"){
 			$config['type'][] = "noibat";	
+			$config['type'][] = "danhmuc";	
 		}
 		@define ( _width_thumb , 400 );
 		@define ( _height_thumb , 300 );
@@ -387,11 +388,11 @@ switch($type){
 	case 'banner':
 	switch($act){
 		default:
-		@define ( _width_thumb , 660 );
-		@define ( _height_thumb , 120);
-		@define ( _style_thumb , 2 );
-		@define ( _width_thumb2 , 660 );
-		@define ( _height_thumb2 , 120 );
+		@define ( _width_thumb , 1366 );
+		@define ( _height_thumb , 610);
+		@define ( _style_thumb , 1 );
+		@define ( _width_thumb2 , 1366 );
+		@define ( _height_thumb2 , 610 );
 		break;
 	}
 	break;
@@ -399,10 +400,10 @@ switch($type){
 	switch($act){
 		default:
 		@define ( _width_thumb , 1366 );
-		@define ( _height_thumb , 110 );
+		@define ( _height_thumb , 366 );
 		@define ( _style_thumb , 1 );
 		@define ( _width_thumb2 , 1366 );
-		@define ( _height_thumb2 , 110 );
+		@define ( _height_thumb2 , 366 );
 		break;
 	}
 	break;
@@ -443,7 +444,7 @@ switch($type){
 		default:
 		@define ( _width_thumb , 1366 );
 		@define ( _height_thumb , 660);
-		@define ( _style_thumb , 2 );
+		@define ( _style_thumb , 1 );
 		@define ( _width_thumb2 , 1366 );
 		@define ( _height_thumb2 , 660);
 		break;

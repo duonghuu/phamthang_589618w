@@ -1,5 +1,5 @@
 <?php
-// $dem_datban = get_result("select count(id) as dem from #_lienhe where type='datban' and hienthi=0");
+$dem_datban = get_result("select count(id) as dem from #_lienhe where type='datban' and hienthi=0");
 $dem_thu = get_result("select count(id) as dem from #_lienhe where type='lienhe' and hienthi=0");
 // $dem_user = get_result("select count(id) as dem from #_user where active=0");
 ?>
@@ -28,10 +28,17 @@ $dem_thu = get_result("select count(id) as dem from #_lienhe where type='lienhe'
             <?php phanquyen_menu('Quên mật khẩu','about','capnhat','quenmatkhau'); ?> 
             <?php phanquyen_menu('Thay đổi thông tin','about','capnhat','thaydoithongtin'); ?> 
             <?php phanquyen_menu('Quản lý thành viên','user','man',''); ?> </ul> </li>
-            
-            <li><a title="Có <?=$dem_datban[0]['dem']?> chưa đọc" href="index.php?com=lienhe&act=man&type=datban" title=""><img src="images/icons/topnav/messages.png" alt="" /><span>Đặt lịch hẹn</span><span class="numberTop"><?=$dem_datban[0]['dem']?></span></a></li>*/?>
-            <li><a title="Có <?=$dem_thu[0]['dem']?> chưa đọc" href="index.php?com=lienhe&act=man&type=lienhe" title=""><img src="images/icons/topnav/messages.png" alt="" /><span>Thư liên hệ</span><span class="numberTop"><?=$dem_thu[0]['dem']?></span></a></li>
-            <li><a href="index.php?com=user&act=logout" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>Đăng xuất</span></a></li>
+            */?>
+            <li><a title="Có <?=$dem_datban[0]['dem']?> chưa đọc" 
+                href="index.php?com=lienhe&act=man&type=datban" title="">
+                <img src="images/icons/topnav/messages.png" alt="" /><span>Tham quan dự án</span>
+                <span class="numberTop"><?=$dem_datban[0]['dem']?></span></a></li>
+            <li><a title="Có <?=$dem_thu[0]['dem']?> chưa đọc" 
+                href="index.php?com=lienhe&act=man&type=lienhe" title="">
+                <img src="images/icons/topnav/messages.png" alt="" /><span>Thư liên hệ</span>
+                <span class="numberTop"><?=$dem_thu[0]['dem']?></span></a></li>
+            <li><a href="index.php?com=user&act=logout" title=""><img src="images/icons/topnav/logout.png" 
+                alt="" /><span>Đăng xuất</span></a></li>
         </ul>
     </div>
     <div class="clear"></div>

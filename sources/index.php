@@ -72,26 +72,21 @@ if(!empty($_POST["rp2val"])){
           // Take action based on the score returned:
           if ($recaptcha->score >= 0.5 and $recaptcha->success == true) { 
             $datapost = $_POST["fpu"];
-            $data["email"] = (string)trim(strip_tags($datapost['email']));       
+            // $data["email"] = (string)trim(strip_tags($datapost['email']));       
             $data["diachi"] = (string)trim(strip_tags($datapost['diachi']));       
             $data["dienthoai"] = (string)trim(strip_tags($datapost['dienthoai']));       
             $data["ten"] = (string)trim(strip_tags($datapost['ten']));  
-            $data['chude'.$lang] = "Đặt Lịch ".date('d/m/Y h:i:s',time());
-            $chondichvu = (string)trim(strip_tags($_POST['chondichvu']));   
-            $chontime = (string)trim(strip_tags($_POST['chontime']));   
+            $data['chude'.$lang] = "Đăng ký tham quan ".date('d/m/Y h:i:s',time());
             $chondate = (string)trim(strip_tags($_POST['chondate']));   
-            $chonso = (string)trim(strip_tags($_POST['chonso']));   
             $note = (string)trim(strip_tags($_POST['note']));   
             $data['hienthi'] = 0;
             $data['stt'] = 1;
             $data['type'] = 'datban';
-           $data['noidung'] = '<div><h2>Nội dung đặt lịch</h2>
+           $data['noidung'] = '<div><h2>Tham quan dự án</h2>
                          <div style="border-style:solid;border-width:1px 0;border-color:#c3bfbf;">
-                          <p><strong style="width:100px;display:inline-block">Dịch vụ:</strong>'.$chondichvu.'</p>
                           <p><strong style="width:100px;display:inline-block">Thời gian:</strong>'.$soban.'</p>
-                          <p><strong style="width:100px;display:inline-block">Số chỗ:</strong>'.$chonso.'</p>
-                          <p><strong style="width:100px;display:inline-block">Số bàn:</strong>'.$soban.'</p>
-                          <p><strong style="width:100px;display:inline-block">Nội dung:</strong>'.(string)trim(strip_tags($note)).'</p>   
+                          <p><strong style="width:100px;display:inline-block">Nội dung:</strong>'.
+                          (string)trim(strip_tags($note)).'</p>   
                           </div></div>';
             // $data['noidung'] = (string)trim(strip_tags($datapost['note']));  
             $d->reset();
@@ -110,9 +105,7 @@ if(!empty($_POST["rp2val"])){
               <tr>
                 <th>Họ tên :</th><td>'.$data["ten"].'</td>
               </tr>
-              <tr>
-                <th>Email :</th><td>'.$data["email"].'</td>
-              </tr>
+              
               <tr>
                 <th>Điện thoại :</th><td>'.$data["dienthoai"].'</td>
               </tr>

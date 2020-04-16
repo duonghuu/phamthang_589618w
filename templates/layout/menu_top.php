@@ -7,7 +7,8 @@
         <li class="<?php if($source=='index') echo 'active'; ?>"><a href="">
           <img src="images/homeicon.png" alt="home">
         </a></li>
-        <li><a href="gioi-thieu.html"><?= _gioithieu ?></a></li>
+        <li class="<?php if($com=='gioi-thieu') echo 'active'; ?>"><a href="gioi-thieu.html">
+          <?= _gioithieu ?></a></li>
         <li class="<?php if($com=='can-ho') echo 'active'; ?>"><a href="can-ho.html">Căn hộ</a>
           <?= for3cap('product_danhmuc','product_list','product_cat','can-ho','can-ho','','/','')?>
         </li>

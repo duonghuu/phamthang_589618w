@@ -11,7 +11,8 @@
         <h3><a href="<?= $link ?>"><?= $value["ten"] ?></a></h3>
         <p><strong><?= _diachi ?>: </strong><?= $value["diachi"] ?></p>
         <p><strong><?= _gia ?>: </strong><?= $value["giabds"] ?></p>
-        <a href="<?= $link ?>" class="xemthem"><?= _xemthem ?></a>
+        <div class="content"><?= $value["mota"] ?></div>
+        <a href="<?= $link ?>" class="xemthem mt-3"><?= _xemthem ?></a>
       </div>
     </div>
   <?php } ?>

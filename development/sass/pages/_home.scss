@@ -79,7 +79,7 @@
   $pd-120: em(120);
   position: relative;
   overflow: hidden;
-  padding: $pd-60 $pd-60 $pd-120 $pd-60;
+  padding: $pd-60 $pd-60 $pd-60 $pd-60;
   @include boxstyle($display: flex, $justify-content: space-between);
   &:before{
       $box-xam-width: percentage(1038/1200);
@@ -242,7 +242,7 @@
   }
   &__title{
     position: relative;
-    @include setFont(18px, #fff, 600);
+    @include setFont(16px, #fff, 600);
     line-height: 1.5;
     margin-bottom: 30px;
     @include boxstyle($display: flex, $justify-content: center);
@@ -271,7 +271,7 @@
     background-color: #f4f4f4;
     padding: em(20);
   h3{
-    @include setFont(17px, #000, 600);
+    @include setFont(16px, #000, 600);
     @include setTagAHover(#000, #a81900);
     margin-bottom: 10px;
     a{
@@ -283,7 +283,6 @@
     p{
         @include setFont(13px, #000, 400);
         @include flex(auto);
-
         margin-bottom: 0;
 
       i{
@@ -551,6 +550,10 @@
     }
   }
 }
+.tencanho{
+  @include setFont(20px, $theme-color, 700);
+  text-align: center;
+}
 .canho-thongtin{
   padding-top: 20px;
   margin-bottom: 20px;
@@ -564,6 +567,10 @@
 .datnen-item{
   @include boxstyle($display: flex, $justify-content: space-between);
   margin-bottom: 2em;
+  @include doubly(){
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+  };
   .imgsp{
     @include boxstyle($display: inline-flex);
     width: 49%;
@@ -576,7 +583,7 @@
     width: 49%;
 
     h3{
-      @include setFont(25px, $theme-color);  
+      @include setFont(25px, $theme-color, 700);  
       a{
         color: $theme-color;
       }
@@ -586,13 +593,17 @@
 
       }
     }
-
     .xemthem{
       background-color: #f7f6f6;
       display: inline-block;
+      @include transition(all 0.2s ease);  
       @include setFont(12px, #333);  
       padding: 5px 10px;
       border-radius: 3px;
+      @include on-event(){
+        background-color: $theme-color;
+        color: #fff;
+      };  
     }
   }
   &.even{
@@ -626,8 +637,9 @@
 }
 }
 .thamquan-btn{
-  @include absolute($left: 0, $top: 300px);
+  @include fixed($left: 0, $top: 50%);
   z-index: 156;
+  margin-top: -110px;
   img{}
 }
 .logoload{

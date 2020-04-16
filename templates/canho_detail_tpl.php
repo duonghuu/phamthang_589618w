@@ -3,6 +3,7 @@ $thumbphoto = '';
 $thumbhinhcon = '';
 $img_row_detail = _upload_sanpham_l.$row_detail["thumb"];
 ?>
+<h3 class="tencanho"><?= $row_detail["ten"] ?></h3>
 <div id="bs-carousel" class="mybs-carousel carousel slide" data-ride="carousel">
 
   

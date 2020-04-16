@@ -16,6 +16,7 @@
     width: 100%;
     z-index: 5;
     background-color: #a81900;
+    margin-top: auto;
     @include boxstyle($display: flex, $justify-content: space-between);
     .ft-left{
         background-color: #971600;
@@ -153,7 +154,7 @@
 }
 ul.ft-thongke {
     @extend %reset-list;
-
+    margin-top: 50px;
     @include boxstyle($display: flex);
     li {
         @extend %copyright-font;

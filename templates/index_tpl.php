@@ -59,7 +59,7 @@
   </div>
 </div>
 
-<div class="duan-datnen lazy" data-bg="url(images/duan-datnen.jpg)">
+<div class="duan-datnen lazy" data-bg="url(<?= _upload_hinhanh_l.$bgdatnen["photo"] ?>)">
   <div class="container">
     <div class="special-title text-uppercase"><?= $company["ten"] ?></div>
     <div class="idx-tit text-center text-uppercase">
@@ -122,35 +122,4 @@
     <?php } ?>
     </div>
   </div>
-</div>
-
-<div class="thamquan-canho lazy" id="thamquan" data-bg="url(images/thamquan-canho.jpg)">
-  <div class="container">
-    <div class="idx-tit text-center text-uppercase">
-      <h4><span>THAM QUAN DỰ ÁN</span></h4>
-    </div>
-    <div class="idx-desc">
-      Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành côn
-      Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành côn
-    </div>
-    <form action="" method="post">
-      <div class="form-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="<?= _hovaten ?>">
-          <input type="text" class="form-control" placeholder="<?= _dienthoai ?>">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control input-diachi" placeholder="<?= _diachi ?>">
-          <input type="date" class="form-control" placeholder="Ngày hẹn">
-          <button class="btn btn-default">Gửi yêu cầu</button>
-        </div>
-      </div>
-      <div class="form-right">
-        <textarea name="" class="form-control" placeholder="Nội dung (ghi chú)..."></textarea>
-      </div>
-    </form>
-    <p class="huongdan-text text-center">Liên lạc với chúng tôi nếu Quý Khách có thắc mắc về dịch vụ hoặc 
-      để hướng dẫn thêm <a href="lien-he.html">Liên hệ</a></p>
-  </div>
-  
 </div>

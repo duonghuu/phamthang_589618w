@@ -95,8 +95,8 @@
   <ul class="sub">
     <?php //phanquyen_menu('Cập nhật background','anhnen','capnhat','background'); ?>
     <?php phanquyen_menu('Logo','background','capnhat','logo'); ?>
-    <?php //phanquyen_menu('Banner','background','capnhat','banner'); ?>
-    <?php //phanquyen_menu('Background banner','background','capnhat','bgbn'); ?>
+    <?php phanquyen_menu('Background dự án đất nền','background','capnhat','banner'); ?>
+    <?php phanquyen_menu('Background tham quan','background','capnhat','bgbn'); ?>
     <?php //phanquyen_menu('Cập nhật logo đóng dấu','background','capnhat','dong'); ?>
     <?php //phanquyen_menu('Background liên hệ','background','capnhat','bgft'); ?>
     <?php //phanquyen_menu('Cập nhật banner mobile','background','capnhat','banner_mobi'); ?>

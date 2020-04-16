@@ -9,23 +9,25 @@ $thuoctinh = json_decode($company["thuoctinh"],true);
 $datacom = array(
 	array("tbl"=>"product_danhmuc","field"=>"id_danhmuc","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
 	array("tbl"=>"product_list","field"=>"id_list","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
-	// array("tbl"=>"product_cat","field"=>"id_cat","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
+	array("tbl"=>"product_cat","field"=>"id_cat","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
 	array("tbl"=>"product","field"=>"id","source"=>"product","type"=>"can-ho","com"=>"can-ho"),
 
 	array("tbl"=>"product_danhmuc","field"=>"id_danhmuc","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
 	array("tbl"=>"product_list","field"=>"id_list","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
+	array("tbl"=>"product_cat","field"=>"id_cat","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
 	array("tbl"=>"product","field"=>"id","source"=>"product","type"=>"nha-pho","com"=>"nha-pho"),
+
+	array("tbl"=>"product_danhmuc","field"=>"id_danhmuc","source"=>"product","type"=>"dat-nen","com"=>"dat-nen"),
+	array("tbl"=>"product","field"=>"id","source"=>"product","type"=>"dat-nen","com"=>"dat-nen"),
 
 	// array("tbl"=>"news_danhmuc","field"=>"id_danhmuc","source"=>"news","type"=>"cokhi","com"=>"co-khi"),
 	// array("tbl"=>"news_list","field"=>"id_list","source"=>"news","type"=>"cokhi","com"=>"co-khi"),
 	// array("tbl"=>"news_cat","field"=>"id_cat","source"=>"news","type"=>"cokhi","com"=>"co-khi"),
 	// array("tbl"=>"news","field"=>"id","source"=>"news","type"=>"cokhi","com"=>"co-khi"),
 
-	array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"tu-van","type"=>"tu-van"),
 	array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"tin-tuc","type"=>"tin-tuc"),
-	array("tbl"=>"news","field"=>"id","source"=>"news","com"=>"tuyen-dung","type"=>"tuyen-dung"),
 	array("tbl"=>"about","field"=>"id","source"=>"about","com"=>"lien-he","type"=>"lienhe"),
-	array("tbl"=>"about","field"=>"id","source"=>"about","com"=>"gioi-thieu","type"=>"gioithieu"),
+	array("tbl"=>"about","field"=>"id","source"=>"about","com"=>"gioi-thieu","type"=>"gioi-thieu"),
 );
 // if($com){
 // 	foreach($datacom as $k=>$v){

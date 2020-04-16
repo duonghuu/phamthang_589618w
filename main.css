@@ -117,7 +117,7 @@ form#frm_dknt #submit_nhantin, .mxh a, .btn-idx, .chitiet, .camnhan-item article
 .main-nav > ul {
   justify-content: space-around; }
 
-form#frm_dknt #submit_nhantin, .main-nav > ul > li, .main-nav > ul > li > a, .mxh, .mxh a, .idx-tit h4, .dm-cap-item a .info-head__title--small, .canho-info__title, .camnhan-item article, .camnhan-item article .camnhan-head, .call-element .callnow i {
+form#frm_dknt #submit_nhantin, .main-nav > ul > li > a, .mxh, .mxh a, .idx-tit h4, .dm-cap-item a .info-head__title--small, .canho-info__title, .camnhan-item article, .camnhan-item article .camnhan-head, .call-element .callnow i {
   justify-content: center; }
 
 .about-flex .about-info, .dm-cap-item a .info {
@@ -7898,6 +7898,9 @@ div.frm_lienhe {
   margin: 0px 0px 10px 0px;
   font-size: 13px;
   position: relative; }
+  div.frm_lienhe .btn-primary {
+    background-color: #a81900;
+    border-color: #a81900; }
 
 .thongbao {
   font-size: 20px;
@@ -8488,6 +8491,56 @@ div.frm_lienhe .item_lienhe input[type='button'] + input[type='button'] {
   -moz-animation: star linear 1.75s infinite;
   -webkit-animation: star linear 1.75s infinite;
   -o-animation: star linear 1.75s infinite; }
+
+@-webkit-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-moz-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-ms-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-o-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
 
 /*----------css hieu ung-------------*/
 div.wap_load {
@@ -9504,6 +9557,16 @@ div.wap_item {
 .slider-bg {
   margin-bottom: 45px; }
 
+@-webkit-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
 #slideshow {
   position: relative;
   z-index: 1;
@@ -9512,6 +9575,10 @@ div.wap_item {
     content: "";
     display: table;
     clear: both; }
+  #slideshow .slideshow-slider-main .slideshow-slider-item.slick-active > section .slider-text-bg .slider-text {
+    animation-name: fadeInUpSD;
+    animation-duration: 1s;
+    opacity: 1; }
   #slideshow .slideshow-slider-main .slideshow-slider-item > section .slider-link {
     display: block; }
     #slideshow .slideshow-slider-main .slideshow-slider-item > section .slider-link img {
@@ -9537,7 +9604,8 @@ div.wap_item {
       width: 100%;
       max-width: 580px;
       margin-top: 4.375em;
-      margin-left: 9.8096632504%; }
+      margin-left: 9.8096632504%;
+      opacity: 0; }
       #slideshow .slideshow-slider-main .slideshow-slider-item > section .slider-text-bg .slider-text__welcome {
         color: #fff;
         font-size: 15px;
@@ -9754,10 +9822,7 @@ div.wap_item {
   top: 0;
   right: 0;
   left: 0;
-  background-image: url("images/duan-datnen.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100% auto;
+  background-color: #a81900;
   z-index: 451 !important; }
   .clsindex .nav-bg {
     position: absolute; }
@@ -9769,6 +9834,8 @@ div.wap_item {
   max-width: 160px;
   margin: 0 1.875em;
   padding: 1em 0; }
+  .fixed .logo {
+    padding: 0.5em 0; }
   .logo img {
     height: 120px;
     -webkit-transition: all 0.5s ease;
@@ -9795,24 +9862,31 @@ div.wap_item {
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    order: 2;
-    margin-right: 3.75em; }
+    order: 2; }
+    .main-nav-right > li {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      justify-content: flex-end; }
+      .main-nav-right > li:last-child {
+        margin-right: 5em; }
   .main-nav > ul {
     z-index: 5;
     position: relative; }
     .main-nav > ul > li {
       position: relative;
       z-index: 5;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -moz-flex: 1;
-      -ms-flex: 1;
-      flex: 1; }
+      -webkit-box-flex: auto;
+      -webkit-flex: auto;
+      -moz-box-flex: auto;
+      -moz-flex: auto;
+      -ms-flex: auto;
+      flex: auto; }
       .main-nav > ul > li a {
         color: #fff; }
         .main-nav > ul > li a:hover {
-          color: #ff0; }
+          color: #fff; }
       .main-nav > ul > li > a {
         min-height: 38px;
         position: relative;
@@ -9830,7 +9904,7 @@ div.wap_item {
           position: absolute;
           bottom: 0;
           left: 50%;
-          background-color: #ff0;
+          background-color: #fff;
           transition: all .5s;
           -moz-transition: all .5s;
           -webkit-transition: all .5s;
@@ -9845,7 +9919,7 @@ div.wap_item {
       .main-nav > ul > li:hover > ul {
         display: block; }
       .main-nav > ul > li.active > a {
-        color: #ff0; }
+        color: #fff; }
         .main-nav > ul > li.active > a:after {
           opacity: 1;
           max-width: 100%; }
@@ -9891,7 +9965,8 @@ div.wap_item {
   position: relative;
   width: 100%;
   z-index: 5;
-  background-color: #a81900; }
+  background-color: #a81900;
+  margin-top: auto; }
   #footer .ft-left {
     background-color: #971600;
     width: 39.5314787701%; }
@@ -9949,20 +10024,22 @@ div.wap_item {
   #footer .text {
     margin: 5px 0; }
 
-ul.ft-thongke li {
-  position: relative;
-  margin: 5px 0; }
-  ul.ft-thongke li span {
-    margin-left: 4px; }
-  ul.ft-thongke li + li {
-    margin-left: 2em; }
-    ul.ft-thongke li + li::before {
-      content: "";
-      background-color: #fff;
-      width: 1px;
-      height: 12px;
-      position: absolute;
-      left: -1em; }
+ul.ft-thongke {
+  margin-top: 50px; }
+  ul.ft-thongke li {
+    position: relative;
+    margin: 5px 0; }
+    ul.ft-thongke li span {
+      margin-left: 4px; }
+    ul.ft-thongke li + li {
+      margin-left: 2em; }
+      ul.ft-thongke li + li::before {
+        content: "";
+        background-color: #fff;
+        width: 1px;
+        height: 12px;
+        position: absolute;
+        left: -1em; }
 
 .header-navigate {
   background-color: #f7f6f6;
@@ -10291,7 +10368,7 @@ div.mxhft {
 .about-flex {
   position: relative;
   overflow: hidden;
-  padding: 3.75em 3.75em 7.5em 3.75em; }
+  padding: 3.75em 3.75em 3.75em 3.75em; }
   .about-flex:before {
     content: "";
     position: absolute;
@@ -10456,7 +10533,7 @@ div.mxhft {
   .canho-info__title {
     position: relative;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -10481,7 +10558,7 @@ div.mxhft {
   padding: 1.25em; }
   .canho-other-info h3 {
     color: #000;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px; }
     .canho-other-info h3 a {
@@ -10733,6 +10810,12 @@ div.mxhft {
     .thamquan-canho .form-right textarea {
       height: 90px; }
 
+.tencanho {
+  color: #a81900;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center; }
+
 .canho-thongtin {
   padding-top: 20px;
   margin-bottom: 20px;
@@ -10749,6 +10832,9 @@ div.mxhft {
 
 .datnen-item {
   margin-bottom: 2em; }
+  .datnen-item + .datnen-item {
+    border-top: 1px solid #eee;
+    padding-top: 30px; }
   .datnen-item .imgsp {
     width: 49%;
     order: 1; }
@@ -10756,16 +10842,25 @@ div.mxhft {
     width: 49%; }
     .datnen-item .info h3 {
       color: #a81900;
-      font-size: 25px; }
+      font-size: 25px;
+      font-weight: 700; }
       .datnen-item .info h3 a {
         color: #a81900; }
     .datnen-item .info .xemthem {
       background-color: #f7f6f6;
       display: inline-block;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
       color: #333;
       font-size: 12px;
       padding: 5px 10px;
       border-radius: 3px; }
+      .datnen-item .info .xemthem:hover, .datnen-item .info .xemthem:active, .datnen-item .info .xemthem:focus {
+        background-color: #a81900;
+        color: #fff; }
   .datnen-item.even .imgsp {
     order: 0; }
 
@@ -10797,10 +10892,11 @@ div.mxhft {
       margin-left: 5px; }
 
 .thamquan-btn {
-  position: absolute;
-  top: 300px;
+  position: fixed;
+  top: 50%;
   left: 0;
-  z-index: 156; }
+  z-index: 156;
+  margin-top: -110px; }
 
 .logoload {
   position: absolute;

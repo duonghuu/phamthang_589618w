@@ -814,6 +814,22 @@ div.wap_item {
 .slider-flex{
     @include boxstyle($display: flex, $justify-content: space-between);
 }
+@-webkit-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+
 #slideshow {
     position:relative;
     z-index: 1;
@@ -822,8 +838,20 @@ div.wap_item {
     .slideshow-slider-main{
         @include clearfix;
         .slideshow-slider-item {
+            &.slick-active{
+                & > section {
+                    .slider-text-bg{
+                        .slider-text{
+                            animation-name: fadeInUpSD;
+                            animation-duration: 1s; 
+                            opacity: 1;
+                        }
+                    }
+                }
+            };
             & > section {
                 @extend %slider-item-1;
+
                 .slider-link{
                     display: block;
                     img {
@@ -843,6 +871,8 @@ div.wap_item {
                         max-width: 580px;
                         margin-top: em(70); 
                         margin-left: percentage(134/1366);
+                        opacity: 0;
+
                         &__welcome{
                             @include setFont(15px, #fff);
                             margin-bottom: 0;

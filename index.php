@@ -59,16 +59,18 @@ $_SESSION['dong'] = lay_banner('dong');
             <div class="call-element">
                 <div class="container">
                     <div class="callnow">
-                      <i class="fas fa-phone-alt"></i>Call Now: <a href="tel:<?=preg_replace('/[^0-9]/','',$company['dienthoai']);?>">
+                      <i class="fas fa-phone-alt"></i>Call Now: <a class="typer" id="some-id"
+                       data-words="<?= $company['dienthoai'] ?>" data-delay="150" data-colors="#a81900" 
+                       href="tel:<?=preg_replace('/[^0-9]/','',$company['dienthoai']);?>">
                         <?= $company['dienthoai'] ?>
                       </a>
                     </div>
                 </div>
             </div>
+            
+            <?php } ?>
             <a href="#thamquan" rel="nofollow" class="thamquan-btn scrollLink"><img 
                 src="images/dkthamkhao.png" alt="<?= _dangky ?>"></a>
-            <?php } ?>
-            
             <div class="main_content <?php if($source!="index") echo 'container';  ?>">
                 <?php if($template == 'productxx') {  ?>
                     <div class="clearfix">
@@ -94,8 +96,8 @@ $_SESSION['dong'] = lay_banner('dong');
     //include _template."layout/phone.php";
     //include _template."layout/chat_facebook.php";
     // include _template."layout/cart_popup.php";
-    if($deviceType=="computer") include _template."layout/phone3.php";
-    include _template."layout/phone2.php";
+    include _template."layout/phone3.php";
+    // include _template."layout/phone2.php";
 }else{
     include _template.$template."_tpl.php";
 }

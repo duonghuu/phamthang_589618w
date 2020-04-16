@@ -123,7 +123,10 @@ div.frm_lienhe {
     margin: 0px 0px 10px 0px;
     font-size: 13px;
     position: relative;
-    
+    .btn-primary{
+        background-color: $theme-color;
+        border-color: $theme-color;
+    }    
 }
 
 .thongbao {
@@ -865,7 +868,19 @@ div.frm_lienhe .item_lienhe input[type='button'] + input[type='button'] {
     -webkit-animation: star linear 1.75s infinite;
     -o-animation: star linear 1.75s infinite;
 }
+@include keyframes(fadeInUpSD){
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+      }
 
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+};
 /*----------css hieu ung-------------*/
 div.wap_load {
     background: #fff;

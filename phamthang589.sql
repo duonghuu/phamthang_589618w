@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2020 at 06:53 AM
+-- Generation Time: Apr 17, 2020 at 05:53 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -2958,11 +2958,163 @@ INSERT INTO `counter` (`id`, `tm`, `ip`) VALUES
 (4040, 1586509051, '::1'),
 (4041, 1586510018, '::1'),
 (4042, 1586510943, '::1'),
-(4043, 1586574307, '::1'),
-(4044, 1586575242, '::1'),
-(4045, 1586577672, '::1'),
-(4046, 1586578934, '::1'),
-(4047, 1586580252, '::1');
+(4043, 1586511849, '::1'),
+(4044, 1586514775, '27.64.195.99'),
+(4045, 1586514780, '66.102.8.148'),
+(4046, 1586515760, '27.64.195.99'),
+(4047, 1586516731, '139.99.8.123'),
+(4048, 1586516775, '171.246.171.239'),
+(4049, 1586517092, '103.37.34.197'),
+(4050, 1586517102, '27.64.195.99'),
+(4051, 1586518063, '27.64.195.99'),
+(4052, 1586518439, '139.99.122.1'),
+(4053, 1586518459, '173.252.83.5'),
+(4054, 1586518459, '173.252.83.14'),
+(4055, 1586518460, '173.252.83.20'),
+(4056, 1586518462, '173.252.83.8'),
+(4057, 1586518475, '173.252.95.12'),
+(4058, 1586518476, '173.252.95.41'),
+(4059, 1586518476, '173.252.87.29'),
+(4060, 1586519125, '27.64.195.99'),
+(4061, 1586519538, '139.99.8.123'),
+(4062, 1586526837, '27.64.195.99'),
+(4063, 1586528157, '49.213.78.31'),
+(4064, 1586528224, '27.64.195.99'),
+(4065, 1586529133, '27.64.195.99'),
+(4066, 1586530138, '27.64.195.99'),
+(4067, 1586531051, '27.64.195.99'),
+(4068, 1586538888, '27.64.195.99'),
+(4069, 1586558263, '49.213.78.31'),
+(4070, 1586562777, '49.213.78.31'),
+(4071, 1586566837, '113.161.88.45'),
+(4072, 1586567396, '113.161.89.144'),
+(4073, 1586573867, '49.213.78.31'),
+(4074, 1586575315, '113.161.88.45'),
+(4075, 1586576052, '69.171.251.8'),
+(4076, 1586576229, '49.213.78.31'),
+(4077, 1586576793, '113.161.88.45'),
+(4078, 1586580271, '103.199.57.135'),
+(4079, 1586580881, '113.161.88.45'),
+(4080, 1586611760, '27.64.195.99'),
+(4081, 1586630759, '27.2.199.6'),
+(4082, 1586647227, '49.213.78.31'),
+(4083, 1586670559, '42.116.115.63'),
+(4084, 1586673020, '42.116.115.63'),
+(4085, 1586675768, '42.116.115.63'),
+(4086, 1586682620, '49.213.78.31'),
+(4087, 1586683402, '42.116.115.63'),
+(4088, 1586687102, '49.213.78.31'),
+(4089, 1586693444, '49.213.78.31'),
+(4090, 1586699462, '27.64.195.99'),
+(4091, 1586731124, '49.213.78.31'),
+(4092, 1586742698, '103.199.33.234'),
+(4093, 1586745784, '113.161.88.45'),
+(4094, 1586746790, '49.213.78.31'),
+(4095, 1586747729, '103.199.32.185'),
+(4096, 1586749636, '103.199.33.213'),
+(4097, 1586750030, '113.161.88.45'),
+(4098, 1586752411, '103.199.33.213'),
+(4099, 1586753537, '103.199.33.249'),
+(4100, 1586753547, '66.249.91.115'),
+(4101, 1586757556, '103.199.32.218'),
+(4102, 1586757558, '66.249.91.117'),
+(4103, 1586759278, '113.161.88.45'),
+(4104, 1586763024, '113.161.88.45'),
+(4105, 1586765811, '27.64.195.99'),
+(4106, 1586766881, '27.64.195.99'),
+(4107, 1586768119, '27.64.195.99'),
+(4108, 1586769099, '27.64.195.99'),
+(4109, 1586770187, '27.64.195.99'),
+(4110, 1586770271, '139.99.8.123'),
+(4111, 1586771206, '27.64.195.99'),
+(4112, 1586771245, '139.99.122.1'),
+(4113, 1586773371, '27.64.195.99'),
+(4114, 1586774586, '27.64.195.99'),
+(4115, 1586777955, '27.64.195.99'),
+(4116, 1586781445, '27.64.195.99'),
+(4117, 1586782362, '27.64.195.99'),
+(4118, 1586783680, '49.213.78.31'),
+(4119, 1586785293, '171.250.15.49'),
+(4120, 1586823034, '49.213.78.31'),
+(4121, 1586826058, '49.213.78.31'),
+(4122, 1586828908, '103.199.32.44'),
+(4123, 1586829886, '49.213.78.31'),
+(4124, 1586831814, '113.161.88.45'),
+(4125, 1586832247, '103.199.32.44'),
+(4126, 1586833616, '49.213.78.31'),
+(4127, 1586835093, '14.161.23.79'),
+(4128, 1586838414, '103.199.32.44'),
+(4129, 1586839640, '49.213.78.31'),
+(4130, 1586842074, '49.213.78.31'),
+(4131, 1586843155, '49.213.78.31'),
+(4132, 1586844419, '49.213.78.31'),
+(4133, 1586845386, '49.213.78.31'),
+(4134, 1586847453, '49.213.78.31'),
+(4135, 1586854397, '27.64.195.99'),
+(4136, 1586870913, '27.64.195.99'),
+(4137, 1586908261, '27.64.195.99'),
+(4138, 1586908266, '66.102.8.146'),
+(4139, 1586909214, '27.64.195.99'),
+(4140, 1586910141, '27.64.195.99'),
+(4141, 1586914015, '49.213.78.31'),
+(4142, 1586915974, '113.161.88.45'),
+(4143, 1586916066, '49.213.78.31'),
+(4144, 1586921981, '103.199.56.28'),
+(4145, 1586925123, '49.213.78.31'),
+(4146, 1586925243, '14.161.23.79'),
+(4147, 1586926223, '49.213.78.31'),
+(4148, 1586926343, '103.199.57.114'),
+(4149, 1586929353, '103.199.56.26'),
+(4150, 1586930289, '103.199.56.26'),
+(4151, 1586930419, '113.161.88.45'),
+(4152, 1586931189, '103.199.56.26'),
+(4153, 1586931926, '113.161.88.45'),
+(4154, 1586932130, '103.199.56.26'),
+(4155, 1586933074, '103.199.56.26'),
+(4156, 1586934776, '49.213.78.31'),
+(4157, 1586939475, '27.64.195.99'),
+(4158, 1586942086, '27.64.195.99'),
+(4159, 1586950127, '27.64.195.99'),
+(4160, 1586958856, '27.64.195.99'),
+(4161, 1586990107, '49.213.78.31'),
+(4162, 1586996159, '27.64.195.99'),
+(4163, 1586998138, '49.213.78.31'),
+(4164, 1586998447, '103.199.56.181'),
+(4165, 1586999665, '49.213.78.31'),
+(4166, 1587000752, '49.213.78.31'),
+(4167, 1587005785, '49.213.78.31'),
+(4168, 1587007889, '49.213.78.31'),
+(4169, 1587008808, '49.213.78.31'),
+(4170, 1587009550, '113.161.88.45'),
+(4171, 1587010485, '116.108.12.223'),
+(4172, 1587010689, '113.161.88.45'),
+(4173, 1587015311, '49.213.78.31'),
+(4174, 1587015760, '103.199.56.181'),
+(4175, 1587016662, '103.199.56.181'),
+(4176, 1587017974, '49.213.78.31'),
+(4177, 1587018267, '171.247.104.182'),
+(4178, 1587020918, '171.247.104.182'),
+(4179, 1587021346, '103.199.56.181'),
+(4180, 1587023759, '113.161.88.45'),
+(4181, 1587024843, '103.199.56.200'),
+(4182, 1587025230, '103.199.57.55'),
+(4183, 1587025921, '103.199.56.200'),
+(4184, 1587026310, '103.199.56.181'),
+(4185, 1587027024, '103.199.56.166'),
+(4186, 1587028532, '103.199.56.166'),
+(4187, 1587029865, '103.199.57.206'),
+(4188, 1587041307, '27.64.195.99'),
+(4189, 1587050597, '171.246.171.239'),
+(4190, 1587050737, '27.64.195.99'),
+(4191, 1587053104, '27.64.195.99'),
+(4192, 1587054100, '27.64.195.99'),
+(4193, 1587060639, '49.213.78.31'),
+(4194, 1587061916, '27.64.195.99'),
+(4195, 1587084867, '49.213.78.31'),
+(4196, 1587090014, '::1'),
+(4197, 1587090984, '::1'),
+(4198, 1587093687, '::1'),
+(4199, 1587095282, '::1');
 
 -- --------------------------------------------------------
 
@@ -2998,16 +3150,18 @@ CREATE TABLE `table_about` (
   `link` varchar(255) NOT NULL,
   `mota2` text NOT NULL,
   `mota2en` text NOT NULL,
-  `mota2cn` text NOT NULL
+  `mota2cn` text NOT NULL,
+  `chucvu` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `table_about`
 --
 
-INSERT INTO `table_about` (`id`, `ten`, `tenkhongdau`, `mota`, `noidung`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `description`, `h3`, `h2`, `h1`, `keywords`, `type`, `tenen`, `motaen`, `noidungen`, `tencn`, `motacn`, `noidungcn`, `link`, `mota2`, `mota2en`, `mota2cn`) VALUES
-(1, 'Đôi lời giới thiệu', 'doi-loi-gioi-thieu', '', '', 'untitled-3-1011.jpg', 'untitled-3.jpg0718_410x520.JPEG', 0, 1, 1586332411, 1586332828, '', '', '', '', '', '', 'gioi-thieu', '', '', '', '', '', '', '', 'Odio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. \r\n\r\nCras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.\r\n\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus', '', ''),
-(2, '', '', '', '<p>Conubia in proident vitae mollitia netus accumsan mollit. Posuere malesuada qui quisquam? Cupiditate nisi occaecat at! Magni eget qui? Cubilia urna amet dapibus iusto primis nobis! Qui voluptatem, pariatur occaecati. Ultricies sodales varius quia quos?</p>\r\n', '', '', 0, 1, 1586423460, 1586423468, '', '', '', '', '', '', 'footer', '', '', '', '', '', '', '', '', '', '');
+INSERT INTO `table_about` (`id`, `ten`, `tenkhongdau`, `mota`, `noidung`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `description`, `h3`, `h2`, `h1`, `keywords`, `type`, `tenen`, `motaen`, `noidungen`, `tencn`, `motacn`, `noidungcn`, `link`, `mota2`, `mota2en`, `mota2cn`, `chucvu`) VALUES
+(1, 'Thương hiệu cá nhân', 'thuong-hieu-ca-nhan', '', '<p style=\"text-align: center;\"><span style=\"color:#FF0000;\"><span style=\"font-size:36px;\"><span style=\"font-family:times new roman,times,serif;\"><strong>\"Cảm ơn Quý Khách\"</strong></span></span></span></p>\r\n\r\n<p>Odio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. </p>\r\n\r\n<p>Cras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.</p>\r\n\r\n<p>Primis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus<br />\r\nOdio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. </p>\r\n\r\n<p>Cras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.</p>\r\n\r\n<p>Primis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus</p>\r\n\r\n<p>Odio diam<strong> nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. </strong></p>\r\n\r\n<p>Cras praesentium veritatis! Accumsa<em>n quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.</em></p>\r\n\r\n<p>Primis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus<br />\r\nOdio diam nunc dignissim laudanti<u>um unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, q</u>uod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. </p>\r\n\r\n<p>Cras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.</p>\r\n\r\n<p>Primis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus</p>\r\n\r\n<p>Odio diam nunc dignissim l<a href=\"goole.com.vn\">audantium unde iaculis feugiat? Tortor la</a>cus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. </p>\r\n\r\n<p>Cras praesentium v<span style=\"color:#B22222;\">eritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.</span></p>\r\n\r\n<p>Primis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus<br />\r\nOdio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum<span style=\"background-color:#EE82EE;\"> rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. </span></p>\r\n\r\n<p>Cras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.</p>\r\n\r\n<p>Primis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus</p>\r\n', '2c469add3245d91b8054-0119.jpg', '2c469add3245d91b8054.jpg8057_410x520.JPEG', 0, 1, 1586332411, 1586930406, '', '', '', '', '', '', 'gioi-thieu', '', '', '', '', '', '', 'Phạm Thắng', 'Odio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. \r\n\r\nCras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.\r\n\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nOdio diam nunc dignissim laudantium unde iaculis feugiat? Tortor lacus exercitationem tempora fugiat? Aspernatur? Fames recusandae felis et vivamus rutrum, tenetur libero. Praesent fermentum? Aliquam eos tempore dictum rhoncus qui, culpa habitant nisl blandit, necessitatibus sunt, culpa suspendisse mus, ad, magnis rutrum, cursus pariatur! Fusce mus, porro voluptate, quod eligendi porta sagittis voluptatibus lobortis faucibus, accusamus. Rhoncus. \r\n\r\nCras praesentium veritatis! Accumsan quasi eius. Sodales, dolorum. Illum egestas numquam quibusdam sociis, porta exercitationem praesentium adipisicing accusantium pariatur quas cubilia pulvinar a, in nascetur scelerisque animi? Adipisicing adipisicing, mauris, quasi eligendi elit? Aliquip cursus sunt porta! Natoque eiusmod, sint architecto vero reprehenderit.\r\n\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\nPrimis tellus corrupti senectus? Voluptatibus cursus cras tempor dolorem! Corrupti aliqua dictum mus quo posuere ea reiciendis ducimus\r\n', '', '', 'Sale manager'),
+(2, '', '', '', '<p><span style=\"font-family:times new roman,times,serif;\"><em><strong><u>Đ/C</u>: </strong></em><strong>Công viên phần mềm Quang Trung, Q.12, HCM</strong><br />\r\n<em><strong><u>Hotline</u>: </strong></em><strong>0909090909</strong><br />\r\n<em><strong><u>Website</u>: </strong></em><strong>http://phamreal.com<br />\r\n<em><u>Email</u>: </em>phamgroup.real@gmail.com</strong></span></p>\r\n', 'logo-1792.png', 'logo.png5786_160x120.JPEG', 0, 1, 1586423460, 1586930531, '', '', '', '', '', '', 'footer', '', '', '', '', '', '', '', '', '', '', ''),
+(3, '', '', '', '<p><span style=\"color:#FF0000;\"><span style=\"font-family:times new roman,times,serif;\"><span style=\"font-size:28px;\"><span font-size:=\"\" new=\"\" times=\"\"><span new=\"\" times=\"\"><strong>Bất động sản Nam Long</strong></span></span></span></span></span></p>\r\n\r\n<p><span style=\"color:#808080;\"><span style=\"font-family:times new roman,times,serif;\"><em new=\"\" style=\"font-family: \" times=\"\"><strong>* <u>Địa chỉ</u>:     </strong></em></span></span><span style=\"color:#000000;\"><span style=\"font-family:times new roman,times,serif;\"><em new=\"\" style=\"font-family: \" times=\"\"><strong> </strong></em></span></span><span style=\"color:#333333;\"><span style=\"font-family:times new roman,times,serif;\"><strong new=\"\" style=\"font-family: \" times=\"\">Công viên phần mềm Quang Trung, Q.12, HCM</strong></span></span></p>\r\n\r\n<p><em new=\"\" style=\"color: rgb(128, 128, 128); font-family: \" times=\"\"><strong>* </strong></em><span style=\"color:#808080;\"><span style=\"font-family:times new roman,times,serif;\"><em new=\"\" style=\"font-family: \" times=\"\"><strong><u>Hotline</u>:</strong></em></span></span><span style=\"color:#000000;\"><span style=\"font-family:times new roman,times,serif;\"><em new=\"\" style=\"font-family: \" times=\"\"><strong>      </strong></em></span></span><span style=\"color:#333333;\"><span style=\"font-family:times new roman,times,serif;\"><strong new=\"\" style=\"font-family: \" times=\"\">0909090909</strong></span></span></p>\r\n\r\n<p><em new=\"\" style=\"color: rgb(128, 128, 128); font-family: \" times=\"\"><strong>* </strong></em><span style=\"color:#808080;\"><span style=\"font-family:times new roman,times,serif;\"><em new=\"\" style=\"font-family: \" times=\"\"><strong><u>Website</u>:     </strong></em></span></span><span style=\"color:#000000;\"><span style=\"font-family:times new roman,times,serif;\"><em new=\"\" style=\"font-family: \" times=\"\"><strong> </strong></em></span></span><span style=\"color:#333333;\"><span style=\"font-family:times new roman,times,serif;\"><strong new=\"\" style=\"font-family: \" times=\"\">http://phamreal.com</strong></span></span></p>\r\n\r\n<p><em new=\"\" style=\"color: rgb(128, 128, 128); font-family: \" times=\"\"><strong>* </strong></em><span style=\"color:#808080;\"><span style=\"font-family:times new roman,times,serif;\"><strong new=\"\" style=\"font-family: \" times=\"\"><em><u>Email</u>:</em></strong></span></span><span style=\"color:#000000;\"><span style=\"font-family:times new roman,times,serif;\"><strong new=\"\" style=\"font-family: \" times=\"\"><em>         </em></strong></span></span><span style=\"color:#333333;\"><span style=\"font-family:times new roman,times,serif;\"><strong new=\"\" style=\"font-family: \" times=\"\">phamgroup.real@gmail.com</strong></span></span></p>\r\n', '', '', 0, 1, 1586529757, 1586773783, '', '', '', '', '', '', 'lienhe', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -3075,9 +3229,9 @@ CREATE TABLE `table_background` (
 INSERT INTO `table_background` (`id`, `ten`, `tenkhongdau`, `mota`, `noidung`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `description`, `keywords`, `type`, `tenen`, `motaen`, `noidungen`, `photoen`, `link`, `photocn`, `tencn`, `noidungcn`, `motacn`) VALUES
 (1, '', '', '', '', '', '', 0, 1, 1564802013, 0, '', '', '', 'bgvisao', '', '', '', '', '', '', '', '', ''),
 (2, '', '', '', '', '', '', 0, 1, 1564802019, 0, '', '', '', 'bgdathen', '', '', '', '', '', '', '', '', ''),
-(3, '', '', '', '', 'untitled-10014layer-2-2134.png', '', 0, 1, 1564803046, 1586329372, '', '', '', 'logo', '', '', '', '', '', '', '', '', ''),
-(4, '', '', '', '', 'untitled-3-0402.png', '', 0, 1, 1564803058, 1585111704, '', '', '', 'banner', '', '', '', '', '', '', '', '', ''),
-(5, '', '', '', '', 'untitled-4-5681.jpg', '', 0, 1, 1564803064, 1579320072, '', '', '', 'bgbn', '', '', '', '', '', '', '', '', ''),
+(3, '', '', '', '', 'lgoo-nam-long-8853.png', '', 0, 1, 1564803046, 1586933308, '', '', '', 'logo', '', '', '', '', '', '', '', '', ''),
+(4, '', '', '', '', 'duan-datnen-2720.jpg', '', 0, 1, 1564803058, 1587009584, '', '', '', 'banner', '', '', '', '', '', '', '', '', ''),
+(5, '', '', '', '', 'thamquan-canho-1942.jpg', '', 0, 1, 1564803064, 1587009577, '', '', '', 'bgbn', '', '', '', '', '', '', '', '', ''),
 (6, '', '', '', '', 'untitled-10-6199.jpg', '', 0, 1, 1564996911, 1579505518, '', '', '', 'bgft', '', '', '', '', '', '', '', '', ''),
 (7, '', '', '', '', '', '', 0, 1, 1567676665, 0, '', '', '', '', '', '', '', '', '', '', '', '', ''),
 (8, '', '', '', '', 'untitled-23-6805.jpg', '', 0, 1, 1567997794, 1567997800, '', '', '', 'bg-dt', '', '', '', '', '', '', '', '', ''),
@@ -3273,7 +3427,7 @@ CREATE TABLE `table_company` (
 --
 
 INSERT INTO `table_company` (`id`, `ten`, `dienthoai`, `email`, `diachi`, `toado`, `fax`, `fanpage`, `website`, `giomo`, `tenen`, `diachien`, `favicon`, `faviconthumb`, `dongdau`, `dongdauthumb`, `codethem`, `sitemap`, `soluong_sp`, `soluong_spk`, `soluong_tin`, `soluong_tink`, `lang_default`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `codethem2`, `bando`, `bct`, `slogan`, `sloganen`, `tencn`, `diachicn`, `slogancn`, `ngaytao`, `thuoctinh`) VALUES
-(1, 'Bất động sản Nam Long', '0919 447 278', 'thanhquang.nina@gmail.com', '15/17/17 Hoàng Hoa Thám, P.13, Q. Tân Bình', '10.853741418142036,106.62834708220907', '', 'https://www.facebook.com/NganroxyTrumsivnxk/', 'roxyshop.com.vn', '', 'abc', 'abc', 'favicon-32x32-2313.png', 'untitled-24638_32x21.png', 'f00000-8245.png', 'f000005140_70x49.png', '', 'sitemap.xml', 8, 8, 6, 10, '', '', 'thời trang xuất khẩu', '', '', '', '', '', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1385.636856256845!2d106.64634040665221!3d10.798068518474096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175294bfef92b9b%3A0xa23ca24a08c31ac0!2zMTUsIDE3IEhvw6BuZyBIb2EgVGjDoW0sIHBoxrDhu51uZyAxMywgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1585727359468!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', '', 'Roxyshop - Chuyên Thời Trang xuất Khẩu Cao Cấp', 'abc', '', '', '', 0, '{\"tt_zalo\":\"0919 447 278\",\"tt_messenger\":\"https://www.facebook.com/NganroxyTrumsivnxk/\"}');
+(1, 'Bất động sản Nam Long', '0902.452.231', 'pham.duykhang.nina@gmail.com', 'Hoàng Hoa Thám, P.13, Q. Tân Bình', '10.853741418142036,106.62834708220907', '', 'https://www.facebook.com/KhangQuep/', 'duannamlong.com', '', 'abc', 'abc', 'logo-pham-real-2-4555.png', 'untitled-24638_32x21.png', 'f00000-8245.png', 'f000005140_70x49.png', '                                                                                                                                ', 'sitemap.xml', 1, 3, 10, 1, '', 'Dự án BĐS Nam Long', 'Dự án BĐS Nam Long, Dự án Nam Long', 'Dự án BĐS Nam Long, Dự án Nam Long', 'Dự án BĐS Nam Long, Dự án Nam Long', 'Dự án BĐS Nam Long, Dự án Nam Long', 'Dự án BĐS Nam Long, Dự án Nam Long', '                                                                                                                                ', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4638893030747!2d106.62747501462938!3d10.852278360756875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752930eb8f4085%3A0xc5add702a651af3d!2zVGhp4bq_dCBr4bq_IHdlYnNpdGUgdGhlbyB5w6p1IGPhuqd1IC0gUERL!5e0!3m2!1svi!2s!4v1586515335975!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>', '', 'Chào mừng đến với Bất động sản Nam Long', 'abc', '', '', '', 0, '{\"tt_zalo\":\"0901 497 770\",\"tt_messenger\":\"https://www.facebook.com/KhangQuep/\"}');
 
 -- --------------------------------------------------------
 
@@ -3438,15 +3592,6 @@ CREATE TABLE `table_hinhanh` (
   `motacn` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `table_hinhanh`
---
-
-INSERT INTO `table_hinhanh` (`id`, `photo`, `ten`, `mota`, `link`, `stt`, `hienthi`, `thumb`, `type`, `id_hinhanh`, `noibat`, `tenen`, `motaen`, `tencn`, `motacn`) VALUES
-(592, 'photo-1584502112306-150f676b0fd0-8536.jpg', '', '', '', 0, 1, 'photo-1584502112306-150f676b0fd0-8536.photo-1584502112306-150f676b0fd0-85362565_768x605.JPEG', 'can-ho', 113, 0, '', '', '', ''),
-(593, 'photo-1585840361623-ccd3c5694106-1683.jpg', '', '', '', 0, 1, 'photo-1585840361623-ccd3c5694106-1683.photo-1585840361623-ccd3c5694106-16839000_768x605.JPEG', 'can-ho', 113, 0, '', '', '', ''),
-(594, '800x600-1621.png', '', '', '', 0, 1, '800x600-1621.800x600-16216855_768x605.JPEG', 'can-ho', 113, 0, '', '', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -3535,6 +3680,13 @@ CREATE TABLE `table_lienhe` (
   `chudeen` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `table_lienhe`
+--
+
+INSERT INTO `table_lienhe` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `link`, `tenen`, `type`, `diachi`, `dienthoai`, `email`, `chude`, `noidung`, `diachien`, `noidungen`, `chudeen`) VALUES
+(3, 0, 'book name', 'book-name', '', '', 1, 0, 0, 1587093829, '', '', 'datban', 'hcm q12', '0956323603', '', 'Đăng ký tham quan 17/04/2020 10:23:02', '<p>need ya help</p>\r\n', '', '', '');
+
 -- --------------------------------------------------------
 
 --
@@ -3564,14 +3716,12 @@ CREATE TABLE `table_lkweb` (
 
 INSERT INTO `table_lkweb` (`id`, `noibat`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `link`, `tenen`, `type`, `tencn`) VALUES
 (30, 0, '', '', 'untitled-10003layer-3-1674.png', '', 1, 1, 1581066846, 1583908413, '', '', 'mxhft', ''),
-(28, 0, '', '', 'untitled-10003layer-7-0237.png', '', 1, 1, 1579505096, 1585554676, '', '', 'mxh', ''),
-(29, 0, '', '', 'untitled-10002layer-8-7261.png', '', 1, 1, 1580868242, 1585554671, '', '', 'mxh', ''),
+(28, 0, 'Twitter', 'twitter', '555555-0234.png', '', 1, 1, 1579505096, 1586773695, '', '', 'mxh', ''),
 (31, 0, '', '', 'untitled-10002layer-4-8990.png', '', 1, 1, 1581066853, 1583908407, '', '', 'mxhft', ''),
-(32, 0, '', '', 'untitled-10001layer-9-3315.png', '', 1, 1, 1581735298, 1585554665, '', '', 'mxh', ''),
+(32, 0, 'Youtube', 'youtube', '22232232323-3931.png', '', 1, 1, 1581735298, 1586773607, '', '', 'mxh', ''),
 (33, 0, 'kerousitordu', 'kerousitordu', 'untitled-10001layer-5-9380.png', '', 1, 1, 1582620965, 1583908402, '', '', 'mxhft', ''),
 (34, 0, '', '', 'untitled-10000layer-6-9501.png', '', 1, 1, 1582861349, 1583908397, '', '', 'mxhft', ''),
-(35, 0, '', '', 'untitled-10000layer-10-9674.png', '', 1, 1, 1583484813, 1585554660, '', '', 'mxh', ''),
-(36, 0, '', '', 'untitled-10004layer-6-5279.png', '', 1, 0, 1585554682, 1585720395, 'https://www.facebook.com/NganroxyTrumsivnxk/', '', 'mxh', '');
+(36, 0, 'Facebook', 'facebook', '11111111111-7707.png', '', 1, 1, 1585554682, 1586773557, 'https://www.facebook.com/NganroxyTrumsivnxk/', '', 'mxh', '');
 
 -- --------------------------------------------------------
 
@@ -3637,7 +3787,6 @@ INSERT INTO `table_news` (`id`, `id_list`, `id_item`, `id_cat`, `noibat`, `photo
 (117, 0, 0, 0, 0, '', '', '', '', '', 'Tên tag 12', 'ten-tag-12', '', '', 0, 1, 1, 0, 1571385458, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tags', '', '', '', '', '', '', '', '', '', '', '', ''),
 (118, 0, 0, 0, 0, '', '', '', '', '', 'Tên tag 123', 'ten-tag-123', '', '', 0, 1, 1, 0, 1571385461, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tags', '', '', '', '', '', '', '', '', '', '', '', ''),
 (119, 0, 0, 0, 0, '', '', '', '', '', 'Tên tag 1234', 'ten-tag-1234', '', '', 0, 1, 1, 0, 1571385465, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tags', '', '', '', '', '', '', '', '', '', '', '', ''),
-(735, 0, 0, 0, 0, '400x300-5459.png', '400x300.png7010_400x300.JPEG', '', '', '', 'Nostra cupiditate c 1', 'nostra-cupiditate-c-1', 'Nostra cupiditate conubia unde odit, alias, labore eleifend malesuada diam, harum ad, mattis scelerisque dicta, fusce, tempus impedit a', '', 0, 1, 1, 0, 1586505169, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinh-sach', '', '', '', '', '', '', '', '', '', '', '', '0'),
 (205, 0, 0, 0, 0, '400x300-7013.png', '400x3001197_200x150.png', '', '', '', 'Nulla turpis faucibus purus quam ma', 'nulla-turpis-faucibus-purus-quam-ma', 'Nulla turpis faucibus purus quam magnam vivamus officiis, facilis hymenaeos, mollis parturient suscipit, mi harum dolores, duis ullamco torquent error culpa vitae laudantium donec accusantium aliquip voluptatum neque? Cursus tristique proin interdum cillum, mollis bibendum similique. Magnam do! Cras sit beatae aperiam repellendus enim, scelerisque sunt aliqua adip', '', 1, 1, 1, 0, 1573704253, 0, '', '', '', '', '', '', 9, '', '', '', '', '', '', 'muctieu', '', '', '', '', '', '', '', '', '', '', '', ''),
 (206, 0, 0, 0, 0, '400x300-4377.png', '400x3006185_200x150.png', '', '', '', 'Nulla turpis faucibus purus quam ma 1', 'nulla-turpis-faucibus-purus-quam-ma-1', 'Nulla turpis faucibus purus quam magnam vivamus officiis, facilis hymenaeos, mollis parturient suscipit, mi harum dolores, duis ullamco torquent error culpa vitae laudantium donec accusantium aliquip voluptatum neque? Cursus tristique proin interdum cillum, mollis bibendum similique. Magnam do! Cras sit beatae aperiam repellendus enim, scelerisque sunt aliqua adip', '', 0, 1, 1, 0, 1573704256, 0, '', '', '', '', '', '', 9, '', '', '', '', '', '', 'muctieu', '', '', '', '', '', '', '', '', '', '', '', ''),
 (207, 0, 0, 0, 0, '400x300-9458.png', '400x3007711_200x150.png', '', '', '', 'Nulla turpis faucibus purus quam ma 12', 'nulla-turpis-faucibus-purus-quam-ma-12', 'Nulla turpis faucibus purus quam magnam vivamus officiis, facilis hymenaeos, mollis parturient suscipit, mi harum dolores, duis ullamco torquent error culpa vitae laudantium donec accusantium aliquip voluptatum neque? Cursus tristique proin interdum cillum, mollis bibendum similique. Magnam do! Cras sit beatae aperiam repellendus enim, scelerisque sunt aliqua adip', '', 0, 1, 1, 0, 1573704259, 0, '', '', '', '', '', '', 9, '', '', '', '', '', '', 'muctieu', '', '', '', '', '', '', '', '', '', '', '', ''),
@@ -3650,11 +3799,7 @@ INSERT INTO `table_news` (`id`, `id_list`, `id_item`, `id_cat`, `noibat`, `photo
 (558, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 12', 'iste-wisi-tenetur-q-12', '', '', 0, 1, 1, 0, 1582683903, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
 (559, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 123', 'iste-wisi-tenetur-q-123', '', '', 0, 1, 1, 0, 1582683906, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
 (560, 0, 0, 0, 0, '', '', '', '', '', 'Iste wisi tenetur, q 1234', 'iste-wisi-tenetur-q-1234', '', '', 0, 1, 1, 0, 1582683908, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinhsach', '', '', '', '', '', '', '', '', '', '', '', ''),
-(739, 0, 0, 0, 1, '', '', '', '', '', 'Tên tin tu c', 'ten-tin-tu-c', '', '', 1, 1, 1, 0, 1586507387, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'tin-tuc', '', '', '', '', '', '', '', '', '', '', '', '0'),
-(731, 0, 0, 0, 0, '150x150-3981.png', '150x150.png6417_100x100.JPEG', '', '', '', 'Tên khach hàng', 'ten-khach-hang', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504608, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
-(732, 0, 0, 0, 0, '150x150-8162.png', '150x150.png4820_100x100.JPEG', '', '', '', 'Tên khach hàng2', 'ten-khach-hang2', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504621, 1586504621, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
-(733, 0, 0, 0, 0, '150x150-6276.png', '150x150.png9841_100x100.JPEG', '', '', '', 'Tên khach hàng1', 'ten-khach-hang1', 'Ullamco condimentum consectetuer diamlorem, aliquet class, optio egestas. Qui ex nihil non facilis nisl morbi recusandae provident massa, taciti iste quod eius aliquip perspiciatis occaecat g', '', 0, 1, 1, 0, 1586504617, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'y-kien', '', 'Nhân viên kỹ thuật', '', '', '', '', '', '', '', '', '', '0'),
-(734, 0, 0, 0, 0, '400x300-9736.png', '400x300.png3127_400x300.JPEG', '', '', '', 'Nostra cupiditate c', 'nostra-cupiditate-c', 'Nostra cupiditate conubia unde odit, alias, labore eleifend malesuada diam, harum ad, mattis scelerisque dicta, fusce, tempus impedit a', '', 0, 1, 1, 0, 1586505164, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 'chinh-sach', '', '', '', '', '', '', '', '', '', '', '', '0');
+(744, 0, 0, 0, 0, 'banner-1-1-6378.jpg', 'banner-1-1.jpg9307_400x300.JPEG', '', '', '', 'Bài 1', 'bai-1', '', '', 0, 1, 1, 0, 1586531597, 0, '', '', '', '', '', '', 0, '', '', '', '', '', '', 've-chung-toi', '', '', '', '', '', '', '', '', '', '', '', '0');
 
 -- --------------------------------------------------------
 
@@ -3833,7 +3978,7 @@ CREATE TABLE `table_online` (
 --
 
 INSERT INTO `table_online` (`id`, `session_id`, `time`) VALUES
-(2100, 'hs1jt3hfk5cej5u48h472dk2a0', 1586580781);
+(2315, 'kg9ragtav04s2jugf3qcf9hk24', 1587095318);
 
 -- --------------------------------------------------------
 
@@ -4754,20 +4899,9 @@ CREATE TABLE `table_product` (
   `tiendo` text NOT NULL,
   `tiendoen` text NOT NULL,
   `thuoctinh_danhmuc` varchar(255) NOT NULL,
-  `thuoctinh_list` varchar(255) NOT NULL
+  `thuoctinh_list` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `table_product`
---
-
-INSERT INTO `table_product` (`id`, `id_danhmuc`, `id_list`, `id_item`, `id_cat`, `hienthi`, `noibat`, `tieubieu`, `spmoi`, `spbanchay`, `photo`, `thumb`, `tenkhongdau`, `ten`, `tenen`, `tencn`, `mota`, `motaen`, `motacn`, `mota2`, `mota2en`, `mota2cn`, `noidung`, `noidungen`, `noidungcn`, `masp`, `gia`, `giakm`, `luotxem`, `stt`, `type`, `soluong`, `tag`, `size`, `size2`, `mausac2`, `mausac`, `ngaytao`, `ngaysua`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `thuonghieu`, `id_nhasanxuat`, `dientich`, `id_huong`, `id_hientrang`, `phaply`, `mattien`, `id_city`, `id_dist`, `id_street`, `id_ward`, `id_thanhvien`, `thuoctinh`, `toado`, `diachi`, `diachien`, `diachicn`, `vitri`, `vitrien`, `matbang`, `matbangen`, `tiendo`, `tiendoen`, `thuoctinh_danhmuc`, `thuoctinh_list`) VALUES
-(110, 160, 0, 0, 0, 1, 0, 0, 0, 0, 'photo-1584502112306-150f676b0fd0-3334.jpg', 'photo-1584502112306-150f676b0fd0.jpg2162_380x300.JPEG', 'vel-nam-ducimus-autem-no', 'Vel nam ducimus autem no', '', '', 'Repudiandae ea eveniet! Donec blandit conubia. Eu. Sodales, facilisis sequi, laboris, egestas praesentium sem diam, nascetur repellat porta culpa dolores minus exercitation, laboris placerat? Saepe turpis. Erat tenetur sunt veritatis, facilisi mi. Mini', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'nha-pho', 0, '', '', '', '', '', 1586500977, 1586501355, '', '', '', '', '', '', 0, 0, '63m2', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Sequi, voluptate inceptos ac, proident am', 0, '', 'Sắp bán', '', '', '', '', '', '', ''),
-(111, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-6708.jpg', 'photo-1584689036675-940c6e0eec93.jpg7346_380x300.JPEG', 'ten-bai-viet', 'Tên bài viết', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '', '', '', '', 0, 0, 1, 1, 'can-ho', 0, '', '', '', '', '', 1586501466, 0, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '', '', '', '', '', ''),
-(112, 157, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-3211.jpg', 'photo-1584689036675-940c6e0eec93.jpg8982_380x300.JPEG', 'ten-bai-viet-1', 'Tên bài viết 1', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '', '', '', '', 0, 0, 17, 1, 'can-ho', 0, '', '', '', '', '', 1586501474, 0, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '        <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '', '', '', '', '', ''),
-(113, 157, 53, 0, 10, 1, 1, 0, 0, 0, 'photo-1584689036675-940c6e0eec93-1445.jpg', 'photo-1584689036675-940c6e0eec93.jpg4050_768x605.JPEG', 'ten-bai-viet-12', 'Tên bài viết 12', '', '', 'Ab mollit, dis viverra, enim quia, non turpis ante nesciunt? Dignissim, per duis wisi. Mi sunt? Nostra reiciendis, corrupti modi. Recusandae! Minim torquent class perspiciatis adipisci, adipisicing? Rhoncus. Ornare dolorum, diamlorem nihil inven', '', '', '', '', '', '<p>Fringilla nibh debitis ullamco. Nisi morbi dignissim platea, habitasse quisque nec, magna? Id et magni eum nisi quibusdam vestibulum aliquam vulputate magnis culpa nascetur itaque mollis quae consequatur! Quod quas voluptate accumsan eos montes, tempor consequuntur nulla vehicula aliquam mauris! Velit doloremque nulla veniam laboriosam voluptas consectetuer vivamus, rhoncus quo animi ante! Dapibus excepturi. Nibh quis justo diam varius scelerisque, consequatur amet hymenaeos, sociosqu cupidatat, eos doloribus nostrum? Ullamco tellus, facilis class, cupiditate nulla mi culpa faucibus incidunt proident iste, provident dis, dictum porro, dis tenetur est distinctio possimus quidem nihil curabitur ad condimentum eiusmod sagittis, excepturi dapibus, penatibus orci.</p>\r\n\r\n<p>Anim natoque? Commodo iste deleniti consequuntur consectetur etiam facilis! Ac sunt pariatur, aliquet convallis quas arcu ea voluptas, per tristique diam tenetur voluptatibus iste? Tempus porro proi</p>\r\n', '', '', '', 0, 0, 19, 1, 'can-ho', 0, '', '', '', '', '', 1586501483, 1586577959, '', '', '', '', '', '', 0, 0, '50', 0, 0, '2', '2', 0, 0, 0, 0, 0, '', '                                                                <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.405984759786!2d106.59539931483654!3d10.780185262072003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c6eef2e2af7%3A0xadbc79cb7ed55467!2zMSwgNzgvNSDEkMaw4budbmcgU-G7kSAxOEIsIELDrG5oIEjGsG5nIEjDsmEgQSwgQsOsbmggVMOibiwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1561518682841!5m2!1svi!2s\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Cras class ex tellus minus cupidatat. Tempus mauris. Tincidunt pariatur? Eleifend proin, mollis distinctio neque error tellus c', 0, '', 'Sold', '', '52tr', '', '', '', '', ''),
-(114, 161, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1585840361623-ccd3c5694106-5695.jpg', 'photo-1585840361623-ccd3c5694106.jpg7363_700x430.JPEG', 'magnis-exercitation-eros-cur', 'Magnis exercitation eros cur', '', '', 'Magnis exercitation eros curae, occaecati numquam. Habitant ante orci iure augue mollis, temporibus fusce? Exercitation voluptate aliquid litora. Senectus mollis mi facere nullam platea fringi', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'dat-nen', 0, '', '', '', '', '', 1586504087, 0, '', '', '', '', '', '', 0, 0, '100', 0, 0, '3', '2', 0, 0, 0, 0, 0, '', '        ', 'Unde tortor mattis pulvinar facilisi consequat bib', 0, '', 'Đã bán', '', '1000tr', '', '', '', '', ''),
-(115, 161, 0, 0, 0, 1, 1, 0, 0, 0, 'photo-1585840361623-ccd3c5694106-9609.jpg', 'photo-1585840361623-ccd3c5694106.jpg3164_700x430.JPEG', 'magnis-exercitation-eros-cur-1', 'Magnis exercitation eros cur 1', '', '', 'Magnis exercitation eros curae, occaecati numquam. Habitant ante orci iure augue mollis, temporibus fusce? Exercitation voluptate aliquid litora. Senectus mollis mi facere nullam platea fringi', '', '', '', '', '', '', '', '', '', 0, 0, 0, 1, 'dat-nen', 0, '', '', '', '', '', 1586504100, 0, '', '', '', '', '', '', 0, 0, '100', 0, 0, '3', '2', 0, 0, 0, 0, 0, '', '        ', 'Unde tortor mattis pulvinar facilisi consequat bib', 0, '', 'Đã bán', '', '1000tr', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -4801,14 +4935,6 @@ CREATE TABLE `table_product_cat` (
   `mota` text NOT NULL,
   `motaen` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `table_product_cat`
---
-
-INSERT INTO `table_product_cat` (`id`, `id_list`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `id_danhmuc`, `noibat`, `noidung`, `title`, `keywords`, `description`, `h3`, `h2`, `h1`, `tenen`, `noidungen`, `type`, `mota`, `motaen`) VALUES
-(10, 53, 'Test danh mục cấp 3 a', 'test-danh-muc-cap-3-a', '', '', 1, 1, 1586576660, 0, 157, 0, '', '', '', '', '', '', '', '', '', 'can-ho', '', ''),
-(11, 53, 'Test danh mục cấp 3 b', 'test-danh-muc-cap-3-b', '', '', 1, 1, 1586576667, 0, 157, 0, '', '', '', '', '', '', '', '', '', 'can-ho', '', '');
 
 -- --------------------------------------------------------
 
@@ -4858,13 +4984,8 @@ CREATE TABLE `table_product_danhmuc` (
 --
 
 INSERT INTO `table_product_danhmuc` (`id`, `keywords`, `description`, `h3`, `h2`, `h1`, `ten`, `tenkhongdau`, `photo`, `thumb`, `photo2`, `thumb2`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `title`, `noibat`, `tieubieu`, `noidung`, `tenen`, `noidungen`, `type`, `mota`, `motaen`, `tencn`, `motacn`, `noidungcn`, `maunen`, `loc1`, `loc2`, `ten2cn`, `ten2en`, `ten2`) VALUES
-(157, '', '', '', '', '', 'Purus id vero faci bài viết', 'purus-id-vero-faci-bai-viet', 'photo-1586348943529-beaae6c28db9-5669.jpg', 'photo-1586348943529-beaae6c28db9.jpg1387_340x560.JPEG', '', '', 1, 1, 1586494693, 1586494834, '', 1, 0, '<p>Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus</p>\r\n', '', '', 'can-ho', 'Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
-(158, '', '', '', '', '', 'Purus id vero faci bài viết 1', 'purus-id-vero-faci-bai-viet-1', 'photo-1584971123287-b3559cca9144-1213.jpg', 'photo-1584971123287-b3559cca9144.jpg8449_340x560.JPEG', '', '', 1, 1, 1586494714, 1586494838, '', 1, 0, '<p>Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus</p>\r\n', '', '', 'can-ho', 'Integer, nostra sequi temporibus exercitation impedit porta massa mattis odio dolor, impedit! Nostra eu vivamus repellendus, primis rem beatae possimus? Hymenaeos deserunt natus ut. Torquent sodales duis laoreet, ante nobis fugiat temporibus? A, arcu incidunt nobis, quis animi consectetuer, nostrud, fus', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
-(159, '', '', '', '', '', 'Quiabài  quos, laoreet voluptat 1', 'quiabai-quos-laoreet-voluptat-1', 'photo-1584971123287-b3559cca9144-6401.jpg', 'photo-1584971123287-b3559cca9144.jpg0787_340x560.JPEG', '', '', 1, 1, 1586494747, 1586494826, '', 1, 0, '<p>Tempor! Incididunt dis. Adipisci id elementum minima consequat dignissim libero illo modi, commodi, montes! Curae repudiandae. Nam nec expedita neque, laoreet? Dignissimos exercitationem? Consectetuer! Perspiciatis sapien molestiae reiciendis? Sem ligula, minus magnam elit accusantium ea. Ipsum. Justo ultrices amet officia fames congue? Magnis esse amet fugit egestas accusamus, rem, suspendisse, quod tortor alias ornare, scelerisque? Similique exercitation facere molestie consequat, pariatur neque excepturi. Maiores, fusce, taciti. Etiam repellat provident odit! Laboriosam cubilia, eligendi vehicula amet quos, fugiat, accumsan adipiscing semper perspiciatis porttitor </p>\r\n', '', '', 'nha-pho', 'Quia quos, laoreet voluptate, ligula ultricies mattis tempus tempus a consectetur perferendis scelerisque, turpis. Nec quibusdam autem elementum! Voluptas pretium iste molestiae mollis cumque quo', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
-(160, '', '', '', '', '', 'Quiabài  quos, laoreet voluptat', 'quiabai-quos-laoreet-voluptat', 'photo-1586348943529-beaae6c28db9-7687.jpg', 'photo-1586348943529-beaae6c28db9.jpg7113_340x560.JPEG', '', '', 1, 1, 1586494752, 1586494823, '', 1, 0, '<p>Tempor! Incididunt dis. Adipisci id elementum minima consequat dignissim libero illo modi, commodi, montes! Curae repudiandae. Nam nec expedita neque, laoreet? Dignissimos exercitationem? Consectetuer! Perspiciatis sapien molestiae reiciendis? Sem ligula, minus magnam elit accusantium ea. Ipsum. Justo ultrices amet officia fames congue? Magnis esse amet fugit egestas accusamus, rem, suspendisse, quod tortor alias ornare, scelerisque? Similique exercitation facere molestie consequat, pariatur neque excepturi. Maiores, fusce, taciti. Etiam repellat provident odit! Laboriosam cubilia, eligendi vehicula amet quos, fugiat, accumsan adipiscing semper perspiciatis porttitor </p>\r\n', '', '', 'nha-pho', 'Quia quos, laoreet voluptate, ligula ultricies mattis tempus tempus a consectetur perferendis scelerisque, turpis. Nec quibusdam autem elementum! Voluptas pretium iste molestiae mollis cumque quo', '', '', '', '', '', '', '', '', '', 'Quiabài  quos, laoreet v'),
-(161, '', '', '', '', '', 'Đất a', 'dat-a', '', '', '', '', 1, 1, 1586503963, 0, '', 0, 0, '', '', '', 'dat-nen', '', '', '', '', '', '', '', '', '', '', ''),
-(162, '', '', '', '', '', 'Đất ab', 'dat-ab', '', '', '', '', 1, 1, 1586503966, 0, '', 0, 0, '', '', '', 'dat-nen', '', '', '', '', '', '', '', '', '', '', ''),
-(163, '', '', '', '', '', 'Đất abc', 'dat-abc', '', '', '', '', 1, 1, 1586503969, 0, '', 0, 0, '', '', '', 'dat-nen', '', '', '', '', '', '', '', '', '', '', '');
+(172, '', '', '', '', '', 'Tin tức BĐS Nam Long', 'tin-tuc-bds-nam-long', '', '', '', '', 1, 1, 1586529061, 0, '', 0, 0, '', '', '', 'tin-tuc', '', '', '', '', '', '', '', '', '', '', ''),
+(173, '', '', '', '', '', 'Thị trường BĐS toàn quốc', 'thi-truong-bds-toan-quoc', '', '', '', '', 1, 1, 1586529077, 0, '', 0, 0, '', '', '', 'tin-tuc', '', '', '', '', '', '', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -4934,14 +5055,6 @@ CREATE TABLE `table_product_list` (
   `motacn` text NOT NULL,
   `noidungcn` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `table_product_list`
---
-
-INSERT INTO `table_product_list` (`id`, `ten`, `tenkhongdau`, `photo`, `thumb`, `stt`, `hienthi`, `ngaytao`, `ngaysua`, `id_danhmuc`, `title`, `description`, `h3`, `h2`, `h1`, `keywords`, `noibat`, `noidung`, `tenen`, `noidungen`, `type`, `mota`, `motaen`, `tencn`, `motacn`, `noidungcn`) VALUES
-(53, 'Test danh muc cap 2 a', 'test-danh-muc-cap-2-a', '', '', 1, 1, 1586576641, 0, 157, '', '', '', '', '', '', 0, '', '', '', 'can-ho', '', '', '', '', ''),
-(54, 'Test danh muc cap 2 b', 'test-danh-muc-cap-2-b', '', '', 1, 1, 1586576645, 0, 157, '', '', '', '', '', '', 0, '', '', '', 'can-ho', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -5030,7 +5143,7 @@ INSERT INTO `table_slider` (`id`, `photo`, `ten`, `mota`, `link`, `stt`, `hienth
 (94, 'untitled-10006layer-10-6073.png', '', '', '', 1, 1, 'untitled-1_0006_layer-106176_150x390.png', 'letruot', 0, 0, '', '', 'right', '', ''),
 (95, 'untitled-10007layer-11-8509.png', '', '', '', 1, 1, 'untitled-1_0007_layer-114973_150x390.png', 'letruot', 0, 0, '', '', 'left', '', ''),
 (96, 'untitled-10007layer-11-6770.png', '', '', '', 1, 1, 'untitled-1_0007_layer-112768_150x390.png', 'letruot', 0, 0, '', '', 'right', '', ''),
-(150, 'untitled-2-5808.jpg', '', '', '', 1, 1, 'untitled-2.jpg9575_1366x660.JPEG', 'slider', 0, 0, '', '', '', '', '');
+(150, 'untitled-1-4357.jpg', 'Provident. Unde eget faucib', 'Provident. Unde eget faucibus quas nemo dis! Primis impedit officia? Modi suscipit! Litora id quibusdam eos! Enim, bibendum nemo dolore, porttitor? Reprehenderit repellendus justo ultrices quo mollis ullam libero fugit perspiciatis imped', '', 1, 1, 'untitled-1.jpg0783_1366x660.JPEG', 'slider', 0, 0, '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -5085,6 +5198,16 @@ CREATE TABLE `table_title` (
   `thumb` varchar(255) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `table_title`
+--
+
+INSERT INTO `table_title` (`id`, `type`, `title`, `keywords`, `description`, `ngaytao`, `ngaysua`, `photo`, `thumb`) VALUES
+(1, 'tin-tuc', 'Cát Tường Group | Dự án bất động sản Cát Tường | Dự án BĐS Cát Tường | Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 1586909115, 1586932073, 'logo-cat-tuong-0895.png', 'logo-cát-tường.png2033_400x300.JPEG'),
+(2, 'can-ho', 'Cát Tường Group | Dự án bất động sản Cát Tường | Dự án BĐS Cát Tường | Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 1586931752, 1586932082, 'logo-cat-tuong-3227.png', 'logo-cát-tường.png3432_768x605.JPEG'),
+(3, 'nha-pho', 'Cát Tường Group | Dự án bất động sản Cát Tường | Dự án BĐS Cát Tường | Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 1586931765, 1586932090, 'logo-cat-tuong-3885.png', 'logo-cát-tường.png1729_768x605.JPEG'),
+(4, 'dat-nen', 'Cát Tường Group | Dự án bất động sản Cát Tường | Dự án BĐS Cát Tường | Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 'Cát Tường Group, Dự án bất động sản Cát Tường, Dự án BĐS Cát Tường, Phạm Real', 1586931780, 1586932100, 'logo-cat-tuong-4282.png', 'logo-cát-tường.png2842_700x430.JPEG');
+
 -- --------------------------------------------------------
 
 --
@@ -5129,7 +5252,7 @@ CREATE TABLE `table_user` (
 --
 
 INSERT INTO `table_user` (`id`, `username`, `password`, `ten`, `dienthoai`, `email`, `diachi`, `sex`, `nick_yahoo`, `nick_skype`, `congty`, `country`, `city`, `role`, `hienthi`, `com`, `quyen`, `ngaysinh`, `gioitinh`, `ngaytao`, `ngaysua`, `active`, `nhom`, `id_facebook`, `id_google`, `stt`, `ho`, `quoctich`, `didong`, `curjob`) VALUES
-(3, 'admin', '03f5c73ec729427adf167cb3cc5c7fc7', 'PHAN THANH XUÂN', '0908141141', 'xuan.phuanh@gmail.com', '', 0, '', '', '', '', '', 3, 1, 'admin', '', 0, '', 0, 0, 1, 0, '', '', 1, '', '', '', ''),
+(3, 'admin', '03f5c73ec729427adf167cb3cc5c7fc7', '', '', '', '', 0, '', '', '', '', '', 3, 1, 'admin', '', 0, '', 0, 0, 1, 0, '', '', 1, '', '', '', ''),
 (23, 'admin1', '1e551972c942c6c34c5e17011ebb11de', '', '', '', '', 0, '', '', '', '', '', 3, 1, 'admin', '', 0, '', 0, 0, 1, 0, '', '', 1, '', '', '', ''),
 (32, 'testweb', '79dcaf822617dda8873bb743a8f32711', 'test web', '0967567854', 'testweb@gmail.com', '', 0, '', '', '', '', '', 0, 1, 'user', '', -28800, '', 0, 0, 1, 0, '', '', 1, '', '', '', '');
 
@@ -5476,13 +5599,13 @@ ALTER TABLE `table_yahoo`
 -- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4048;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4200;
 
 --
 -- AUTO_INCREMENT for table `table_about`
 --
 ALTER TABLE `table_about`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `table_anhnen`
@@ -5542,7 +5665,7 @@ ALTER TABLE `table_donhang`
 -- AUTO_INCREMENT for table `table_hinhanh`
 --
 ALTER TABLE `table_hinhanh`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=595;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=598;
 
 --
 -- AUTO_INCREMENT for table `table_hinhthucgiaohang`
@@ -5560,7 +5683,7 @@ ALTER TABLE `table_httt`
 -- AUTO_INCREMENT for table `table_lienhe`
 --
 ALTER TABLE `table_lienhe`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `table_lkweb`
@@ -5572,7 +5695,7 @@ ALTER TABLE `table_lkweb`
 -- AUTO_INCREMENT for table `table_news`
 --
 ALTER TABLE `table_news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=740;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=751;
 
 --
 -- AUTO_INCREMENT for table `table_newsletter`
@@ -5590,7 +5713,7 @@ ALTER TABLE `table_news_cat`
 -- AUTO_INCREMENT for table `table_news_danhmuc`
 --
 ALTER TABLE `table_news_danhmuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT for table `table_news_item`
@@ -5608,7 +5731,7 @@ ALTER TABLE `table_news_list`
 -- AUTO_INCREMENT for table `table_online`
 --
 ALTER TABLE `table_online`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2101;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2316;
 
 --
 -- AUTO_INCREMENT for table `table_phanquyen`
@@ -5632,7 +5755,7 @@ ALTER TABLE `table_place_dist`
 -- AUTO_INCREMENT for table `table_product`
 --
 ALTER TABLE `table_product`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT for table `table_product_cat`
@@ -5644,7 +5767,7 @@ ALTER TABLE `table_product_cat`
 -- AUTO_INCREMENT for table `table_product_danhmuc`
 --
 ALTER TABLE `table_product_danhmuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=174;
 
 --
 -- AUTO_INCREMENT for table `table_product_item`
@@ -5656,7 +5779,7 @@ ALTER TABLE `table_product_item`
 -- AUTO_INCREMENT for table `table_product_list`
 --
 ALTER TABLE `table_product_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT for table `table_protag`
@@ -5674,7 +5797,7 @@ ALTER TABLE `table_pushonesignal`
 -- AUTO_INCREMENT for table `table_slider`
 --
 ALTER TABLE `table_slider`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
 
 --
 -- AUTO_INCREMENT for table `table_tags`
@@ -5692,7 +5815,7 @@ ALTER TABLE `table_tinhtrang`
 -- AUTO_INCREMENT for table `table_title`
 --
 ALTER TABLE `table_title`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `table_user`

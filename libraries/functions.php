@@ -830,7 +830,7 @@ function thumb_bgratio($src_img, $new_w, $new_h){
   $img_thumb->insert($src_img, 'center');
   return $img_thumb;
 }
-function create_thumb($file, $width, $height, $folder,$file_name,$zoom_crop='1'){
+function create_thumb($file, $width, $height, $folder,$file_name,$zoom_crop='1',$dong='0'){
    $type = end(explode('.',$file_name));
    $name = basename($file_name, '.'.$type);
    $name=changeTitleImage($name);
@@ -868,8 +868,26 @@ function create_thumb($file, $width, $height, $folder,$file_name,$zoom_crop='1')
     $IMG = thumb_ratio($src_img, $new_w, $new_h);
   }
 
-  //$img->save('public/foo', 80, 'jpg');
-  $IMG->save($pathto, $quant);
+  if($dong == 1){
+    $new_w = $this->width;
+    $new_h = $this->height;
+
+    // $img_thumb = Image::make((__DIR__).'/Upload/hinhanh/watermark.png');
+    $img_thumb = Image::make((__DIR__)."/".$_SESSION['dong']);
+
+    $img_thumb->resize(round($new_w/2,0), round($new_h/2,0), function ($constraint) {
+      $constraint->aspectRatio();
+      $constraint->upsize();
+    });
+    $img_thumb->opacity(100);
+
+    $IMG->insert($img_thumb, 'bottom-right', 5, 5);
+
+    $IMG->save($pathto, $quant);
+  }else{
+    //$img->save('public/foo', 80, 'jpg');
+    $IMG->save($pathto, $quant);
+  }
   return $new_file;
   }
 function create_thumb_old($file, $width, $height, $folder,$file_name,$zoom_crop='1'){

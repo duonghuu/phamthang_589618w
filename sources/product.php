@@ -215,6 +215,6 @@ if($id>0)
 	// $product = get_result("select *,mota$lang as mota,id,ten$lang as ten,tenkhongdau FROM #_product where $where 
 	// 	limit $bg,$pageSize");
 	$product = get_result("select *,mota$lang as mota,ten$lang as ten,vitri as tinhtrang,phaply as phongtam,
-		mattien as phongngu,matbang as giabds FROM #_product where $where 
+		mattien as phongngu,matbang as giabds FROM #_product where $where limit $bg,$pageSize
 	");
 	$url_link = getCurrentPageURL();

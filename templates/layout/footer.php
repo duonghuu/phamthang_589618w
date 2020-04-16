@@ -1,3 +1,37 @@
+
+<div class="thamquan-canho lazy" id="thamquan" data-bg="url(<?= _upload_hinhanh_l.$bgthamquan["photo"] ?>)">
+  <div class="container">
+    <div class="idx-tit text-center text-uppercase">
+      <h4><span>THAM QUAN DỰ ÁN</span></h4>
+    </div>
+    <div class="idx-desc">
+      Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành côn
+      Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành côn
+    </div>
+    <form action="index.php" method="post">
+      <div class="form-left">
+        <div class="form-group">
+          <input type="text" required="true" name="fpu[ten]" class="form-control" placeholder="<?= _hovaten ?>">
+          <input type="text" required="true" name="fpu[dienthoai]" class="form-control" placeholder="<?= _dienthoai ?>">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control input-diachi" name="fpu[diachi]" placeholder="<?= _diachi ?>">
+          <input type="date" required="true" class="form-control" name="fpu[chondate]" placeholder="Ngày hẹn">
+          <button type="submit" class="btn btn-default">Gửi yêu cầu</button>
+        </div>
+      </div>
+      <div class="form-right">
+        <textarea name="fpu[note]" class="form-control" placeholder="Nội dung (ghi chú)..."></textarea>
+      </div>
+      <input type="hidden" value="1" name="rp2val">
+      <input type="hidden" value="<?= time() ?>" name="rp2token">
+      <input type="hidden" id="recaptchaResponse" name="recaptchaResponse">
+    </form>
+    <p class="huongdan-text text-center">Liên lạc với chúng tôi nếu Quý Khách có thắc mắc về dịch vụ hoặc 
+      để hướng dẫn thêm <a href="lien-he.html">Liên hệ</a></p>
+  </div>
+  
+</div>
 <footer id="footer">
   <div class="ft-left">
     <div class="ft-info">

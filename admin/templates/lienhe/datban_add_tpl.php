@@ -46,7 +46,7 @@
                     <div class="clear"></div>
                 </div>
             <?php } ?>
-                <div class="formRow">
+                <div class="formRow none">
                     <label>Email</label>
                     <div class="formRight">
                         <input type="text" name="email" title="Nhập link website" id="email" class="tipS" value="<?=@$item['email']?>" />
