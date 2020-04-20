@@ -5,8 +5,7 @@
       <h4><span>THAM QUAN DỰ ÁN</span></h4>
     </div>
     <div class="idx-desc">
-      Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành côn
-      Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành côn
+      <?= nl2br($txtthamquan["mota"]) ?>
     </div>
     <form action="index.php" method="post">
       <div class="form-left">

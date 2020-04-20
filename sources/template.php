@@ -15,6 +15,8 @@ if($source=="index"){
         order by stt asc");
     $bgdatnen = get_fetch("select photo as photo from #_background where type='banner'");
 }
+$txtthamquan=get_fetch("select mota$lang as mota from #_about 
+    where type='txttham-quan' ");
 $bgthamquan = get_fetch("select photo as photo from #_background where type='bgbn'");
 $tinnb=get_result("select mota$lang as mota,ten$lang as ten,tenkhongdau,id,thumb,photo
     ,type,ngaytao,luotxem from #_news where type='tin-tuc' and noibat>0 and hienthi>0 order by stt asc");

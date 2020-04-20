@@ -87,6 +87,7 @@ $img_row_detail = _upload_sanpham_l.$row_detail["thumb"];
   </div>
   <?php } ?>
 </div>
+<div class="li"><?php include _template."layout/share.php";?></div>
 <?php if(count($product)>0) { ?>
   <div class="tieude_giua"><div><?=$title_other?></div></div>
   <div class="product-grid">

@@ -67,10 +67,11 @@
                 <?php //phanquyen_menu('Lấy tin từ Vnexpress','vnexpress','man',''); ?>
             </ul>
         </li>
-        <li class="categories_li <?php if(in_array($type, array('gioi-thieu','lienhe','footer')))
+        <li class="categories_li <?php if(in_array($type, array('gioi-thieu','lienhe','footer','txttham-quan')))
         echo ' activemenu' ?>" id="menu_t"><a href="" title="" class="exp">
             <span>Trang tĩnh</span><strong></strong></a>
             <ul class="sub">
+                <?php phanquyen_menu('Text tham quan dự án','about','capnhat','txttham-quan'); ?>
                 <?php phanquyen_menu('Giới thiệu','about','capnhat','gioi-thieu'); ?>
                 <?php phanquyen_menu('Cập nhật liên hệ','about','capnhat','lienhe'); ?>
                 <?php phanquyen_menu('Cập nhật footer','about','capnhat','footer'); ?>

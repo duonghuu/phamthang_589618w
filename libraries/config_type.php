@@ -517,6 +517,14 @@ switch($type){
 		break;
 	}
 	break;
+	case 'txttham-quan':
+
+	switch($act){
+		default:
+		$config['type'] = array('mota');
+		break;
+	}
+	break;
 	case 'first-article':
 	case 'thong-tin-chinh-sach':
 	case 'chinh-sach-bo-si':
